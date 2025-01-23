@@ -12,7 +12,7 @@ const HomeSection = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Se declanșează când 50% din element este vizibil
+      threshold: 0.3, // Se declanșează când 50% din element este vizibil
     };
 
     const handleIntersection = (entries) => {
