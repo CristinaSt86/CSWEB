@@ -4,7 +4,6 @@ import LandingPage from "./components/LandingPage";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-//import Payment from "./components/Payment";
 
 function App() {
   return (
@@ -48,7 +47,6 @@ function App() {
       <ScrollToTopButton />
       {/* Footer */}
       <Footer />
-      {/* <Payment /> */}
     </div>
   );
 }
