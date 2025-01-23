@@ -15,16 +15,16 @@ const Banner = () => {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 w-full rounded px-4 py-2 text-center text-gray-800
+      className={`fixed bottom-0 left-0 w-full rounded px-4 sm: py-0.5 md:py-2 text-center text-gray-800
         ${isVisible ? "animate-slideIn" : "animate-slideOut"}
         bg-gradient-to-r from-blue-200 via-green-200 to-gray-200 z-50`}
     >
       <div>
-        <h2 className="text-xl font-bold flex justify-center items-center">
+        <h2 className="sm:text-s md:text-xl md:font-bold flex justify-center items-center">
           <FaTag className="mr-2" /> 20% Discount pentru o perioadă limitată!{" "}
           <FaRegSmile className="ml-2" />
         </h2>
-        <p className="mt-2">Profitați acum de ofertele noastre exclusive. Reducerea expiră în curând!</p>
+        <p className="mt-2 sm:text-s md:text-xl ">Profitați acum de ofertele noastre exclusive. Reducerea expiră în curând!</p>
       </div>
     </div>
   );

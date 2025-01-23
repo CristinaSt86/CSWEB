@@ -1,6 +1,5 @@
-// LandingPage.jsx
 import React from "react";
-import { Helmet } from "react-helmet";  // Import react-helmet for head management
+import { Helmet } from "react-helmet";  
 //import Navbar from "../components/Navbar"; // Importăm Navbar
 import HomeSection from "../Sections/HomeSection";
 import AboutSection from "../Sections/AboutSection";
@@ -10,6 +9,7 @@ import TestimonialsSection from "../Sections/TestimonialsSection";
 import ContactSection from "../Sections/ContactSection";
 //import Footer from "../components/Footer";
 import Banner from "../components/Banner";
+//import DiscountBanner from "../components/DiscountBanner"
 
 const LandingPage = () => {
   return (

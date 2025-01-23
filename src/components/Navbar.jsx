@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Logo from "../images/logo1c.webp";
+import { FaHome, FaInfoCircle, FaCogs, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle menu state
+    setIsMenuOpen(!isMenuOpen);
+    // Toggle menu state
   };
 
   const scrollToSection = (sectionId) => {
@@ -14,6 +16,29 @@ const Navbar = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleMenuClick = (sectionId) => {
+    scrollToSection(sectionId); // Navighează la secțiunea dorită
+    setIsMenuOpen(false); // Închide meniul
+  };
+
+  const handleOutsideClick = (event) => {
+    const menu = document.querySelector("nav"); // Selectează navbar-ul
+    if (menu && !menu.contains(event.target)) {
+      setIsMenuOpen(false); // Închide meniul
+    }
+  };
+
+  React.useEffect(() => {
+    if (isMenuOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    } else {
+      document.removeEventListener("click", handleOutsideClick);
+    }
+    return () => {
+      document.removeEventListener("click", handleOutsideClick); // Curățare
+    };
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -66,38 +91,42 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-custom-textMenu hover:text-custom-btn-hover hover:underline"
+                className="text-custom-textMenu hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Acasă"
                 aria-current="page"
               >
-                Acasă
+                Acasă{" "}
+                <FaHome className="ml-1 text-custom-btn-hover inline-block " />
               </button>
             </li>
             <li>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-gray-700 hover:text-custom-btn-hover hover:underline"
+                className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Despre CS|Web"
               >
-                Despre CS|Web
+                Despre CS|Web{" "}
+                <FaInfoCircle className="ml-1 text-custom-btn-hover inline-block" />
               </button>
             </li>
             <li>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-gray-700 hover:text-custom-btn-hover hover:underline"
+                className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Servicii"
               >
-                Servicii
+                Servicii{" "}
+                <FaCogs className="ml-1 text-custom-btn-hover inline-block" />
               </button>
             </li>
             <li>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-700 hover:text-custom-btn-hover hover:underline"
+                className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Contact"
               >
-                Contact
+                Contact{" "}
+                <FaEnvelope className="ml-1 text-custom-btn-hover inline-block" />
               </button>
             </li>
           </ul>
@@ -105,36 +134,40 @@ const Navbar = () => {
 
         {/* Meniul pentru mobil */}
         <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-          <ul className="flex flex-col items-center space-y-4 py-4 text-custom-textMenu">
+          <ul className="flex flex-col items-center space-y-4 py-8 text-custom-textMenu font-medium text-lg ">
             <li>
               <button
-                onClick={() => scrollToSection("home")}
-                className=" hover:text-custom-btn-hover"
+                onClick={() => handleMenuClick("home")}
+                className="flex items-center hover:text-custom-btn-hover hover:underline"
               >
+                <FaHome className="mr-2 text-custom-btn-hover" />
                 Acasă
               </button>
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("about")}
-                className=" hover:text-custom-btn-hover"
+                onClick={() => handleMenuClick("about")}
+                className="flex items-center hover:text-custom-btn-hover hover:underline"
               >
+                <FaInfoCircle className="mr-2 text-custom-btn-hover" />
                 Despre CS|Web
               </button>
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("services")}
-                className=" hover:text-custom-btn-hover"
+                onClick={() => handleMenuClick("services")}
+                className="flex items-center hover:text-custom-btn-hover hover:underline"
               >
+                <FaCogs className="mr-2 text-custom-btn-hover" />
                 Servicii
               </button>
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("contact")}
-                className=" hover:text-custom-btn-hover"
+                onClick={() => handleMenuClick("contact")}
+                className="flex items-center hover:text-custom-btn-hover hover:underline"
               >
+                <FaEnvelope className="mr-2 text-custom-btn-hover" />
                 Contact
               </button>
             </li>

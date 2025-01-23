@@ -1,9 +1,32 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Form from "../components/Form";
 import { Helmet } from "react-helmet";
 
 const ContactSection = () => {
   const formRef = useRef();
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Se activează când 50% din element este în viewport
+    };
+
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+    observer.observe(document.getElementById("contact-section"));
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleButtonClick = () => {
     if (formRef.current) {
@@ -13,8 +36,8 @@ const ContactSection = () => {
 
   return (
     <section
-      id="contact"
-      className="min-h-screen bg-contact-bg bg-center bg-scroll md:bg-fixed bg-contain text-gray-700 flex items-center justify-center px-4 md:px-8"
+      id="contact-section"
+      className="min-h-screen bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-gray-700 flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
       aria-labelledby="contact-heading"
     >
       <Helmet>
@@ -47,12 +70,16 @@ const ContactSection = () => {
         </script>
       </Helmet>
 
-      <div className="flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-24 md:mt-48 mb-24 md:mb-48">
+      <div
+        className={`flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-24 md:mt-48 mb-24 md:mb-48 ${
+          isInView ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"
+        } transition-all duration-1000 ease-out`}
+      >
         {/* Contact Information */}
         <div className="text-left relative z-10 bg-white p-6 rounded shadow-lg w-full md:w-5/12">
           <h2
             id="contact-heading"
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-8"
             itemProp="headline"
           >
             Contactează-ne
@@ -69,7 +96,7 @@ const ContactSection = () => {
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:contact.csweb@gmail.com"
-                className="text-custom-btn hover:underline text-lg"
+                className="text-custom-btn hover:underline text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
                 aria-label="Trimite un email la contact.csweb@gmail.com"
               >
                 contact.csweb@gmail.com
@@ -79,7 +106,7 @@ const ContactSection = () => {
               <strong>WhatsApp:</strong>{" "}
               <a
                 href="tel:+40736690118"
-                className="text-custom-btn hover:underline text-lg"
+                className="text-custom-btn hover:underline text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
                 aria-label="Sună la +40 736 690 118"
               >
                 +40 736 690 118

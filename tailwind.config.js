@@ -2,13 +2,14 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", // Include all relevant file paths
+    "./public/index.html", // Include HTML fișiere pentru a verifica utilizarea claselor
   ],
   theme: {
     extend: {
       backgroundImage: {
         "home-bg": "url('./images/pic1.webp')",
         "services-bg": "url('./images/img1.webp')",
-        "contact-bg": "url('./images/8.webp')",
+        "contact-bg": "url('./images/5.webp')",
         "preturi-bg": "url('./images/8.webp')",
         "contact-bg-overlay":
           "linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3)), url('./images/LOGO.png')",
@@ -39,7 +40,14 @@ module.exports = {
           "100%": { transform: "translateY(0)", opacity: 1 },
         },
       },
+      fontFamily: {
+        sans: ['Roboto', 'Arial', 'sans-serif'], // Example custom font family
+      },
     },
   },
   plugins: [],
+  safelist: [
+    // Adăugați aici orice clasă Tailwind care trebuie să fie păstrată în ciuda purgării
+    'bg-custom-btn', 'bg-custom-btn-hover', 'text-custom-textMenu', 'text-xl',
+  ],
 };

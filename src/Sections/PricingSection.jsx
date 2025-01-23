@@ -15,6 +15,7 @@ const PricingSection = () => {
     >
       Investiții Smart pentru Web
     </h1>
+    <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
     <p className="text-center text-gray-600 mb-16">
       Alege soluția care se potrivește afacerii tale. Fiecare pachet include optimizare SEO, design atractiv și funcționalități adaptate nevoilor tale.
     </p>
@@ -22,7 +23,7 @@ const PricingSection = () => {
     <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12 items-center md:items-start justify-center">
       {/* Pachet Basic */}
       <div className="flex-1 relative">
-        <div className="absolute left-0 top-0 w-1 h-full bg-gray-300 hidden md:block"></div>
+        <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
         <div className="text-center md:text-left p-4">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             Pachet Basic
@@ -46,11 +47,11 @@ const PricingSection = () => {
       </div>
 
       {/* Separator pentru mobil */}
-      <div className="w-full h-1 bg-gray-300 md:hidden"></div>
+      <div className="w-full h-0.5 bg-gray-300 md:hidden"></div>
 
       {/* Pachet E-commerce */}
       <div className="flex-1 relative">
-        <div className="absolute left-0 top-0 w-1 h-full bg-gray-300 hidden md:block"></div>
+        <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
         <div className="text-center md:text-left p-4">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             Pachet E-commerce
@@ -74,11 +75,11 @@ const PricingSection = () => {
       </div>
 
       {/* Separator pentru mobil */}
-      <div className="w-full h-1 bg-gray-300 md:hidden"></div>
+      <div className="w-full h-0.5 bg-gray-300 md:hidden"></div>
 
       {/* Pachet Personalizat */}
       <div className="flex-1 relative">
-        <div className="absolute left-0 top-0 w-1 h-full bg-gray-300 hidden md:block"></div>
+        <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
         <div className="text-center md:text-left p-4">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             Pachet Personalizat
