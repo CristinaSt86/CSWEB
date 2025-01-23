@@ -12,7 +12,7 @@ const PricingSection = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.8, // Când 80% din element devine vizibil
+      threshold: 0.3, 
     };
 
     const handleIntersection = (entries) => {

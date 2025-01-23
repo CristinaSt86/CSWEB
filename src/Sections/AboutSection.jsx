@@ -7,7 +7,7 @@ const AboutSection = () => {
     const options = {
       root: null, // Vizibilitatea se măsoară față de viewport
       rootMargin: "0px",
-      threshold: 0.8, // Când 80% din element este vizibil
+      threshold: 0.3, // Când 80% din element este vizibil
     };
 
     const handleIntersection = (entries) => {

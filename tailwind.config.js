@@ -22,8 +22,8 @@ module.exports = {
       },
 
       animation: {
-        slideIn: "slideIn 0.8s ease-out forwards",
-        slideOut: "slideOut 0.8s ease-in forwards",
+        slideIn: "slideIn 3s ease-out forwards",
+        slideOut: "slideOut 3s ease-in forwards",
         fadeInUp: "fadeInUp 1.5s cubic-bezier(0.5, 1, 0.89, 1) forwards", 
       },
       keyframes: {

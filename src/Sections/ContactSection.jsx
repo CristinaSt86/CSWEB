@@ -10,7 +10,7 @@ const ContactSection = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Se activează când 50% din element este în viewport
+      threshold: 0.3, // Se activează când 50% din element este în viewport
     };
 
     const handleIntersection = (entries) => {

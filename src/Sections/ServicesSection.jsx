@@ -10,7 +10,7 @@ const ServicesSection = () => {
     y: 0,
     transition: {
       duration: 0.8, // Durata animației
-      delay: custom * 0.5, // Delay bazat pe custom
+      delay: custom * 0.3, // Delay bazat pe custom
       type: "spring", // Tip bounce
       stiffness: 150,
       damping: 10,
