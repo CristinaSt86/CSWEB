@@ -57,7 +57,7 @@ const HomeSection = () => {
             }`}
             itemProp="headline"
           >
-            CS|WEB – Soluții digitale inovative pentru afacerea ta
+            Soluții digitale inovative pentru afacerea ta
           </h1>
           <h2
             id="home-section-subtitle"
