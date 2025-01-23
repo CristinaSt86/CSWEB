@@ -52,7 +52,7 @@ const HomeSection = () => {
         >
           <h1
             id="home-section-title"
-            className={`text-4xl font-semibold mb-4 sm:text-5xl transition-opacity duration-1000 ${
+            className={`text-4xl font-semibold mb-8 sm:text-5xl transition-opacity duration-1000 ${
               isTitleVisible ? "opacity-100" : "opacity-0"
             }`}
             itemProp="headline"
