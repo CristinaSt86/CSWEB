@@ -51,7 +51,7 @@ const AboutSection = () => {
         <div
           aria-labelledby="about-who-title"
           className={`transition-all duration-1000 ease-in-out transform ${
-            isInView.who ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+            isInView.who ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
           }`}
         >
           <h2
