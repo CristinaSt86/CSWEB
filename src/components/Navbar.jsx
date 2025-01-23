@@ -134,11 +134,11 @@ const Navbar = () => {
 
         {/* Meniul pentru mobil */}
         <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-          <ul className="flex flex-col items-center space-y-4 py-8 text-custom-textMenu font-medium text-lg ">
+          <ul className="flex flex-col items-center space-y-4 py-6 text-custom-textMenu font-medium text-lg ">
             <li>
               <button
                 onClick={() => handleMenuClick("home")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
                 <FaHome className="mr-2 text-custom-btn-hover" />
                 Acasă
@@ -147,7 +147,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("about")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
                 <FaInfoCircle className="mr-2 text-custom-btn-hover" />
                 Despre CS|Web
@@ -156,7 +156,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("services")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
                 <FaCogs className="mr-2 text-custom-btn-hover" />
                 Servicii
@@ -165,7 +165,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("contact")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
                 <FaEnvelope className="mr-2 text-custom-btn-hover" />
                 Contact
