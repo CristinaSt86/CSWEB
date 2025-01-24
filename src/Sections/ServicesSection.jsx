@@ -30,13 +30,13 @@ const ServicesSection = () => {
           aria-labelledby="services-title"
           itemProp="headline"
         >
-          Serviciile Oferite
+          Servicii Oferite  
         </h2>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Service 1 */}
           <motion.div
-            className="p-6 bg-gray-100 rounded shadow"
+            className="p-6 bg-gray-100 rounded shadow-lg"
             aria-labelledby="service-1-title"
             itemProp="serviceType"
             initial="hidden"
@@ -58,7 +58,7 @@ const ServicesSection = () => {
 
           {/* Service 2 */}
           <motion.div
-            className="p-6 bg-gray-100 rounded shadow"
+            className="p-6 bg-gray-100 rounded shadow-lg"
             aria-labelledby="service-2-title"
             initial="hidden"
             whileInView="visible"
@@ -79,12 +79,12 @@ const ServicesSection = () => {
 
           {/* Service 3 */}
           <motion.div
-            className="p-6 bg-gray-100 rounded shadow"
+            className="p-6 bg-gray-100 rounded shadow-lg"
             aria-labelledby="service-3-title"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            custom={4} 
+            custom={3} 
             variants={serviceVariants}
           >
             <h3

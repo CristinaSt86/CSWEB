@@ -8,12 +8,12 @@ import PricingSection from "../Sections/PricingSection";
 import TestimonialsSection from "../Sections/TestimonialsSection";
 import ContactSection from "../Sections/ContactSection";
 //import Footer from "../components/Footer";
-import Banner from "../components/Banner";
+//import Banner from "../components/Banner";
 //import DiscountBanner from "../components/DiscountBanner"
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className=" overflow-x-hidden ">
       {/* Using react-helmet to manage SEO optimizations */}
       <Helmet>
         <title>Inovație Digitală - Soluții Personalizate pentru Afacerea Ta</title>
@@ -46,7 +46,7 @@ const LandingPage = () => {
      
 
       {/* Banner */}
-      <Banner />
+      {/* <Banner /> */}
 
       {/* Main sections */}
       <main>

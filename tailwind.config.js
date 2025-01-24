@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "home-bg": "url('./images/pic1.webp')",
-        "services-bg": "url('./images/img1.webp')",
+        "services-bg": "url('./images/img2copy.webp')",
         "contact-bg": "url('./images/5.webp')",
         "preturi-bg": "url('./images/8.webp')",
         "contact-bg-overlay":

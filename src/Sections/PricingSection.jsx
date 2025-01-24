@@ -1,5 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../components/Button";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import PaymentPage from "../components/PaymentPage";
+
+// Initialize Stripe with your public key
+const stripePromise = loadStripe(
+  "pk_live_51QjKAx077Yw0Kd8saYZsAqoZcg6c05Cc2i0xRbBVnYVjSZI6gKoGcGCnXtXbLYcs9FotWsSxsM0HhJejvzuVlTzR00ZW1rAWj2"
+);
 
 const PricingSection = () => {
   const [isInView, setIsInView] = useState({
@@ -7,12 +15,26 @@ const PricingSection = () => {
     ecommerce: false,
     custom: false,
   });
+  const [loading, setLoading] = useState(false);
+  const [activePackage, setActivePackage] = useState(null); // Setează pachetul activ
 
+  // Handler pentru deschiderea componentei de plată
+  const openPaymentPage = (packageType) => {
+    setActivePackage(packageType);
+    setLoading(true); // Activează încărcarea la apăsarea butonului
+  };
+
+  const closePaymentPage = () => {
+    setActivePackage(null); // Resetează pachetul activ când se închide componenta
+    setLoading(false); // Dezactivează încărcarea
+  };
+
+  // Handle Intersection Observer
   useEffect(() => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, 
+      threshold: 0.3,
     };
 
     const handleIntersection = (entries) => {
@@ -63,7 +85,9 @@ const PricingSection = () => {
         </h1>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
         <p className="text-center text-gray-600 mb-16">
-          Alege soluția care se potrivește afacerii tale. Fiecare pachet include optimizare SEO, design atractiv și funcționalități adaptate nevoilor tale.
+          Alege soluția care se potrivește afacerii tale. Fiecare pachet include
+          optimizare SEO, design atractiv și funcționalități adaptate nevoilor
+          tale.
         </p>
 
         <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12 items-center md:items-start justify-center">
@@ -71,7 +95,9 @@ const PricingSection = () => {
           <div
             id="basic-package"
             className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
-              isInView.basic ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+              isInView.basic
+                ? "translate-x-0 opacity-100"
+                : "translate-x-10 opacity-0"
             }`}
           >
             <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
@@ -92,8 +118,34 @@ const PricingSection = () => {
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
-                className="mt-6"
+                className="mt-6 mx-1"
               />
+              {/* Butonul de plată */}
+              <Button
+                label="Plătește acum"
+                onClick={() => openPaymentPage("basic")}
+                primaryColor="bg-blue-500"
+                hoverColor="bg-blue-600"
+                className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
+              />
+              {/* Componenta de plată pentru pachetul basic */}
+              {activePackage === "basic" && (
+                <div className="relative">
+                  {/* Close Button */}
+                  <button
+                    onClick={closePaymentPage}
+                    className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
+                  >
+                    x
+                  </button>
+
+                  {loading && (
+                    <Elements stripe={stripePromise}>
+                      <PaymentPage />
+                    </Elements>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 
@@ -104,7 +156,9 @@ const PricingSection = () => {
           <div
             id="ecommerce-package"
             className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
-              isInView.ecommerce ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+              isInView.ecommerce
+                ? "translate-x-0 opacity-100"
+                : "translate-x-10 opacity-0"
             }`}
           >
             <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
@@ -125,8 +179,34 @@ const PricingSection = () => {
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
-                className="mt-6"
+                className="mt-6 mx-1"
               />
+              {/* Butonul de plată */}
+              <Button
+                label="Plătește acum"
+                onClick={() => openPaymentPage("ecommerce")}
+                primaryColor="bg-blue-500"
+                hoverColor="bg-blue-600"
+                className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
+              />
+              {/* Componenta de plată pentru pachetul ecommerce */}
+              {activePackage === "ecommerce" && (
+                <div className="relative">
+                  {/* Close Button */}
+                  <button
+                    onClick={closePaymentPage}
+                    className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
+                  >
+                    x
+                  </button>
+
+                  {loading && (
+                    <Elements stripe={stripePromise}>
+                      <PaymentPage />
+                    </Elements>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 
@@ -137,7 +217,9 @@ const PricingSection = () => {
           <div
             id="custom-package"
             className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
-              isInView.custom ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+              isInView.custom
+                ? "translate-x-0 opacity-100"
+                : "translate-x-10 opacity-0"
             }`}
           >
             <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
@@ -146,7 +228,7 @@ const PricingSection = () => {
                 Pachet Personalizat
               </h2>
               <p className="text-gray-600 mb-6">
-                Pentru proiecte complexe cu cerințe specifice.
+                Soluție personalizată și inovativă pentru afacerea ta.
               </p>
               <ul className="text-gray-700 space-y-2 mb-6">
                 <li>✔ Funcționalități personalizate</li>
@@ -154,12 +236,40 @@ const PricingSection = () => {
                 <li>✔ Optimizare SEO premium</li>
                 <li>✔ Suport tehnic dedicat</li>
               </ul>
-              <p className="text-2xl font-bold text-gray-800">De la 1.000 EUR</p>
+              <p className="text-2xl font-bold text-gray-800">De la 1500 EUR</p>
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
-                className="mt-6"
+                className="mt-6 mx-1"
               />
+
+              {/* Butonul de plată */}
+              <Button
+                label="Plătește acum"
+                onClick={() => openPaymentPage("custom")}
+                primaryColor="bg-blue-500"
+                hoverColor="bg-blue-600"
+                className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
+              />
+
+              {/* Componenta de plată pentru pachetul personalizat */}
+              {activePackage === "custom" && (
+                <div className="relative">
+                  {/* Close Button */}
+                  <button
+                    onClick={closePaymentPage}
+                    className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
+                  >
+                    x
+                  </button>
+
+                  {loading && (
+                    <Elements stripe={stripePromise}>
+                      <PaymentPage />
+                    </Elements>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
