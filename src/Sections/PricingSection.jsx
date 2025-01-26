@@ -73,18 +73,18 @@ const PricingSection = () => {
   return (
     <section
       id="pricing"
-      className="min-h-screen bg-gradient-to-r from-bej-300 via-gray-400 to-bej-500 text-gray-700 flex flex-col items-center justify-center px-2 py-24"
+      className="min-h-screen bg-gradient-to-r from-bej-300 via-gray-400 to-bej-500 flex flex-col items-center justify-center px-2 py-24"
       aria-labelledby="pricing-heading"
     >
       <div className="container mx-auto px-8 backdrop-blur-lg rounded">
         <h1
           id="pricing-heading"
-          className="text-4xl font-bold text-center mb-12 text-gray-800"
+          className="text-4xl font-bold text-center mb-12 text-custom-textMenu"
         >
           Investiții Smart pentru Web
         </h1>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
-        <p className="text-center text-gray-600 mb-16">
+        <p className="text-center text-gray-700 mb-16">
           Alege soluția care se potrivește afacerii tale. Fiecare pachet include
           optimizare SEO, design atractiv și funcționalități adaptate nevoilor
           tale.
@@ -102,7 +102,7 @@ const PricingSection = () => {
           >
             <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
             <div className="text-center md:text-left p-4">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
                 Pachet Basic
               </h2>
               <p className="text-gray-600 mb-6">
@@ -114,7 +114,7 @@ const PricingSection = () => {
                 <li>✔ Formular de contact</li>
                 <li>✔ Optimizare SEO de bază</li>
               </ul>
-              <p className="text-2xl font-bold text-gray-800">De la 300 EUR</p>
+              <p className="text-2xl font-bold text-custom-textMenu py-2">De la 300 EUR</p>
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
@@ -163,7 +163,7 @@ const PricingSection = () => {
           >
             <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
             <div className="text-center md:text-left p-4">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
                 Pachet E-commerce
               </h2>
               <p className="text-gray-600 mb-6">
@@ -175,7 +175,7 @@ const PricingSection = () => {
                 <li>✔ Panou de administrare</li>
                 <li>✔ Optimizare SEO avansată</li>
               </ul>
-              <p className="text-2xl font-bold text-gray-800">De la 700 EUR</p>
+              <p className="text-2xl font-bold text-custom-textMenu py-2">De la 700 EUR</p>
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
@@ -224,19 +224,19 @@ const PricingSection = () => {
           >
             <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
             <div className="text-center md:text-left p-4">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
                 Pachet Personalizat
               </h2>
               <p className="text-gray-600 mb-6">
                 Soluție personalizată și inovativă pentru afacerea ta.
               </p>
-              <ul className="text-gray-700 space-y-2 mb-6">
+              <ul className="text-gray-700 space-y-2 mb-6 ">
                 <li>✔ Funcționalități personalizate</li>
                 <li>✔ Integrare API-uri</li>
                 <li>✔ Optimizare SEO premium</li>
                 <li>✔ Suport tehnic dedicat</li>
               </ul>
-              <p className="text-2xl font-bold text-gray-800">De la 1100 EUR</p>
+              <p className="text-2xl font-bold text-custom-textMenu py-2">De la 1100 EUR</p>
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
