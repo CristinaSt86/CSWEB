@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "../images/logo1c.webp";
 import { FaHome, FaInfoCircle, FaCogs, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,9 +19,15 @@ const Navbar = () => {
     }
   };
 
-  const handleMenuClick = (sectionId) => {
+  const handleMenuClick = (sectionId, route = "/") => {
+    navigate(route);
     scrollToSection(sectionId); // Navighează la secțiunea dorită
     setIsMenuOpen(false); // Închide meniul
+  };
+
+  const handleLogoClick = () => {
+    navigate("/");
+    scrollToSection("home");
   };
 
   const handleOutsideClick = (event) => {
@@ -68,7 +76,7 @@ const Navbar = () => {
             <img
               src={Logo}
               alt="CS|WEB Logo - Soluții digitale pentru afacerea ta"
-              onClick={() => scrollToSection("home")}
+              onClick={handleLogoClick}
               className="h-16 cursor-pointer rounded"
             />
           </a>
@@ -90,7 +98,7 @@ const Navbar = () => {
           >
             <li>
               <button
-                onClick={() => scrollToSection("home")}
+                onClick={() => handleMenuClick("home")}
                 className="text-custom-textMenu hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Acasă"
                 aria-current="page"
@@ -101,7 +109,7 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("about")}
+                onClick={() => handleMenuClick("about")}
                 className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Despre CS|Web"
               >
@@ -111,7 +119,7 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("services")}
+                onClick={() => handleMenuClick("services")}
                 className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Servicii"
               >
@@ -121,7 +129,7 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => handleMenuClick("contact")}
                 className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded md:flex md:flex-row md:items-center md:justify-center"
                 aria-label="Navighează la secțiunea Contact"
               >
@@ -140,7 +148,7 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("home")}
                 className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
-                <FaHome className="mr-2 text-custom-btn-hover" />
+                <FaHome className="mr-2 text-custom-btn" />
                 Acasă
               </button>
             </li>
@@ -149,7 +157,7 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("about")}
                 className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
-                <FaInfoCircle className="mr-2 text-custom-btn-hover" />
+                <FaInfoCircle className="mr-2 text-custom-btn" />
                 Despre CS|Web
               </button>
             </li>
@@ -158,7 +166,7 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("services")}
                 className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
-                <FaCogs className="mr-2 text-custom-btn-hover" />
+                <FaCogs className="mr-2 text-custom-btn" />
                 Servicii
               </button>
             </li>
@@ -167,7 +175,7 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("contact")}
                 className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
-                <FaEnvelope className="mr-2 text-custom-btn-hover" />
+                <FaEnvelope className="mr-2 text-custom-btn" />
                 Contact
               </button>
             </li>

@@ -175,7 +175,7 @@ const PricingSection = () => {
                 <li>✔ Panou de administrare</li>
                 <li>✔ Optimizare SEO avansată</li>
               </ul>
-              <p className="text-2xl font-bold text-gray-800">De la 800 EUR</p>
+              <p className="text-2xl font-bold text-gray-800">De la 700 EUR</p>
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
@@ -236,7 +236,7 @@ const PricingSection = () => {
                 <li>✔ Optimizare SEO premium</li>
                 <li>✔ Suport tehnic dedicat</li>
               </ul>
-              <p className="text-2xl font-bold text-gray-800">De la 1500 EUR</p>
+              <p className="text-2xl font-bold text-gray-800">De la 1100 EUR</p>
               <Button
                 label="Solicită ofertă"
                 targetSectionId="contact"
