@@ -9,64 +9,85 @@ const stripePromise = loadStripe(
   "pk_live_51QjKAx077Yw0Kd8saYZsAqoZcg6c05Cc2i0xRbBVnYVjSZI6gKoGcGCnXtXbLYcs9FotWsSxsM0HhJejvzuVlTzR00ZW1rAWj2"
 );
 
-const PricingSection = () => {
-  const [isInView, setIsInView] = useState({
-    basic: false,
-    ecommerce: false,
-    custom: false,
-  });
-  const [loading, setLoading] = useState(false);
-  const [activePackage, setActivePackage] = useState(null); // Setează pachetul activ
+const packages = [
+  {
+    id: "basic-package",
+    name: "Pachet Basic",
+    description: "Perfect pentru un site simplu de prezentare.",
+    features: [
+      "✔ Design responsive",
+      "✔ Până la 10 pagini",
+      "✔ Formular de contact",
+      "✔ Optimizare SEO de bază",
+    ],
+    price: "De la 300 EUR",
+    type: "basic",
+  },
+  {
+    id: "ecommerce-package",
+    name: "Pachet E-commerce",
+    description: "Ideal pentru magazine online mici și mijlocii.",
+    features: [
+      "✔ Catalog produse până la 50 articole",
+      "✔ Integrare metode de plată",
+      "✔ Panou de administrare",
+      "✔ Optimizare SEO avansată",
+    ],
+    price: "De la 700 EUR",
+    type: "ecommerce",
+  },
+  {
+    id: "custom-package",
+    name: "Pachet Personalizat",
+    description: "Soluție personalizată și inovativă pentru afacerea ta.",
+    features: [
+      "✔ Funcționalități personalizate",
+      "✔ Integrare API-uri",
+      "✔ Optimizare SEO premium",
+      "✔ Suport tehnic dedicat",
+    ],
+    price: "De la 1100 EUR",
+    type: "custom",
+  },
+];
 
-  // Handler pentru deschiderea componentei de plată
+const PricingSection = () => {
+  const [isInView, setIsInView] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [activePackage, setActivePackage] = useState(null);
+
   const openPaymentPage = (packageType) => {
     setActivePackage(packageType);
-    setLoading(true); // Activează încărcarea la apăsarea butonului
+    setLoading(true);
   };
 
   const closePaymentPage = () => {
-    setActivePackage(null); // Resetează pachetul activ când se închide componenta
-    setLoading(false); // Dezactivează încărcarea
+    setActivePackage(null);
+    setLoading(false);
   };
 
-  // Handle Intersection Observer
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.3,
-    };
+    const options = { root: null, rootMargin: "0px", threshold: 0.3 };
 
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          if (entry.target.id === "basic-package") {
-            setIsInView((prev) => ({ ...prev, basic: true }));
-          }
-          if (entry.target.id === "ecommerce-package") {
-            setIsInView((prev) => ({ ...prev, ecommerce: true }));
-          }
-          if (entry.target.id === "custom-package") {
-            setIsInView((prev) => ({ ...prev, custom: true }));
-          }
+          setIsInView((prev) => ({ ...prev, [entry.target.id]: true }));
         }
       });
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);
-
-    const basicPackage = document.getElementById("basic-package");
-    const ecommercePackage = document.getElementById("ecommerce-package");
-    const customPackage = document.getElementById("custom-package");
-
-    if (basicPackage) observer.observe(basicPackage);
-    if (ecommercePackage) observer.observe(ecommercePackage);
-    if (customPackage) observer.observe(customPackage);
+    packages.forEach((pkg) => {
+      const element = document.getElementById(pkg.id);
+      if (element) observer.observe(element);
+    });
 
     return () => {
-      if (basicPackage) observer.unobserve(basicPackage);
-      if (ecommercePackage) observer.unobserve(ecommercePackage);
-      if (customPackage) observer.unobserve(customPackage);
+      packages.forEach((pkg) => {
+        const element = document.getElementById(pkg.id);
+        if (element) observer.unobserve(element);
+      });
     };
   }, []);
 
@@ -89,189 +110,61 @@ const PricingSection = () => {
           optimizare SEO, design atractiv și funcționalități adaptate nevoilor
           tale.
         </p>
-
         <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12 items-center md:items-start justify-center">
-          {/* Pachet Basic */}
-          <div
-            id="basic-package"
-            className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
-              isInView.basic
-                ? "translate-x-0 opacity-100"
-                : "translate-x-10 opacity-0"
-            }`}
-          >
-            <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
-            <div className="text-center md:text-left p-4">
-              <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
-                Pachet Basic
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Perfect pentru un site simplu de prezentare.
-              </p>
-              <ul className="text-gray-700 space-y-2 mb-6">
-                <li>✔ Design responsive</li>
-                <li>✔ Până la 10 pagini</li>
-                <li>✔ Formular de contact</li>
-                <li>✔ Optimizare SEO de bază</li>
-              </ul>
-              <p className="text-2xl font-bold text-custom-textMenu py-2">De la 300 EUR</p>
-              <Button
-                label="Solicită ofertă"
-                targetSectionId="contact"
-                className="mt-6 mx-1"
-              />
-              {/* Butonul de plată */}
-              <Button
-                label="Plătește acum"
-                onClick={() => openPaymentPage("basic")}
-                primaryColor="bg-blue-500"
-                hoverColor="bg-blue-600"
-                className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
-              />
-              {/* Componenta de plată pentru pachetul basic */}
-              {activePackage === "basic" && (
-                <div className="relative">
-                  {/* Close Button */}
-                  <button
-                    onClick={closePaymentPage}
-                    className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
-                  >
-                    x
-                  </button>
-
-                  {loading && (
-                    <Elements stripe={stripePromise}>
-                      <PaymentPage />
-                    </Elements>
-                  )}
-                </div>
-              )}
+          {packages.map((pkg) => (
+            <div
+              key={pkg.type}
+              id={pkg.id}
+              className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
+                isInView[pkg.id]
+                  ? "translate-x-0 opacity-100"
+                  : "translate-x-10 opacity-0"
+              }`}
+            >
+              <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
+              <div className="text-center md:text-left p-4">
+                <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
+                  {pkg.name}
+                </h2>
+                <p className="text-gray-600 mb-6">{pkg.description}</p>
+                <ul className="text-gray-700 space-y-2 mb-6">
+                  {pkg.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+                <p className="text-2xl font-bold text-custom-textMenu py-2">
+                  {pkg.price}
+                </p>
+                <Button
+                  label="Solicită ofertă"
+                  targetSectionId="contact"
+                  className="mt-6 mx-1"
+                />
+                <Button
+                  label="Plătește acum"
+                  onClick={() => openPaymentPage(pkg.type)}
+                  primaryColor="bg-blue-500"
+                  hoverColor="bg-blue-600"
+                  className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
+                />
+                {activePackage === pkg.type && (
+                  <div className="relative">
+                    <button
+                      onClick={closePaymentPage}
+                      className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
+                    >
+                      x
+                    </button>
+                    {loading && (
+                      <Elements stripe={stripePromise}>
+                        <PaymentPage />
+                      </Elements>
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-
-          {/* Separator pentru mobil */}
-          <div className="w-full h-0.5 bg-gray-300 md:hidden"></div>
-
-          {/* Pachet E-commerce */}
-          <div
-            id="ecommerce-package"
-            className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
-              isInView.ecommerce
-                ? "translate-x-0 opacity-100"
-                : "translate-x-10 opacity-0"
-            }`}
-          >
-            <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
-            <div className="text-center md:text-left p-4">
-              <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
-                Pachet E-commerce
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Ideal pentru magazine online mici și mijlocii.
-              </p>
-              <ul className="text-gray-700 space-y-2 mb-6">
-                <li>✔ Catalog produse până la 50 articole</li>
-                <li>✔ Integrare metode de plată</li>
-                <li>✔ Panou de administrare</li>
-                <li>✔ Optimizare SEO avansată</li>
-              </ul>
-              <p className="text-2xl font-bold text-custom-textMenu py-2">De la 700 EUR</p>
-              <Button
-                label="Solicită ofertă"
-                targetSectionId="contact"
-                className="mt-6 mx-1"
-              />
-              {/* Butonul de plată */}
-              <Button
-                label="Plătește acum"
-                onClick={() => openPaymentPage("ecommerce")}
-                primaryColor="bg-blue-500"
-                hoverColor="bg-blue-600"
-                className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
-              />
-              {/* Componenta de plată pentru pachetul ecommerce */}
-              {activePackage === "ecommerce" && (
-                <div className="relative">
-                  {/* Close Button */}
-                  <button
-                    onClick={closePaymentPage}
-                    className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
-                  >
-                    x
-                  </button>
-
-                  {loading && (
-                    <Elements stripe={stripePromise}>
-                      <PaymentPage />
-                    </Elements>
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Separator pentru mobil */}
-          <div className="w-full h-0.5 bg-gray-300 md:hidden"></div>
-
-          {/* Pachet Personalizat */}
-          <div
-            id="custom-package"
-            className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
-              isInView.custom
-                ? "translate-x-0 opacity-100"
-                : "translate-x-10 opacity-0"
-            }`}
-          >
-            <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
-            <div className="text-center md:text-left p-4">
-              <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
-                Pachet Personalizat
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Soluție personalizată și inovativă pentru afacerea ta.
-              </p>
-              <ul className="text-gray-700 space-y-2 mb-6 ">
-                <li>✔ Funcționalități personalizate</li>
-                <li>✔ Integrare API-uri</li>
-                <li>✔ Optimizare SEO premium</li>
-                <li>✔ Suport tehnic dedicat</li>
-              </ul>
-              <p className="text-2xl font-bold text-custom-textMenu py-2">De la 1100 EUR</p>
-              <Button
-                label="Solicită ofertă"
-                targetSectionId="contact"
-                className="mt-6 mx-1"
-              />
-
-              {/* Butonul de plată */}
-              <Button
-                label="Plătește acum"
-                onClick={() => openPaymentPage("custom")}
-                primaryColor="bg-blue-500"
-                hoverColor="bg-blue-600"
-                className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
-              />
-
-              {/* Componenta de plată pentru pachetul personalizat */}
-              {activePackage === "custom" && (
-                <div className="relative">
-                  {/* Close Button */}
-                  <button
-                    onClick={closePaymentPage}
-                    className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
-                  >
-                    x
-                  </button>
-
-                  {loading && (
-                    <Elements stripe={stripePromise}>
-                      <PaymentPage />
-                    </Elements>
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

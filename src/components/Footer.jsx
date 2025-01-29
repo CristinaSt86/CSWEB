@@ -81,13 +81,13 @@ const Footer = () => {
               to="/terms-and-conditions"
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Terms and Conditions
+              Termeni si condiții
             </Link>
             <Link
               to="/privacy-policy"
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Privacy Policy
+              Politica de confidențialitate
             </Link>
           </div>
         </div>
