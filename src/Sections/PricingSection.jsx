@@ -20,7 +20,7 @@ const packages = [
       "✔ Formular de contact",
       "✔ Optimizare SEO de bază",
     ],
-    price: "De la 300 EUR",
+    price: "De la 200 EUR",
     type: "basic",
   },
   {
@@ -33,7 +33,7 @@ const packages = [
       "✔ Panou de administrare",
       "✔ Optimizare SEO avansată",
     ],
-    price: "De la 700 EUR",
+    price: "De la 600 EUR",
     type: "ecommerce",
   },
   {
@@ -46,7 +46,7 @@ const packages = [
       "✔ Optimizare SEO premium",
       "✔ Suport tehnic dedicat",
     ],
-    price: "De la 1100 EUR",
+    price: "De la 1000 EUR",
     type: "custom",
   },
 ];

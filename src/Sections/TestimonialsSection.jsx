@@ -9,7 +9,7 @@ const testimonialsData = [
     quote:
       "Colaborarea cu echipa CS|WEB a fost excelentă! Site-ul nostru arată fantastic și am observat o creștere a traficului în primele săptămâni. Recomand cu încredere!",
     image: ViaNapoli,
-    name: "Mihaela Radu",
+    // name: "Mihaela Radu",
     role: "CEO, Restaurant Via Napoli",
   },
   {
@@ -17,7 +17,7 @@ const testimonialsData = [
     quote:
       "Echipa CS|WEB a înțeles perfect viziunea noastră și a creat un site care reflectă exact ceea ce ne-am dorit. Suntem foarte mulțumiți de rezultat!",
     image: LogoTplx,
-    name: "Constantin Topală",
+    // name: "Constantin Topală",
     role: "CEO, TopalX, Școala de șoferi",
   },
   {
@@ -25,7 +25,7 @@ const testimonialsData = [
     quote:
       "I had a very good experience with CS|WEB! Our website is Fast, modern, and SEO-optimized. We are grateful for their help!",
     image: EcoDesign,
-    name: "Rene Klemig",
+    // name: "Rene Klemig",
     role: "Founder, EcoDesign",
   },
 ];

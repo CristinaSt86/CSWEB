@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="mb-4 sm:mb-0">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=61572491164002"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"

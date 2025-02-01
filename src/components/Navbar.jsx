@@ -141,7 +141,7 @@ const Navbar = () => {
         </div>
 
         {/* Meniul pentru mobil */}
-        <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
+        <div className={`lg:hidden transition-all duration-700 ${isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"} overflow-hidden`}>
           <ul className="flex flex-col items-center space-y-4 py-6 text-custom-textMenu font-medium text-lg ">
             <li>
               <button

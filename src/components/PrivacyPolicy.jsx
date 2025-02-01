@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <section className="container mx-auto px-6 pt-36 pb-16 ">
+    <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden">
       <h1 className="text-4xl font-bold mb-8 text-gray-800">Politica de Confidențialitate</h1>
       <p className="text-gray-700 mb-4">
         Confidențialitatea dumneavoastră este importantă pentru noi. Această politică explică modul în care colectăm, utilizăm și protejăm informațiile dumneavoastră personale.
