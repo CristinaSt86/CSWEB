@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
+  const { t } = useTranslation(); // Folosim hook-ul useTranslation pentru a obține funcția de traducere
   const [isInView, setIsInView] = useState({ who: false, less: false });
 
   useEffect(() => {
@@ -59,19 +61,10 @@ const AboutSection = () => {
             className="text-4xl font-bold mb-12 text-gray-700"
             itemProp="headline"
           >
-            Cine suntem?
+            {t("about.who_title")}
           </h2>
           <p className="text-gray-700 text-xl text-left" itemProp="description">
-            Suntem o echipă pasionată de tehnologie și inovație, dedicată să
-            sprijinim IMM-urile în construirea unor site-uri web moderne și
-            funcționale. Abordăm fiecare proiect cu maximă seriozitate și dorința
-            de a învăța și de a ne îmbunătăți constant. Ne axăm pe soluții
-            simple, elegante și optimizate SEO, care îți ajută afacerea să
-            crească online și să ajungă la un public mai larg. Fiecare proiect
-            este adaptat nevoilor tale specifice, cu un design curat și intuitiv
-            la un cost accesibil. Suntem aici pentru a asigura succesul pe
-            termen lung al afacerii tale, oferindu-ți suport și îndrumare pe
-            toată durata colaborării.
+            {t("about.who_description")}
           </p>
         </div>
 
@@ -90,22 +83,10 @@ const AboutSection = () => {
             className="text-4xl font-bold mb-12 text-gray-700"
             itemProp="headline"
           >
-            Less is More
+            {t("about.less_title")}
           </h2>
           <p className="text-gray-700 text-xl text-left" itemProp="description">
-            Credem că simplitatea este cheia unui site de succes. De aceea,
-            fiecare design creat de CS|Web este intuitiv, ușor de navigat și
-            optimizat pentru performanță, asigurându-se că vizitatorii au o
-            experiență plăcută și fără fricțiuni. Fiecare element este gândit
-            pentru a atrage atenția asupra celor mai importante aspecte ale
-            afacerii tale, iar designul este adaptat pentru a reflecta
-            personalitatea și valorile brandului tău. Fără elemente inutile,
-            doar ceea ce contează cu adevărat pentru afacerea ta – pentru ca
-            fiecare vizitator să înțeleagă rapid mesajul tău și să îți aprecieze
-            serviciile. În plus, punem accent pe optimizarea pentru
-            dispozitivele mobile și viteza de încărcare, astfel încât
-            utilizatorii să aibă acces la informațiile tale rapid, oriunde s-ar
-            afla.
+            {t("about.less_description")}
           </p>
         </div>
       </div>
@@ -115,9 +96,8 @@ const AboutSection = () => {
         {JSON.stringify({
           "@context": "http://schema.org",
           "@type": "AboutPage",
-          headline: "Despre noi - Cine suntem și ce facem",
-          description:
-            "Suntem o echipă dedicată tehnologiei care sprijină IMM-urile să crească online cu soluții SEO personalizate și design modern.",
+          headline: t("about.page_title"),
+          description: t("about.page_description"),
           mainEntity: {
             "@type": "Organization",
             name: "CS|WEB",
@@ -126,15 +106,13 @@ const AboutSection = () => {
           mainContentOfPage: [
             {
               "@type": "WebContent",
-              headline: "Cine suntem?",
-              description:
-                "Oferim soluții web personalizate pentru IMM-uri, adaptate nevoilor și bugetului, cu design curat și optimizare SEO.",
+              headline: t("about.who_title"),
+              description: t("about.who_description"),
             },
             {
               "@type": "WebContent",
-              headline: "Less is More",
-              description:
-                "Simplitatea este cheia succesului unui site. Designul CS|Web este intuitiv, ușor de navigat și performant.",
+              headline: t("about.less_title"),
+              description: t("about.less_description"),
             },
           ],
         })}

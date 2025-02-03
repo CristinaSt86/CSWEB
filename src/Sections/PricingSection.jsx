@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import PaymentPage from "../components/PaymentPage";
+import { useTranslation } from "react-i18next"; // Import i18n
 
 // Initialize Stripe with your public key
 const stripePromise = loadStripe(
@@ -12,10 +13,10 @@ const stripePromise = loadStripe(
 const packages = [
   {
     id: "basic-package",
-    name: "Pachet Basic",
+    name: "basicPackage",
     description: "Perfect pentru un site simplu de prezentare.",
     features: [
-      "✔ Design responsive",
+      "",
       "✔ Până la 10 pagini",
       "✔ Formular de contact",
       "✔ Optimizare SEO de bază",
@@ -25,7 +26,7 @@ const packages = [
   },
   {
     id: "ecommerce-package",
-    name: "Pachet E-commerce",
+    name: "ecommercePackage",
     description: "Ideal pentru magazine online mici și mijlocii.",
     features: [
       "✔ Catalog produse până la 50 articole",
@@ -38,7 +39,7 @@ const packages = [
   },
   {
     id: "custom-package",
-    name: "Pachet Personalizat",
+    name: "customPackage",
     description: "Soluție personalizată și inovativă pentru afacerea ta.",
     features: [
       "✔ Funcționalități personalizate",
@@ -52,6 +53,7 @@ const packages = [
 ];
 
 const PricingSection = () => {
+  const { t } = useTranslation(); // Initialize translation hook
   const [isInView, setIsInView] = useState({});
   const [loading, setLoading] = useState(false);
   const [activePackage, setActivePackage] = useState(null);
@@ -102,13 +104,11 @@ const PricingSection = () => {
           id="pricing-heading"
           className="text-4xl font-bold text-center mb-12 text-custom-textMenu"
         >
-          Investiții Smart pentru Web
+          {t("pricingHeading")} {/* Translated heading */}
         </h1>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
         <p className="text-center text-gray-700 mb-16">
-          Alege soluția care se potrivește afacerii tale. Fiecare pachet include
-          optimizare SEO, design atractiv și funcționalități adaptate nevoilor
-          tale.
+          {t("description")} {/* Translated description */}
         </p>
         <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12 items-center md:items-start justify-center">
           {packages.map((pkg) => (
@@ -124,24 +124,30 @@ const PricingSection = () => {
               <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
               <div className="text-center md:text-left p-4">
                 <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
-                  {pkg.name}
+                  {t(`packages.${pkg.name}.name`)}{" "}
+                  {/* Translated package name */}
                 </h2>
-                <p className="text-gray-600 mb-6">{pkg.description}</p>
+                <p className="text-gray-600 mb-6">
+                  {t(`packages.${pkg.name}.description`)}
+                </p>
                 <ul className="text-gray-700 space-y-2 mb-6">
                   {pkg.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <li key={index}>
+                      {t(`packages.${pkg.name}.features.${index}`) || feature}
+                      {/* Folosește t() pentru traducere sau valoarea din array */}
+                    </li>
                   ))}
                 </ul>
                 <p className="text-2xl font-bold text-custom-textMenu py-2">
-                  {pkg.price}
+                  {t(`packages.${pkg.name}.price`)} {/* Translated price */}
                 </p>
                 <Button
-                  label="Solicită ofertă"
+                  label={t("requestOffer")}
                   targetSectionId="contact"
                   className="mt-6 mx-1"
                 />
                 <Button
-                  label="Plătește acum"
+                  label={t("payNow")}
                   onClick={() => openPaymentPage(pkg.type)}
                   primaryColor="bg-blue-500"
                   hoverColor="bg-blue-600"

@@ -1,0 +1,165 @@
+{
+  "navbar": {
+    "home": "Acasă",
+    "about": "Despre CS|Web",
+    "services": "Servicii",
+    "contact": "Contact",
+    "siteName": "CS|WEB",
+    "logoAlt": "CS|WEB Logo - Soluții digitale pentru afacerea ta",
+    "openMenu": "Deschide meniul mobil",
+    "navigateToHome": "Navighează la secțiunea Acasă",
+    "navigateToAbout": "Navighează la secțiunea Despre CS|Web",
+    "navigateToServices": "Navighează la secțiunea Servicii",
+    "navigateToContact": "Navighează la secțiunea Contact"
+  },
+
+  "home": {
+    "title": "Soluții digitale inovative pentru afacerea ta",
+    "subtitle": "CS|Web îți oferă soluții web personalizate, optimizate SEO, care ajută IMM-urile să atragă clienți și să crească online. Beneficiezi de site-uri de calitate, adaptate bugetului tău, pentru a-ți spori vizibilitatea și succesul afacerii.",
+    "button": "Descoperă mai multe"
+  },
+  "about": {
+    "who_title": "Cine suntem?",
+    "who_description": "Suntem o echipă pasionată de tehnologie și inovație, dedicată să sprijinim IMM-urile în construirea unor site-uri web moderne și funcționale. Abordăm fiecare proiect cu maximă seriozitate și dorința de a învăța și de a ne îmbunătăți constant. Ne axăm pe soluții simple, elegante și optimizate SEO, care îți ajută afacerea să crească online și să ajungă la un public mai larg. Fiecare proiect este adaptat nevoilor tale specifice, cu un design curat și intuitiv la un cost accesibil.",
+    "less_title": "Less is More",
+    "less_description": "Credem că simplitatea este cheia unui site de succes. De aceea, fiecare design creat de CS|Web este intuitiv, ușor de navigat și optimizat pentru performanță, asigurându-se că vizitatorii au o experiență plăcută și fără fricțiuni. Fiecare element este gândit pentru a atrage atenția asupra celor mai importante aspecte ale afacerii tale.",
+    "page_title": "Despre noi - Cine suntem și ce facem",
+    "page_description": "Suntem o echipă dedicată tehnologiei care sprijină IMM-urile să crească online cu soluții SEO personalizate și design modern."
+  },
+  "services": {
+    "title": "Servicii Oferite",
+    "services_list": [
+      {
+        "title": "Creare site-uri web personalizate",
+        "description": "Transformăm viziunea afacerii tale într-un website modern, adaptat cerințelor pieței și optimizat pentru utilizator."
+      },
+      {
+        "title": "Optimizare SEO și creștere vizibilitate",
+        "description": "Vrei ca site-ul tău să fie găsit rapid pe Google? Te ajutăm să urci în clasament prin strategii SEO eficiente."
+      },
+      {
+        "title": "Mentenață și suport tehnic",
+        "description": "Asigurăm funcționarea optimă a site-ului tău pe termen lung. Oferim actualizări periodice, backup-uri și soluționăm rapid orice problemă."
+      }
+    ]
+  },
+  "pricingHeading": "Investiții Smart pentru Web",
+  "description": "Alege soluția care se potrivește afacerii tale. Fiecare pachet include optimizare SEO, design atractiv și funcționalități adaptate nevoilor tale.",
+  "requestOffer": "Solicită ofertă",
+  "payNow": "Plătește acum",
+  "packages": {
+    "basicPackage": {
+      "name": "Pachet Basic",
+      "description": "Perfect pentru un site simplu de prezentare.",
+      "features": [
+        "✔ Design responsive",
+        "✔ Până la 10 pagini",
+        "✔ Formular de contact",
+        "✔ Optimizare SEO de bază"
+      ],
+      "price": "De la 200 EUR"
+    },
+    "ecommercePackage": {
+      "name": "Pachet E-commerce",
+      "description": "Ideal pentru magazine online mici și mijlocii.",
+      "features": [
+        "✔ Catalog produse până la 50 articole",
+        "✔ Integrare metode de plată",
+        "✔ Panou de administrare",
+        "✔ Optimizare SEO avansată"
+      ],
+      "price": "De la 600 EUR"
+    },
+    "customPackage": {
+      "name": "Pachet Personalizat",
+      "description": "Soluție personalizată și inovativă pentru afacerea ta.",
+      "features": [
+        "✔ Funcționalități personalizate",
+        "✔ Integrare API-uri",
+        "✔ Optimizare SEO premium",
+        "✔ Suport tehnic dedicat"
+      ],
+      "price": "De la 1000 EUR"
+    }
+  },
+  "testimonials": {
+    "heading": "Experiențele clienților noștri",
+    "testimonial1": {
+      "quote": "Colaborarea cu echipa CS|WEB a fost excelentă! Site-ul nostru arată fantastic și am observat o creștere a traficului în primele săptămâni. Recomand cu încredere!",
+      "name": "Mihaela Radu",
+      "role": "CEO, Restaurant Via Napoli"
+    },
+    "testimonial2": {
+      "quote": "Echipa CS|WEB a înțeles perfect viziunea noastră și a creat un site care reflectă exact ceea ce ne-am dorit. Suntem foarte mulțumiți de rezultat!",
+      "name": "Constantin Topală",
+      "role": "CEO, TopalX, Școala de șoferi"
+    },
+    "testimonial3": {
+      "quote": "Am avut o experiență foarte bună cu CS|WEB! Site-ul nostru este rapid, modern și optimizat SEO. Suntem recunoscători pentru ajutorul lor!",
+      "name": "Rene Klemig",
+      "role": "Fondator, EcoDesign"
+    }
+  },
+
+  "contact": {
+    "heading": "Contactează-ne",
+    "infoText": "Vrei mai multe informații? Suntem la un mesaj distanță.",
+    "emailLabel": "Email:",
+    "whatsappLabel": "WhatsApp:",
+    "email": "contact.csweb@gmail.com",
+    "phone": "+40 736 690 118",
+    "buttonText": "Aici pentru tine →"
+  },
+  "form": {
+    "heading": "Scrie-ne un mesaj",
+    "namePlaceholder": "Nume",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Mesajul tău",
+    "submitButton": "Trimite",
+    "successMessage": "Mulțumim! Mesajul tău a fost trimis cu succes.",
+    "errorMessage": "Eroare la trimiterea formularului. Te rog încearcă din nou.",
+    "connectionErrorMessage": "Eroare la trimiterea mesajului. Te rog verifică conexiunea."
+  },
+  "footer": {
+    "home": "Acasă",
+    "about": "Despre",
+    "services": "Servicii",
+    "contact": "Contact",
+    "termsAndConditions": "Termeni si condiții",
+    "privacyPolicy": "Politica de confidențialitate",
+    "copyright": " 2025 CS|WEB. Toate drepturile rezervate."
+  },
+  "privacyPolicy": {
+    "title": "Politica de Confidențialitate",
+    "intro": "Confidențialitatea dumneavoastră este importantă pentru noi. Această politică explică modul în care colectăm, utilizăm și protejăm informațiile dumneavoastră personale.",
+    "section1Title": "1. Informații colectate",
+    "section1Content": "Colectăm informații personale pe care ni le furnizați voluntar, cum ar fi numele, adresa de e-mail și alte detalii necesare pentru a vă oferi serviciile noastre.",
+    "section2Title": "2. Utilizarea informațiilor",
+    "section2Content": "Utilizăm informațiile colectate pentru a îmbunătăți serviciile noastre, a comunica cu dumneavoastră și a asigura o experiență mai bună pe site-ul nostru.",
+    "section3Title": "3. Securitatea informațiilor",
+    "section3Content": "Luăm măsuri de securitate adecvate pentru a proteja informațiile personale împotriva accesului neautorizat, modificării sau divulgării.",
+    "section4Title": "4. Drepturile dumneavoastră",
+    "section4Content": "Aveți dreptul să accesați, să corectați sau să ștergeți informațiile personale pe care le deținem despre dumneavoastră. Pentru a vă exercita aceste drepturi, vă rugăm să ne contactați.",
+    "section5Title": "5. Contact",
+    "section5Content": "Pentru întrebări legate de politica de confidențialitate sau pentru a vă exercita drepturile, ne puteți contacta la:",
+    "phoneWhatsapp": "Telefon WhatsApp",
+    "phone": "Telefon",
+    "email": "Email"
+  },
+
+  "termsAndConditions": {
+    "title": "Termeni și Condiții",
+    "intro": "Bine ați venit pe site-ul nostru. Accesând sau utilizând acest site, sunteți de acord cu următorii termeni și condiții. Dacă nu sunteți de acord cu acești termeni, vă rugăm să nu utilizați site-ul nostru.",
+    "section1Title": "1. Utilizarea site-ului",
+    "section1Content": "Sunteți de acord să utilizați acest site numai în scopuri legale și să respectați toate legile și reglementările aplicabile. Nu aveți voie să utilizați acest site pentru a transmite orice conținut ilegal, defăimător, obscen sau alt conținut care ar putea încălca drepturile altor persoane.",
+    "section2Title": "2. Proprietate intelectuală",
+    "section2Content": "Toate materialele de pe acest site, inclusiv textele, imaginile, grafica și logo-urile, sunt protejate prin drepturi de autor și alte legi privind proprietatea intelectuală. Nu aveți permisiunea de a copia, reproduce sau distribui aceste materiale fără consimțământul nostru prealabil.",
+    "section3Title": "3. Modificări",
+    "section3Content": "Ne rezervăm dreptul de a modifica acești termeni și condiții în orice moment. Vă încurajăm să verificați această pagină periodic pentru a fi la curent cu eventualele modificări.",
+    "section5Title": "5. Contact",
+    "section5Content": "Pentru întrebări legate de termeni si condiții sau pentru a vă exercita drepturile, ne puteți contacta la:",
+    "phoneWhatsapp": "Telefon WhatsApp",
+    "phone": "Telefon",
+    "email": "Email"
+  }
+}

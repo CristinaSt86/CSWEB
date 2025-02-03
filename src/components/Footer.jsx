@@ -1,10 +1,11 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom"; // Importă useNavigate
-import { Link as ScrollLink } from "react-scroll"; // Importă Link din react-scroll
+import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // Import i18n for translations
 
 const Footer = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); // Initialize translation hook
 
   // Funcție care gestionează scroll-ul și navigarea
   const handleNavigation = (sectionId) => {
@@ -42,10 +43,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-xs p-4">
-              &copy; 2025 <span itemProp="name">CS|WEB</span>. Toate drepturile
-              rezervate.
-            </p>
+            <p className="text-xs p-4">&copy; {t("footer.copyright")}</p>
           </div>
 
           {/* Link-uri către secțiuni */}
@@ -54,25 +52,25 @@ const Footer = () => {
               onClick={() => handleNavigation("home")}
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Acasă
+              {t("footer.home")}
             </button>
             <button
               onClick={() => handleNavigation("about")}
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Despre
+              {t("footer.about")}
             </button>
             <button
               onClick={() => handleNavigation("services")}
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Servicii
+              {t("footer.services")}
             </button>
             <button
               onClick={() => handleNavigation("contact")}
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Contact
+              {t("footer.contact")}
             </button>
           </div>
 
@@ -81,13 +79,13 @@ const Footer = () => {
               to="/terms-and-conditions"
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Termeni si condiții
+              {t("footer.termsAndConditions")}
             </Link>
             <Link
               to="/privacy-policy"
               className=" hover:text-custom-btn-hover hover:underline transition-colors"
             >
-              Politica de confidențialitate
+              {t("footer.privacyPolicy")}
             </Link>
           </div>
         </div>

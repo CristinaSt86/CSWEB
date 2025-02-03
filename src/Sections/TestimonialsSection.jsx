@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next"; // Import i18n for translations
 import ViaNapoli from "../images/ViaNapoliTeam.webp";
 import LogoTplx from "../images/LogoTplx.webp";
 import EcoDesign from "../images/EcoDesign.webp";
@@ -6,31 +7,20 @@ import EcoDesign from "../images/EcoDesign.webp";
 const testimonialsData = [
   {
     id: "testimonial1",
-    quote:
-      "Colaborarea cu echipa CS|WEB a fost excelentă! Site-ul nostru arată fantastic și am observat o creștere a traficului în primele săptămâni. Recomand cu încredere!",
     image: ViaNapoli,
-    // name: "Mihaela Radu",
-    role: "CEO, Restaurant Via Napoli",
   },
   {
     id: "testimonial2",
-    quote:
-      "Echipa CS|WEB a înțeles perfect viziunea noastră și a creat un site care reflectă exact ceea ce ne-am dorit. Suntem foarte mulțumiți de rezultat!",
     image: LogoTplx,
-    // name: "Constantin Topală",
-    role: "CEO, TopalX, Școala de șoferi",
   },
   {
     id: "testimonial3",
-    quote:
-      "I had a very good experience with CS|WEB! Our website is Fast, modern, and SEO-optimized. We are grateful for their help!",
     image: EcoDesign,
-    // name: "Rene Klemig",
-    role: "Founder, EcoDesign",
   },
 ];
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation(); // Initialize translation hook
   const [visibleTestimonials, setVisibleTestimonials] = useState({});
 
   useEffect(() => {
@@ -76,7 +66,7 @@ const TestimonialsSection = () => {
           className="text-4xl font-bold text-gray-700 mb-8 px-6"
           itemProp="headline"
         >
-          Experiențele clienților noștri
+          {t("testimonials.heading")} {/* Heading from JSON */}
         </h2>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
         <div className="flex flex-wrap justify-center gap-8">
@@ -98,20 +88,22 @@ const TestimonialsSection = () => {
                   cite="https://www.example.com"
                   itemProp="reviewBody"
                 >
-                  {testimonial.quote}
+                  {t(`testimonials.${testimonial.id}.quote`)} {/* Translate quote */}
                 </blockquote>
                 <div className="flex items-center justify-center">
                   <img
                     src={testimonial.image}
-                    alt={testimonial.name}
+                    alt={t(`testimonials.${testimonial.id}.name`)} 
                     className="w-12 h-12 rounded-full mr-4"
                     loading="lazy"
                   />
                   <div>
                     <p className="font-semibold text-gray-800">
-                      {testimonial.name}
+                      {t(`testimonials.${testimonial.id}.name`)} {/* Translate name */}
                     </p>
-                    <p className="text-gray-600">{testimonial.role}</p>
+                    <p className="text-gray-600">
+                      {t(`testimonials.${testimonial.id}.role`)} {/* Translate role */}
+                    </p>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
 
 const HomeSection = () => {
+  const { t } = useTranslation(); // Folosim hook-ul useTranslation pentru a obține funcția de traducere
   const [isTitleVisible, setIsTitleVisible] = useState(false);
   const [isSubtitleVisible, setIsSubtitleVisible] = useState(false);
 
@@ -57,7 +59,7 @@ const HomeSection = () => {
             }`}
             itemProp="headline"
           >
-            Soluții digitale inovative pentru afacerea ta
+            {t("home.title")}
           </h1>
           <h2
             id="home-section-subtitle"
@@ -66,16 +68,13 @@ const HomeSection = () => {
             }`}
             itemProp="description"
           >
-            CS|Web îți oferă soluții web personalizate, optimizate SEO, care
-            ajută IMM-urile să atragă clienți și să crească online. Beneficiezi
-            de site-uri de calitate, adaptate bugetului tău, pentru a-ți spori
-            vizibilitatea și succesul afacerii.
+            {t("home.subtitle")}
           </h2>
         </div>
         {/* Accessible Button */}
         <div className="flex justify-center sm:mt-2 md:mt-6">
           <Button
-            label="Descopera mai multe"
+            label={t("home.button")}
             targetSectionId="about"
             aria-label="Descoperă mai multe despre CS|Web"
             className="w-fit"

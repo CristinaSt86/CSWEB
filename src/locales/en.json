@@ -1,0 +1,165 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About CS|Web",
+    "services": "Services",
+    "contact": "Contact",
+    "siteName": "CS|WEB",
+    "logoAlt": "CS|WEB Logo - Digital Solutions for Your Business",
+    "openMenu": "Open mobile menu",
+    "navigateToHome": "Navigate to Home section",
+    "navigateToAbout": "Navigate to About CS|Web section",
+    "navigateToServices": "Navigate to Services section",
+    "navigateToContact": "Navigate to Contact section"
+  },
+  "home": {
+    "title": "Innovative Digital Solutions for Your Business",
+    "subtitle": "CS|Web offers customized, SEO-optimized web solutions that help SMEs attract customers and grow online. You get quality websites tailored to your budget to boost your visibility and business success.",
+    "button": "Learn More"
+  },
+  "about": {
+    "who_title": "Who are we?",
+    "who_description": "We are a team passionate about technology and innovation, dedicated to helping SMEs build modern and functional websites. We approach each project with great seriousness and a desire to learn and improve constantly. We focus on simple, elegant, and SEO-optimized solutions that help your business grow online and reach a wider audience. Each project is tailored to your specific needs, with a clean and intuitive design at an affordable cost.",
+    "less_title": "Less is More",
+    "less_description": "We believe that simplicity is key to a successful website. That's why every design created by CS|Web is intuitive, easy to navigate, and performance-optimized, ensuring that visitors have a smooth and enjoyable experience. Every element is designed to highlight the most important aspects of your business, reflecting your brand's personality and values.",
+    "page_title": "About Us - Who We Are and What We Do",
+    "page_description": "We are a technology-driven team helping SMEs grow online with customized SEO solutions and modern design."
+  },
+  "services": {
+    "title": "Digital Services",
+    "services_list": [
+      {
+        "title": "Custom Website Development",
+        "description": "We transform your business vision into a modern website, tailored to market demands and optimized for the user."
+      },
+      {
+        "title": "SEO Optimization and Visibility Boost",
+        "description": "Want your website to be found quickly on Google? We help you climb the rankings with effective SEO strategies."
+      },
+      {
+        "title": "Maintenance and Technical Support",
+        "description": "We ensure the optimal performance of your website in the long term. We provide regular updates, backups, and quickly solve any issues."
+      }
+    ]
+  },
+  "pricingHeading": "Smart Investments for the Web",
+  "description": "Choose the solution that fits your business. Each package includes SEO optimization, attractive design, and features tailored to your needs.",
+  "requestOffer": "Request an Offer",
+  "payNow": "Pay Now",
+  "packages": {
+    "basicPackage": {
+      "name": "Basic Package",
+      "description": "Perfect for a simple presentation website.",
+      "features": [
+        "✔ Responsive Design",
+        "✔ Up to 10 Pages",
+        "✔ Contact Form",
+        "✔ Basic SEO Optimization"
+      ],
+      "price": "From 200 EUR"
+    },
+    "ecommercePackage": {
+      "name": "E-commerce Package",
+      "description": "Ideal for small and medium-sized online stores.",
+      "features": [
+        "✔ Product Catalog up to 50 items",
+        "✔ Payment Methods Integration",
+        "✔ Admin Panel",
+        "✔ Advanced SEO Optimization"
+      ],
+      "price": "From 600 EUR"
+    },
+    "customPackage": {
+      "name": "Custom Package",
+      "description": "Customized and innovative solution for your business.",
+      "features": [
+        "✔ Custom Functionalities",
+        "✔ API Integration",
+        "✔ Premium SEO Optimization",
+        "✔ Dedicated Technical Support"
+      ],
+      "price": "From 1000 EUR"
+    }
+  },
+
+  "testimonials": {
+    "heading": "Our Clients Experiences",
+    "testimonial1": {
+      "quote": "Working with the CS|WEB team was excellent! Our site looks fantastic and we've seen a boost in traffic in the first few weeks. I highly recommend them!",
+      "name": "Mihaela Radu",
+      "role": "CEO, Via Napoli Restaurant"
+    },
+    "testimonial2": {
+      "quote": "The CS|WEB team perfectly understood our vision and created a website that reflects exactly what we wanted. We are very happy with the result!",
+      "name": "Constantin Topală",
+      "role": "CEO, TopalX, Driving School"
+    },
+    "testimonial3": {
+      "quote": "I had a very good experience with CS|WEB! Our website is fast, modern, and SEO-optimized. We are grateful for their help!",
+      "name": "Rene Klemig",
+      "role": "Founder, EcoDesign"
+    }
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "infoText": "Want more information? We are just a message away.",
+    "emailLabel": "Email:",
+    "whatsappLabel": "WhatsApp:",
+    "email": "contact.csweb@gmail.com",
+    "phone": "+40 736 690 118",
+    "buttonText": "Here for you →"
+  },
+  "form": {
+    "heading": "Send us a message",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Your message",
+    "submitButton": "Send",
+    "successMessage": "Thank you! Your message has been sent successfully.",
+    "errorMessage": "Error sending the form. Please try again.",
+    "connectionErrorMessage": "Error sending the message. Please check your connection."
+  },
+  "footer": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "termsAndConditions": "Terms and Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": " 2025 CS|WEB. All rights reserved."
+  },
+
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
+    "section1Title": "1. Information Collected",
+    "section1Content": "We collect personal information that you voluntarily provide to us, such as your name, email address, and other details necessary to provide you with our services.",
+    "section2Title": "2. Use of Information",
+    "section2Content": "We use the collected information to improve our services, communicate with you, and ensure a better experience on our website.",
+    "section3Title": "3. Security of Information",
+    "section3Content": "We take appropriate security measures to protect personal information from unauthorized access, alteration, or disclosure.",
+    "section4Title": "4. Your Rights",
+    "section4Content": "You have the right to access, correct, or delete the personal information we hold about you. To exercise these rights, please contact us.",
+    "section5Title": "5. Contact",
+    "section5Content": "For questions regarding this privacy policy or to exercise your rights, you can contact us at:",
+    "phoneWhatsapp": "WhatsApp Phone",
+    "phone": "Phone",
+    "email": "Email"
+  },
+
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "intro": "Welcome to our website. By accessing or using this site, you agree to the following terms and conditions. If you do not agree with these terms, please do not use our site.",
+    "section1Title": "1. Use of the Site",
+    "section1Content": "You agree to use this site only for lawful purposes and to comply with all applicable laws and regulations. You may not use this site to transmit any illegal, defamatory, obscene, or any content that could violate the rights of others.",
+    "section2Title": "2. Intellectual Property",
+    "section2Content": "All materials on this site, including text, images, graphics, and logos, are protected by copyright and other intellectual property laws. You may not copy, reproduce, or distribute these materials without our prior consent.",
+    "section3Title": "3. Modifications",
+    "section3Content": "We reserve the right to modify these terms and conditions at any time. We encourage you to check this page periodically to stay informed of any changes.",
+    "section5Title": "5. Contact",
+    "section5Content": "For questions related to terms and conditions or to exercise your rights, you can contact us at:",
+    "phoneWhatsapp": "WhatsApp Phone",
+    "phone": "Phone",
+    "email": "Email"
+  }
+}

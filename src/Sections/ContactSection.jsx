@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next"; // Import i18n for translations
 import Form from "../components/Form";
 import { Helmet } from "react-helmet";
 
 const ContactSection = () => {
+  const { t } = useTranslation(); // Initialize translation hook
   const formRef = useRef();
   const [isInView, setIsInView] = useState(false);
 
@@ -10,7 +12,7 @@ const ContactSection = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, // Se activează când 50% din element este în viewport
+      threshold: 0.3, // Activates when 30% of the element is in the viewport
     };
 
     const handleIntersection = (entries) => {
@@ -47,7 +49,7 @@ const ContactSection = () => {
         {
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          "headline": "Contactează-ne",
+          "headline": "${t("contact.heading")}",
           "description": "Vrei mai multe informații? Suntem la un mesaj distanță.",
           "address": {
             "@type": "PostalAddress",
@@ -82,34 +84,32 @@ const ContactSection = () => {
             className="text-3xl md:text-4xl font-bold mb-8"
             itemProp="headline"
           >
-            Contactează-ne
+            {t("contact.heading")}
           </h2>
-          <p className="mb-6">
-            Vrei mai multe informații? Suntem la un mesaj distanță.
-          </p>
+          <p className="mb-6">{t("contact.infoText")}</p>
           <address
             className="mb-6"
             itemProp="address"
             aria-label="Informații de contact"
           >
             <p className="mb-4">
-              <strong>Email:</strong>{" "}
+              <strong>{t("contact.emailLabel")}</strong>{" "}
               <a
-                href="mailto:contact.csweb@gmail.com"
+                href={`mailto:${t("contact.email")}`}
                 className="text-custom-btn hover:underline text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-                aria-label="Trimite un email la contact.csweb@gmail.com"
+                aria-label={`Trimite un email la ${t("contact.email")}`}
               >
-                contact.csweb@gmail.com
+                {t("contact.email")}
               </a>
             </p>
             <p className="mb-6">
-              <strong>WhatsApp:</strong>{" "}
+              <strong>{t("contact.whatsappLabel")}</strong>{" "}
               <a
-                href="tel:+40736690118"
+                href={`tel:${t("contact.phone")}`}
                 className="text-custom-btn hover:underline text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-                aria-label="Sună la +40 736 690 118"
+                aria-label={`Sună la ${t("contact.phone")}`}
               >
-                +40 736 690 118
+                {t("contact.phone")}
               </a>
             </p>
           </address>
@@ -119,9 +119,9 @@ const ContactSection = () => {
             onClick={handleButtonClick}
             type="submit"
             className="bg-custom-btn text-white px-4 py-2 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1"
-            aria-label="Contactează-ne pentru mai multe detalii"
+            aria-label={t("contact.buttonText")}
           >
-            Aici pentru tine <span className="ml-2">&#8594;</span>
+            {t("contact.buttonText")}
           </button>
         </div>
 

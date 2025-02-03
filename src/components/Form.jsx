@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next"; // Import i18n for translations
 
 const Form = React.forwardRef((props, ref) => {
+  const { t } = useTranslation(); // Initialize translation hook
   const nameInputRef = useRef(null);
 
   React.useImperativeHandle(ref, () => ({
@@ -26,20 +28,20 @@ const Form = React.forwardRef((props, ref) => {
       });
 
       if (response.ok) {
-        alert("Mulțumim! Mesajul tău a fost trimis cu succes.");
+        alert(t("form.successMessage"));
         form.reset();
       } else {
-        alert("Eroare la trimiterea formularului. Te rog încearcă din nou.");
+        alert(t("form.errorMessage"));
       }
     } catch (error) {
-      console.error("Eroare:", error);
-      alert("Eroare la trimiterea mesajului. Te rog verifică conexiunea.");
+      console.error("Error:", error);
+      alert(t("form.connectionErrorMessage"));
     }
   };
 
   return (
     <div className="bg-white p-8 rounded shadow-lg max-w-md w-full">
-      <h3 className="text-2xl font-bold mb-6">Scrie-ne un mesaj</h3>
+      <h3 className="text-2xl font-bold mb-6">{t("form.heading")}</h3>
       <form onSubmit={handleSubmit} noValidate>
         {/* Câmpul pentru Nume */}
         <div className="mb-4">
@@ -52,7 +54,7 @@ const Form = React.forwardRef((props, ref) => {
             id="name"
             name="name"
             ref={nameInputRef}
-            placeholder="Nume"
+            placeholder={t("form.namePlaceholder")}
             required
             className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-custom-btn focus:border-custom-btn"
           />
@@ -68,7 +70,7 @@ const Form = React.forwardRef((props, ref) => {
             type="email"
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder={t("form.emailPlaceholder")}
             required
             className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-custom-btn focus:border-custom-btn"
           />
@@ -83,7 +85,7 @@ const Form = React.forwardRef((props, ref) => {
           <textarea
             id="message"
             name="message"
-            placeholder="Mesajul tău"
+            placeholder={t("form.messagePlaceholder")}
             rows="5"
             required
             className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-custom-btn focus:border-custom-btn"
@@ -95,7 +97,7 @@ const Form = React.forwardRef((props, ref) => {
           type="submit"
           className="bg-custom-btn text-white px-4 py-2 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1"
         >
-          Trimite
+          {t("form.submitButton")}
         </button>
       </form>
     </div>
