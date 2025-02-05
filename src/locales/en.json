@@ -51,10 +51,12 @@
       "name": "Basic Package",
       "description": "Perfect for a simple presentation website.",
       "features": [
-        "✔ Responsive Design",
-        "✔ Up to 10 Pages",
-        "✔ Contact Form",
-        "✔ Basic SEO Optimization"
+        "✔ Up to 10 simple pages.",
+        "✔ Integrated contact form to interact with visitors.",
+        "✔ Basic SEO optimization to reach more users on Google.",
+        "✔ 'Back to Top' button for easy navigation on the page.",
+        "✔ Ability to add custom text and images to each page.",
+        "✔ Translation in the main language of the site (one language only, no advanced multilingual)."
       ],
       "price": "From 200 EUR"
     },
@@ -62,10 +64,14 @@
       "name": "E-commerce Package",
       "description": "Ideal for small and medium-sized online stores.",
       "features": [
-        "✔ Product Catalog up to 50 items",
-        "✔ Payment Methods Integration",
-        "✔ Admin Panel",
-        "✔ Advanced SEO Optimization"
+        "✔ Online store with up to 50 products.",
+        "✔ Integrated shopping cart functionality to add and purchase products.",
+        "✔ Secure online payments (via card or PayPal).",
+        "✔ Ability to add product reviews.",
+        "✔ Integration with Google Maps for store location (if necessary).",
+        "✔ Advanced SEO optimization to attract more visitors from online searches.",
+        "✔ Translation in multiple languages to reach an international audience (depending on your choice).",
+        "✔ 'Back to Top' button to improve navigation in the store."
       ],
       "price": "From 600 EUR"
     },
@@ -73,10 +79,14 @@
       "name": "Custom Package",
       "description": "Customized and innovative solution for your business.",
       "features": [
-        "✔ Custom Functionalities",
-        "✔ API Integration",
-        "✔ Premium SEO Optimization",
-        "✔ Dedicated Technical Support"
+        "✔ Custom functionalities that meet your business requirements.",
+        "✔ API integration to connect the website with external systems (e.g., CRM, ERP, etc.).",
+        "✔ Interactive Google Maps for multiple locations (regardless of your business type).",
+        "✔ Full translation in multiple languages to reach a global audience.",
+        "✔ Ability to implement advanced forms and functionalities (e.g., booking systems, custom price calculators, etc.).",
+        "✔ User login and account management functionalities (e.g., for social platforms or online stores).",
+        "✔ Customized 'Back to Top' button based on the page design.",
+        "✔ Premium SEO optimization to attract customers from all around the world."
       ],
       "price": "From 1000 EUR"
     }

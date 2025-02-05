@@ -99,7 +99,7 @@ const TestimonialsSection = () => {
                   />
                   <div>
                     <p className="font-semibold text-gray-800">
-                      {t(`testimonials.${testimonial.id}.name`)} {/* Translate name */}
+                      {t(`testimonials.${testimonial.id}.name`)} 
                     </p>
                     <p className="text-gray-600">
                       {t(`testimonials.${testimonial.id}.role`)} {/* Translate role */}

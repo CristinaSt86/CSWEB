@@ -52,10 +52,12 @@
       "name": "Pachet Basic",
       "description": "Perfect pentru un site simplu de prezentare.",
       "features": [
-        "✔ Design responsive",
-        "✔ Până la 10 pagini",
-        "✔ Formular de contact",
-        "✔ Optimizare SEO de bază"
+        "✔ Până la 10 pagini simple.",
+        "✔ Formular de contact integrat pentru a putea interacționa cu vizitatorii.",
+        "✔ Optimizare SEO de bază pentru a ajunge la mai mulți utilizatori pe Google.",
+        "✔ Buton \"Back to Top\" pentru o navigare ușoară pe pagină.",
+        "✔ Posibilitatea de a adăuga texte și imagini personalizate pe fiecare pagină.",
+        "✔ Traducere în limba principală a site-ului (una singură, fără multilingvistică avansată)."
       ],
       "price": "De la 200 EUR"
     },
@@ -63,10 +65,14 @@
       "name": "Pachet E-commerce",
       "description": "Ideal pentru magazine online mici și mijlocii.",
       "features": [
-        "✔ Catalog produse până la 50 articole",
-        "✔ Integrare metode de plată",
-        "✔ Panou de administrare",
-        "✔ Optimizare SEO avansată"
+        "✔ Magazin online cu până la 50 de produse.",
+        "✔ Funcționalitate coș de cumpărături integrat pentru a adăuga și cumpăra produse.",
+        "✔ Plăți sigure online (prin card sau PayPal).",
+        "✔ Posibilitatea de a adăuga review-uri pentru produse.",
+        "✔ Integrare cu Google Maps pentru locația magazinului (dacă este necesar).",
+        "✔ Optimizare SEO avansată pentru a atrage mai mulți vizitatori din căutările online.",
+        "✔ Traducere în multiple limbi pentru a accesa un public internațional (în funcție de alegerea ta).",
+        "✔ Buton \"Back to Top\" pentru a îmbunătăți navigarea în magazin."
       ],
       "price": "De la 600 EUR"
     },
@@ -74,10 +80,14 @@
       "name": "Pachet Personalizat",
       "description": "Soluție personalizată și inovativă pentru afacerea ta.",
       "features": [
-        "✔ Funcționalități personalizate",
-        "✔ Integrare API-uri",
-        "✔ Optimizare SEO premium",
-        "✔ Suport tehnic dedicat"
+        "✔ Funcționalități personalizate care răspund cerințelor afacerii tale.",
+        "✔ Integrare API-uri pentru a conecta site-ul cu sisteme externe (ex. CRM, ERP, etc.).",
+        "✔ Hărți Google interactive pentru locații multiple (indiferent de business-ul tău).",
+        "✔ Traducere completă în mai multe limbi pentru a ajunge la un public global.",
+        "✔ Posibilitatea de a implementa formulare și funcționalități avansate (ex. rezervări, calculatoare de preț personalizat, etc.).",
+        "✔ Funcționalități de login și management al conturilor utilizatorilor (ex. pentru platforme de socializare sau magazine online).",
+        "✔ Buton \"Back to Top\" personalizat pe designul paginii.",
+        "✔ Optimizare SEO premium pentru a atrage clienți din toate colțurile lumii."
       ],
       "price": "De la 1000 EUR"
     }
