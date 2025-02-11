@@ -23,7 +23,10 @@ const ContactSection = () => {
       });
     };
 
-    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions
+    );
 
     observer.observe(document.getElementById("contact-section"));
 
@@ -63,10 +66,27 @@ const ContactSection = () => {
             "contactType": "Customer Service",
             "telephone": "+40 736 690 118",
             "email": "mailto:contact.csweb@gmail.com",
-            "availableLanguage": "ro"
+           "availableLanguage": ["ro", "en", "de"]
           },
           "url": "https://www.csweb.pro/contact",
-          "mainEntityOfPage": "https://www.csweb.pro/contact"
+          "mainEntityOfPage": "https://www.csweb.pro/contact",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Acasă",
+                "item": "https://www.csweb.pro"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "${t("contact.heading")}",
+                "item": "https://www.csweb.pro/contact"
+              }
+            ]
+          }
         }
         `}
         </script>
@@ -74,7 +94,9 @@ const ContactSection = () => {
 
       <div
         className={`flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-24 md:mt-48 mb-24 md:mb-48 ${
-          isInView ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"
+          isInView
+            ? "opacity-100 transform translate-y-0"
+            : "opacity-0 transform translate-y-10"
         } transition-all duration-1000 ease-out`}
       >
         {/* Contact Information */}

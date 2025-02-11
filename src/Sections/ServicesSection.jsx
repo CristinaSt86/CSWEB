@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next"; // Importă useTranslation
+import { Helmet } from "react-helmet"; // Importă Helmet pentru a adăuga schema în head
 
 const ServicesSection = () => {
   const { t } = useTranslation(); // Folosește useTranslation pentru a obține funcția de traducere
@@ -44,6 +45,41 @@ const ServicesSection = () => {
       className="min-h-screen bg-services-bg bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center px-8 text-gray-700 py-24"
       aria-label={t("services.title")} // Traducerea titlului secțiunii
     >
+      <Helmet>
+        {/* Structured Data Schema pentru ServicesPage */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ServicePage",
+            "headline": t("services.title"),
+            "description": t("services.description"),
+            "mainEntityOfPage": "https://www.csweb.pro/services",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.csweb.pro"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": t("services.title"),
+                  "item": "https://www.csweb.pro/services"
+                }
+              ]
+            },
+            "service": services.map((service) => ({
+              "@type": "Service",
+              "name": service.title,
+              "description": service.description,
+            }))
+          })}
+        </script>
+      </Helmet>
+
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-10" aria-labelledby="services-title" itemProp="headline">
           {t("services.title")} {/* Traducerea titlului secțiunii */}

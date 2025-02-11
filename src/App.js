@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import LandingPage from "./components/LandingPage";
-import ScrollToTopButton from "./components/ScrollToTopButton";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import TermsAndConditions from "./components/TermsAndConditions";
-import PrivacyPolicy from "./components/PrivacyPolicy";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import CookieBanner from "./components/CookieBanner";
+
+
+// Folosirea React.lazy pentru a încărca componentele la cerere
+const LandingPage = lazy(() => import("./components/LandingPage"));
+//const HomeSection = lazy(() => import("./sections/HomeSection"));
+const AboutSection = lazy(() => import("./Sections/AboutSection"));
+const ServicesSection = lazy(() => import("./Sections/ServicesSection"));
+const ContactSection = lazy(() => import("./Sections/ContactSection"));
+const TermsAndConditions = lazy(() => import("./components/TermsAndConditions"));
+const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
 
 function App() {
   return (
@@ -48,12 +55,23 @@ function App() {
         {/* Navbar */}
         <Navbar />
 
-        {/* Routes */}
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        </Routes>
+        {/* Suspense pentru a încărca componentele lazily */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            {/* Ruta principală pentru pagina de Landing */}
+            <Route path="/" element={<LandingPage />} />
+            
+            {/* Rutele pentru paginile statice */}
+            {/* <Route path="/home" element={<HomeSection />} /> */}
+            <Route path="/about" element={<AboutSection />} />
+            <Route path="/services" element={<ServicesSection />} />
+            <Route path="/contact" element={<ContactSection />} />
+            
+            {/* Rutele pentru Termeni și Condiții și Politica de Confidențialitate */}
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          </Routes>
+        </Suspense>
 
         {/* Scroll to top button */}
         <ScrollToTopButton />
