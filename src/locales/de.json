@@ -1,0 +1,178 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "about": "Über CS|Web",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "siteName": "CS|WEB",
+    "logoAlt": "CS|WEB Logo - Digitale Lösungen für Ihr Unternehmen",
+    "openMenu": "Mobiles Menü öffnen",
+    "navigateToHome": "Zur Startseite navigieren",
+    "navigateToAbout": "Zur Über CS|Web Sektion navigieren",
+    "navigateToServices": "Zur Dienstleistungen Sektion navigieren",
+    "navigateToContact": "Zur Kontakt Sektion navigieren"
+  },
+  "home": {
+    "title": "Innovative digitale Lösungen für Ihr Unternehmen",
+    "subtitle": "CS|Web bietet maßgeschneiderte, SEO-optimierte Weblösungen, die KMU helfen, Kunden zu gewinnen und online zu wachsen. Sie erhalten qualitativ hochwertige Websites, die auf Ihr Budget zugeschnitten sind, um Ihre Sichtbarkeit und Ihren Geschäftserfolg zu steigern.",
+    "button": "Mehr erfahren"
+  },
+  "about": {
+    "who_title": "Wer sind wir?",
+    "who_description": "Wir sind ein technologie- und innovationsbegeistertes Team, das sich darauf spezialisiert hat, KMU beim Aufbau moderner und funktionaler Websites zu unterstützen. Jedes Projekt gehen wir mit großer Sorgfalt, Lernbereitschaft und dem Ziel ständiger Verbesserung an. Unser Fokus liegt auf einfachen, eleganten und SEO-optimierten Lösungen, die Ihr Unternehmen online wachsen lassen und ein breiteres Publikum erreichen. Jedes Projekt wird individuell an Ihre Bedürfnisse angepasst, mit einem klaren und intuitiven Design zu einem erschwinglichen Preis.",
+    "less_title": "Weniger ist mehr",
+    "less_description": "Wir glauben, dass Einfachheit der Schlüssel zu einer erfolgreichen Website ist. Deshalb ist jedes Design von CS|Web intuitiv, benutzerfreundlich und leistungsoptimiert, um Besuchern ein reibungsloses und angenehmes Erlebnis zu bieten. Jedes Element ist so gestaltet, dass die wichtigsten Aspekte Ihres Unternehmens hervorgehoben werden und Ihre Markenpersönlichkeit und Werte widerspiegeln.",
+    "page_title": "Über uns - Wer wir sind und was wir tun",
+    "page_description": "Wir sind ein technologieorientiertes Team, das KMU mit maßgeschneiderten SEO-Lösungen und modernem Design online wachsen lässt."
+  },
+  "services": {
+    "title": "Digitale Dienstleistungen",
+    "services_list": [
+      {
+        "title": "Individuelle Website-Entwicklung",
+        "description": "Wir verwandeln Ihre Unternehmensvision in eine moderne Website, die auf die Marktanforderungen zugeschnitten und benutzeroptimiert ist."
+      },
+      {
+        "title": "SEO-Optimierung und Sichtbarkeitssteigerung",
+        "description": "Möchten Sie, dass Ihre Website schnell auf Google gefunden wird? Wir helfen Ihnen, mit effektiven SEO-Strategien in den Rankings aufzusteigen."
+      },
+      {
+        "title": "Wartung und technischer Support",
+        "description": "Wir sorgen für die optimale Leistung Ihrer Website auf lange Sicht. Regelmäßige Updates, Backups und schnelle Problemlösungen sind garantiert."
+      }
+    ]
+  },
+  "pricingHeading": "Smarte Investitionen fürs Web",
+  "description": "Wählen Sie die Lösung, die zu Ihrem Unternehmen passt. Jedes Paket beinhaltet SEO-Optimierung, attraktives Design und Funktionen, die auf Ihre Bedürfnisse zugeschnitten sind.",
+  "requestOffer": "Angebot anfordern",
+  "payNow": "Jetzt bezahlen",
+  "packages": {
+    "basicPackage": {
+      "name": "Basispaket",
+      "description": "Perfekt für eine einfache Präsentations-Website.",
+      "features": [
+        "✔ Bis zu 10 einfache Seiten.",
+        "✔ Integriertes Kontaktformular zur Interaktion mit Besuchern.",
+        "✔ Grundlegende SEO-Optimierung, um mehr Nutzer auf Google zu erreichen.",
+        "✔ 'Zurück nach oben'-Button für eine einfache Navigation.",
+        "✔ Möglichkeit, benutzerdefinierte Texte und Bilder auf jeder Seite hinzuzufügen.",
+        "✔ Übersetzung in die Hauptsprache der Website (nur eine Sprache, keine erweiterte Mehrsprachigkeit)."
+      ],
+      "price": "Ab 200 EUR"
+    },
+    "ecommercePackage": {
+      "name": "E-Commerce-Paket",
+      "description": "Ideal für kleine und mittelständische Online-Shops.",
+      "features": [
+        "✔ Online-Shop mit bis zu 50 Produkten.",
+        "✔ Integrierte Warenkorbfunktion zum Hinzufügen und Kaufen von Produkten.",
+        "✔ Sichere Online-Zahlungen (per Karte oder PayPal).",
+        "✔ Möglichkeit zur Anzeige von Produktbewertungen.",
+        "✔ Integration mit Google Maps zur Standortanzeige (falls erforderlich).",
+        "✔ Erweiterte SEO-Optimierung zur Gewinnung weiterer Besucher über Online-Suchanfragen.",
+        "✔ Mehrsprachige Übersetzung, um ein internationales Publikum zu erreichen (je nach Wahl).",
+        "✔ 'Zurück nach oben'-Button zur Verbesserung der Navigation im Shop."
+      ],
+      "price": "Ab 600 EUR"
+    },
+    "customPackage": {
+      "name": "Individuelles Paket",
+      "description": "Maßgeschneiderte und innovative Lösung für Ihr Unternehmen.",
+      "features": [
+        "✔ Individuelle Funktionen, die den Anforderungen Ihres Unternehmens entsprechen.",
+        "✔ API-Integration zur Verbindung der Website mit externen Systemen (z. B. CRM, ERP usw.).",
+        "✔ Interaktive Google Maps für mehrere Standorte (unabhängig von der Art Ihres Unternehmens).",
+        "✔ Vollständige Übersetzung in mehrere Sprachen, um ein globales Publikum zu erreichen.",
+        "✔ Möglichkeit zur Implementierung erweiterter Formulare und Funktionen (z. B. Buchungssysteme, individuelle Preisrechner usw.).",
+        "✔ Benutzeranmeldung und Kontoverwaltung (z. B. für soziale Plattformen oder Online-Shops).",
+        "✔ Anpassbarer 'Zurück nach oben'-Button basierend auf dem Seitendesign.",
+        "✔ Premium-SEO-Optimierung, um Kunden weltweit zu gewinnen."
+      ],
+      "price": "Ab 1000 EUR"
+    }
+  },
+  "testimonials": {
+    "heading": "Erfahrungen unserer Kunden",
+    "testimonial1": {
+      "quote": "Die Zusammenarbeit mit dem CS|WEB-Team war ausgezeichnet! Unsere Website sieht fantastisch aus, und wir haben bereits in den ersten Wochen mehr Traffic bemerkt. Ich kann sie nur weiterempfehlen!",
+      "name": "Mihaela Radu",
+      "role": "CEO, Via Napoli Restaurant"
+    },
+    "testimonial2": {
+      "quote": "Das CS|WEB-Team hat unsere Vision perfekt verstanden und eine Website erstellt, die genau unseren Erwartungen entspricht. Wir sind sehr zufrieden mit dem Ergebnis!",
+      "name": "Constantin Topală",
+      "role": "CEO, TopalX, Fahrschule"
+    },
+    "testimonial3": {
+      "quote": "Ich hatte eine sehr gute Erfahrung mit CS|WEB! Unsere Website ist schnell, modern und SEO-optimiert. Wir sind sehr dankbar für ihre Unterstützung!",
+      "name": "Rene Klemig",
+      "role": "Gründer, EcoDesign"
+    }
+  },
+  "contact": {
+    "heading": "Kontaktieren Sie uns",
+    "infoText": "Möchten Sie mehr Informationen? Wir sind nur eine Nachricht entfernt.",
+    "emailLabel": "E-Mail:",
+    "whatsappLabel": "WhatsApp:",
+    "email": "contact.csweb@gmail.com",
+    "phone": "+40 736 690 118",
+    "buttonText": "Hier für Sie →"
+  },
+  "form": {
+    "heading": "Senden Sie uns eine Nachricht",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "E-Mail",
+    "messagePlaceholder": "Ihre Nachricht",
+    "submitButton": "Senden",
+    "successMessage": "Danke! Ihre Nachricht wurde erfolgreich gesendet.",
+    "errorMessage": "Fehler beim Senden des Formulars. Bitte versuchen Sie es erneut.",
+    "connectionErrorMessage": "Fehler beim Senden der Nachricht. Bitte überprüfen Sie Ihre Verbindung."
+  },
+  "footer": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "termsAndConditions": "Allgemeine Geschäftsbedingungen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "copyright": " 2025 CS|WEB. Alle Rechte vorbehalten."
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzrichtlinie",
+    "intro": "Ihre Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Ihre persönlichen Daten erfassen, nutzen und schützen.",
+    "section1Title": "1. Erfasste Informationen",
+    "section1Content": "Wir erfassen personenbezogene Daten, die Sie uns freiwillig zur Verfügung stellen, wie z. B. Ihren Namen, Ihre E-Mail-Adresse und andere Details, die für unsere Dienstleistungen erforderlich sind.",
+    "section2Title": "2. Nutzung der Informationen",
+    "section2Content": "Wir verwenden die gesammelten Informationen, um unsere Dienstleistungen zu verbessern, mit Ihnen zu kommunizieren und Ihnen eine bessere Erfahrung auf unserer Website zu bieten.",
+    "section3Title": "3. Sicherheit der Informationen",
+    "section3Content": "Wir ergreifen geeignete Sicherheitsmaßnahmen, um persönliche Daten vor unbefugtem Zugriff, Änderung oder Offenlegung zu schützen.",
+    "section4Title": "4. Ihre Rechte",
+    "section4Content": "Sie haben das Recht, auf Ihre personenbezogenen Daten zuzugreifen, sie zu korrigieren oder zu löschen. Um diese Rechte auszuüben, kontaktieren Sie uns bitte.",
+    "section5Title": "5. Kontakt",
+    "section5Content": "Für Fragen zu dieser Datenschutzrichtlinie oder zur Ausübung Ihrer Rechte können Sie uns kontaktieren unter:",
+    "phoneWhatsapp": "WhatsApp-Telefon",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "termsAndConditions": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "intro": "Willkommen auf unserer Website. Durch den Zugriff auf oder die Nutzung dieser Website erklären Sie sich mit den folgenden Bedingungen einverstanden. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, nutzen Sie unsere Website bitte nicht.",
+    "section1Title": "1. Nutzung der Website",
+    "section1Content": "Sie verpflichten sich, diese Website nur für rechtmäßige Zwecke zu nutzen und alle geltenden Gesetze und Vorschriften einzuhalten. Sie dürfen diese Website nicht zur Übertragung von illegalen, verleumderischen, obszönen oder anderen Inhalten verwenden, die die Rechte anderer verletzen könnten.",
+    "section2Title": "2. Geistiges Eigentum",
+    "section2Content": "Alle Materialien auf dieser Website, einschließlich Texte, Bilder, Grafiken und Logos, sind durch Urheberrechte und andere geistige Eigentumsrechte geschützt. Sie dürfen diese Materialien ohne unsere vorherige Zustimmung nicht kopieren, reproduzieren oder verbreiten.",
+    "section3Title": "3. Änderungen",
+    "section3Content": "Wir behalten uns das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Wir empfehlen Ihnen, diese Seite regelmäßig zu überprüfen, um über etwaige Änderungen informiert zu bleiben.",
+    "section5Title": "5. Kontakt",
+    "section5Content": "Für Fragen zu den Allgemeinen Geschäftsbedingungen oder zur Ausübung Ihrer Rechte können Sie uns kontaktieren unter:",
+    "phoneWhatsapp": "WhatsApp-Telefon",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "cookieBanner": {
+    "message": "Diese Website verwendet Cookies, um das Benutzererlebnis zu verbessern.",
+    "learnMore": "Erfahren Sie mehr",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
+  }
+}

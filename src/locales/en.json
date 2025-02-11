@@ -171,5 +171,11 @@
     "phoneWhatsapp": "WhatsApp Phone",
     "phone": "Phone",
     "email": "Email"
+  },
+  "cookieBanner": {
+    "message": "This website uses cookies to enhance user experience.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

@@ -17,8 +17,8 @@ module.exports = {
 
       colors: {
         "custom-textMenu": "#372a25", // Add your custom color
-        "custom-btn": "#368e33",
-        "custom-btn-hover": "#2c722a",
+        "custom-btn": "#368e33 " ,
+        "custom-btn-hover": "#2c722a ",
       },
 
       animation: {

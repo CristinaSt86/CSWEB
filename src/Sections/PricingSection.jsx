@@ -158,6 +158,7 @@ const PricingSection = () => {
                 />
                 <Button
                   label={t("payNow")}
+                  aria-label="Închide formularul de plată"
                   onClick={() => openPaymentPage(pkg.type)}
                   primaryColor="bg-blue-500"
                   hoverColor="bg-blue-600"

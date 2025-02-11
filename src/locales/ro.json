@@ -171,5 +171,12 @@
     "phoneWhatsapp": "Telefon WhatsApp",
     "phone": "Telefon",
     "email": "Email"
+  },
+
+  "cookieBanner": {
+    "message": "Acest site folosește cookie-uri pentru a îmbunătăți experiența utilizatorului.",
+    "learnMore": "Află mai multe",
+    "accept": "Accept",
+    "decline": "Refuz"
   }
 }

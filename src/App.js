@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TermsAndConditions from "./components/TermsAndConditions";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import CookieBanner from "./components/CookieBanner";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
 
         {/* Footer */}
         <Footer />
+        <CookieBanner />
       </div>
     </Router>
   );

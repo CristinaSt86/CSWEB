@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 bg-custom-btn text-white w-10 h-10 rounded-full shadow-lg transition-transform transform hover:scale-110 focus:outline-none flex items-center justify-center"
+        className="z-50 fixed bottom-6 right-6 bg-custom-btn text-white w-10 h-10 rounded-full shadow-lg transition-transform transform hover:scale-110 focus:outline-none flex items-center justify-center"
         aria-label="Scroll to top"
       >
         <span className="text-xl">&#8593;</span> {/* Săgeata în sus */}
