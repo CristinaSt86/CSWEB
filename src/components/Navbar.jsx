@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Logo from "../images/logo1c.webp";
@@ -9,6 +9,7 @@ import {
   FaEnvelope,
   FaPhone,
   FaMailBulk,
+  FaFacebook,
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -38,6 +39,19 @@ const Navbar = () => {
     scrollToSection("home");
   };
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup pentru a reseta overflow-ul când componenta este demontată
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
+
   return (
     <>
       {/* Schema markup */}
@@ -45,17 +59,23 @@ const Navbar = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: t("navbar.siteName"),
-          url: "https://www.csweb.",
+          name: "CSWeb", // Numele site-ului tău
+          url: "https://www.csweb.ro", // URL-ul site-ului tău
           potentialAction: {
             "@type": "SearchAction",
             target: "https://www.csweb.ro/?s={search_term_string}",
             "query-input": "required name=search_term_string",
           },
+          inLanguage: ["ro", "en", "de"], // Limbile disponibile pe site-ul tău
+          alternateName: {
+            ro: "CSWeb - Română",
+            en: "CSWeb - English",
+            de: "CSWeb - Deutsch",
+          },
         })}
       </script>
 
-      <nav className="bg-transparent backdrop-blur-md shadow fixed w-full z-10">
+      <nav className="bg-transparent backdrop-blur-md shadow fixed  w-full z-10">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <a href="#home" aria-label={t("navbar.navigateToHome")}>
             <img
@@ -124,8 +144,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden transition-all duration-700 ${
-            isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          className={`lg:hidden h-screen shadow-lg transition-all duration-700 ${
+            isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-90"
           } overflow-hidden`}
         >
           <ul className="flex flex-col items-center space-y-4 py-6 text-custom-textMenu font-medium text-lg">
@@ -181,6 +201,16 @@ const Navbar = () => {
               >
                 <FaPhone className="mr-2 text-custom-btn" />
                 +49 1573 187 1996
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/people/CSWEB/61572491164002/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6 "
+              >
+                <FaFacebook className="mr-2 text-custom-btn text-3xl" />
               </a>
             </li>
           </ul>
