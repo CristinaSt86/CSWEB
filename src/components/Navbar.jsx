@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Logo from "../images/logo1c.webp";
-import { FaHome, FaInfoCircle, FaCogs, FaEnvelope } from "react-icons/fa";
+import {
+  FaHome,
+  FaInfoCircle,
+  FaCogs,
+  FaEnvelope,
+  FaPhone,
+  FaMailBulk,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -78,7 +85,8 @@ const Navbar = () => {
                 className="text-custom-textMenu hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToHome")}
               >
-                {t("navbar.home")} <FaHome className="ml-1 text-custom-btn-hover" />
+                {t("navbar.home")}{" "}
+                <FaHome className="ml-1 text-custom-btn-hover" />
               </button>
             </li>
             <li>
@@ -87,7 +95,8 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToAbout")}
               >
-                {t("navbar.about")} <FaInfoCircle className="ml-1 text-custom-btn-hover" />
+                {t("navbar.about")}{" "}
+                <FaInfoCircle className="ml-1 text-custom-btn-hover" />
               </button>
             </li>
             <li>
@@ -96,7 +105,8 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToServices")}
               >
-                {t("navbar.services")} <FaCogs className="ml-1 text-custom-btn-hover" />
+                {t("navbar.services")}{" "}
+                <FaCogs className="ml-1 text-custom-btn-hover" />
               </button>
             </li>
             <li>
@@ -105,14 +115,19 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToContact")}
               >
-                {t("navbar.contact")} <FaEnvelope className="ml-1 text-custom-btn-hover" />
+                {t("navbar.contact")}{" "}
+                <FaEnvelope className="ml-1 text-custom-btn-hover" />
               </button>
             </li>
           </ul>
         </div>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden transition-all duration-700 ${isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"} overflow-hidden`}>
+        <div
+          className={`lg:hidden transition-all duration-700 ${
+            isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          } overflow-hidden`}
+        >
           <ul className="flex flex-col items-center space-y-4 py-6 text-custom-textMenu font-medium text-lg">
             <li>
               <button
@@ -149,6 +164,24 @@ const Navbar = () => {
                 <FaEnvelope className="mr-2 text-custom-btn" />
                 {t("navbar.contact")}
               </button>
+            </li>
+            <li>
+              <a
+                href="mailto:your-email@example.com"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+              >
+                <FaMailBulk className="mr-2 text-custom-btn" />
+                contact.csweb@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+4915731871996"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+              >
+                <FaPhone className="mr-2 text-custom-btn" />
+                +49 1573 187 1996
+              </a>
             </li>
           </ul>
         </div>

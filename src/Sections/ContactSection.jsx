@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next"; // Import i18n for translations
 import Form from "../components/Form";
 import { Helmet } from "react-helmet";
+import HeadMetaTags from "../components/HeadMetaTags";
 
 const ContactSection = () => {
   const { t } = useTranslation(); // Initialize translation hook
@@ -90,6 +91,7 @@ const ContactSection = () => {
         }
         `}
         </script>
+        <HeadMetaTags />
       </Helmet>
 
       <div

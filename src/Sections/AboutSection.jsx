@@ -52,15 +52,17 @@ const AboutSection = () => {
         {/* Cine suntem? */}
         <div
           aria-labelledby="about-who-title"
-          className={`transition-all duration-1000 ease-in-out transform ${isInView.who ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}
+          className={`transition-all duration-1000 ease-in-out transform ${
+            isInView.who ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
+          }`}
         >
-          <h2
+          <h1
             id="about-who-title"
             className="text-4xl font-bold mb-12 text-gray-700"
             itemProp="headline"
           >
             {t("about.who_title")}
-          </h2>
+          </h1>
           <p className="text-gray-700 text-xl text-left" itemProp="description">
             {t("about.who_description")}
           </p>
@@ -71,7 +73,9 @@ const AboutSection = () => {
 
         {/* Less is More */}
         <div
-          className={`mt-12 transition-all duration-1000 ease-in-out transform ${isInView.less ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}
+          className={`mt-12 transition-all duration-1000 ease-in-out transform ${
+            isInView.less ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+          }`}
           aria-labelledby="about-less-title"
         >
           <h2
@@ -111,23 +115,6 @@ const AboutSection = () => {
               description: t("about.less_description"),
             },
           ],
-          breadcrumb: {
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Acasă",
-                item: "https://www.csweb.pro",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: t("about.page_title"),
-                item: "https://www.csweb.pro/despre",
-              },
-            ],
-          },
         })}
       </script>
     </section>
