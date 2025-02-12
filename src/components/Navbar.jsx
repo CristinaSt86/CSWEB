@@ -187,7 +187,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:contact.csweb@gmail.com"
                 className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
               >
                 <FaMailBulk className="mr-2 text-custom-btn" />
