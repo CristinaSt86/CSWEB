@@ -22,10 +22,6 @@ function App() {
     <Router>
       <div>
         <Helmet>
-          <meta
-            property="og:image"
-            content="https://www.csweb.pro/csweb-preview-1200x630.png"
-          />
           <title>
             CSWEB - Creare Site Web, SEO și Soluții Digitale pentru Afacerea Ta
           </title>
