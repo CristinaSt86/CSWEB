@@ -14,7 +14,7 @@ const HeadMetaTags = () => {
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="Servicii web profesionale in Romania si Germania." />
-      <title>CS|WEB - Servicii web</title>
+      <title>CSWEB - Creare Site-uri & Optimizare SEO</title>
     </Helmet>
   );
 };

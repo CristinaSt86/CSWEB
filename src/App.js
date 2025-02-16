@@ -22,7 +22,7 @@ function App() {
     <Router>
       <div>
         <Helmet>
-          <title>CSWEB - Creare Site-uri Web pentru IMM-uri</title>
+        <title>CSWEB - Creare Site-uri & Optimizare SEO</title>
 
           {/* 🔹 Meta Descriere (maxim 160 caractere, optimizată pentru CTR) */}
           <meta
@@ -33,7 +33,7 @@ function App() {
           {/* 🔹 Cuvinte-cheie optimizate pentru targetare mai bună */}
           <meta
             name="keywords"
-            content="creare site web, dezvoltare aplicații, SEO pentru afaceri, optimizare Google, creare magazin online, promovare digitală, design web modern, soluții web personalizate, servicii web pentru IMM"
+            content="creare site web, dezvoltare aplicații,site-uri accesibile, SEO pentru afaceri, optimizare Google, creare magazin online, promovare digitală, design web modern, soluții web personalizate, servicii web pentru IMM"
           />
 
           <meta name="author" content="CSWEB" />
