@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next"; // Import i18n for translations
 import Form from "../components/Form";
-import { Helmet } from "react-helmet";
-import HeadMetaTags from "../components/HeadMetaTags";
+
 
 const ContactSection = () => {
   const { t } = useTranslation(); // Initialize translation hook
@@ -46,53 +45,6 @@ const ContactSection = () => {
       className="min-h-screen bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-gray-700 flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
       aria-labelledby="contact-heading"
     >
-      <Helmet>
-        {/* Structured Data Schema for ContactPage */}
-        <script type="application/ld+json">
-          {`
-        {
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "headline": "${t("contact.heading")}",
-          "description": "Vrei mai multe informații? Suntem la un mesaj distanță.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Adresa companiei",
-            "addressLocality": "București, România",
-            "postalCode": "Codul poștal al locației",
-            "addressCountry": "RO"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Service",
-            "telephone": "+40 736 690 118",
-            "email": "mailto:contact.csweb@gmail.com",
-           "availableLanguage": ["ro", "en", "de"]
-          },
-          "url": "https://www.csweb.pro/contact",
-          "mainEntityOfPage": "https://www.csweb.pro/contact",
-          "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Acasă",
-                "item": "https://www.csweb.pro"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "${t("contact.heading")}",
-                "item": "https://www.csweb.pro/contact"
-              }
-            ]
-          }
-        }
-        `}
-        </script>
-        <HeadMetaTags />
-      </Helmet>
 
       <div
         className={`flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-24 md:mt-48 mb-24 md:mb-48 ${

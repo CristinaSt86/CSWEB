@@ -6,9 +6,9 @@ import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import CookieBanner from "./components/CookieBanner";
 
-// Folosirea React.lazy pentru a încărca componentele la cerere
+
+
 const LandingPage = lazy(() => import("./components/LandingPage"));
-//const HomeSection = lazy(() => import("./sections/HomeSection"));
 const AboutSection = lazy(() => import("./Sections/AboutSection"));
 const ServicesSection = lazy(() => import("./Sections/ServicesSection"));
 const ContactSection = lazy(() => import("./Sections/ContactSection"));
@@ -22,9 +22,7 @@ function App() {
     <Router>
       <div>
         <Helmet>
-          <title>
-            CSWEB - Creare Site Web, SEO și Soluții Digitale pentru Afacerea Ta
-          </title>
+          <title>CSWEB - Creare Site-uri Web pentru IMM-uri</title>
 
           {/* 🔹 Meta Descriere (maxim 160 caractere, optimizată pentru CTR) */}
           <meta
