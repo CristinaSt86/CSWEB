@@ -24,7 +24,7 @@ function App() {
         <Helmet>
           <meta
             property="og:image"
-            content="https://www.csweb.pro/logo-og.png"
+            content="https://www.csweb.pro/csweb-preview-1200x630.png"
           />
           <title>
             CSWEB - Creare Site Web, SEO și Soluții Digitale pentru Afacerea Ta
