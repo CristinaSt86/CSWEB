@@ -15,7 +15,7 @@ const LandingPage = () => {
   return (
     <div className=" overflow-x-hidden ">
       <h1 className="text-lg text-custom-titlu-seo text-center mt-2">
-      CSWEB - Creare Site Web și Optimizare SEO pentru Afaceri
+      CSWEB - Creare Site-uri Web
       </h1>
 
       {/* Banner */}
