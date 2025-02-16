@@ -34,6 +34,7 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  
   const handleLogoClick = () => {
     navigate("/");
     scrollToSection("home");

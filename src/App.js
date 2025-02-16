@@ -5,8 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import CookieBanner from "./components/CookieBanner";
-
-
+import ScrollToTop from "./components/ScrollToTop";
 
 const LandingPage = lazy(() => import("./components/LandingPage"));
 const AboutSection = lazy(() => import("./Sections/AboutSection"));
@@ -20,9 +19,10 @@ const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Helmet>
-        <title>CSWEB - Creare Site-uri & Optimizare SEO</title>
+          <title>CSWEB - Creare Site-uri & Optimizare SEO</title>
 
           {/* 🔹 Meta Descriere (maxim 160 caractere, optimizată pentru CTR) */}
           <meta
