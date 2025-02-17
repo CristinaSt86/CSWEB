@@ -153,7 +153,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("home")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
               >
                 <FaHome className="mr-2 text-custom-btn" />
                 {t("navbar.home")}
@@ -162,7 +162,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("about")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
               >
                 <FaInfoCircle className="mr-2 text-custom-btn" />
                 {t("navbar.about")}
@@ -171,7 +171,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("services")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
               >
                 <FaCogs className="mr-2 text-custom-btn" />
                 {t("navbar.services")}
@@ -180,7 +180,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("contact")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
               >
                 <FaEnvelope className="mr-2 text-custom-btn" />
                 {t("navbar.contact")}
@@ -189,7 +189,7 @@ const Navbar = () => {
             <li>
               <a
                 href="mailto:contact.csweb@gmail.com"
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
               >
                 <FaMailBulk className="mr-2 text-custom-btn" />
                 contact.csweb@gmail.com
@@ -198,7 +198,7 @@ const Navbar = () => {
             <li>
               <a
                 href="tel:+4915731871996"
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6"
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
               >
                 <FaPhone className="mr-2 text-custom-btn" />
                 +49 1573 187 1996
@@ -209,7 +209,7 @@ const Navbar = () => {
                 href="https://www.facebook.com/people/CSWEB/61572491164002/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-6 "
+                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4 "
               >
                 <FaFacebook className="mr-2 text-custom-btn text-3xl" />
               </a>
