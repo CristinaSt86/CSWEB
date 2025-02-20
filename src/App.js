@@ -33,7 +33,7 @@ function App() {
           {/* 🔹 Cuvinte-cheie optimizate pentru targetare mai bună */}
           <meta
             name="keywords"
-            content="creare site web, dezvoltare aplicații,site-uri accesibile, SEO pentru afaceri, optimizare Google, creare magazin online, promovare digitală, design web modern, soluții web personalizate, servicii web pentru IMM"
+            content="site web, dezvoltare aplicații,site-uri accesibile, SEO pentru afaceri, optimizare Google, creare magazin online, promovare digitală, design web modern, soluții web personalizate, servicii web pentru IMM"
           />
 
           <meta name="author" content="CSWEB" />

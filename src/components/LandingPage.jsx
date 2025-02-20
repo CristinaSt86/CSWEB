@@ -14,8 +14,8 @@ import ContactSection from "../Sections/ContactSection";
 const LandingPage = () => {
   return (
     <div className=" overflow-x-hidden ">
-      <h1 className="text-lg text-custom-titlu-seo text-center mt-2">
-      CSWEB - Creare Site-uri Web
+      <h1 id="seo-h1" className="hidden">
+        CSWEB - Creare Site-uri Web
       </h1>
 
       {/* Banner */}

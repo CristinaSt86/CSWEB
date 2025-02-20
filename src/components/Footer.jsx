@@ -31,7 +31,7 @@ const Footer = () => {
 
       <div className="container mx-auto px-4">
         <div className="z-10 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="mb-4 sm:mb-0">
+          <div>
             <a
               href="https://www.facebook.com/profile.php?id=61572491164002"
               target="_blank"
