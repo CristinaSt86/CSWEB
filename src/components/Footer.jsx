@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-xs p-4">&copy; {t("footer.copyright")}</p>
+            <p className="text-xs p-4">{t("footer.copyright")}</p>
           </div>
 
           {/* Link-uri către secțiuni */}
