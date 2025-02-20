@@ -109,7 +109,7 @@ const PricingSection = () => {
       className="min-h-screen bg-gradient-to-r from-bej-300 via-gray-400 to-bej-500 flex flex-col items-center justify-center px-2 py-24"
       aria-labelledby="pricing-heading"
     >
-      <div className="container mx-auto px-8 backdrop-blur-lg rounded">
+      <div className="container mx-auto px-8 backdrop-blur-lg rounded text-lg">
         <h1
           id="pricing-heading"
           className="text-4xl font-bold text-center mb-12 text-custom-textMenu"
@@ -120,69 +120,52 @@ const PricingSection = () => {
         <p className="text-center text-gray-700 mb-16">
           {t("description")} {/* Translated description */}
         </p>
-        <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12 items-center md:items-start justify-center">
-          {packages.map((pkg) => (
-            <div
-              key={pkg.type}
-              id={pkg.id}
-              className={`flex-1 relative transition-all duration-1000 ease-in-out transform ${
-                isInView[pkg.id]
-                  ? "translate-x-0 opacity-100"
-                  : "translate-x-10 opacity-0"
-              }`}
-            >
-              <div className="absolute left-0 top-0 w-0.5 h-full bg-gray-300 hidden md:block"></div>
-              <div className="text-center md:text-left p-4">
-                <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
-                  {t(`packages.${pkg.name}.name`)}{" "}
-                  {/* Translated package name */}
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  {t(`packages.${pkg.name}.description`)}
-                </p>
-                <ul className="text-gray-700 space-y-2 mb-6">
-                  {pkg.features.map((feature, index) => (
-                    <li key={index}>
-                      {t(`packages.${pkg.name}.features.${index}`) || feature}
-                      {/* Folosește t() pentru traducere sau valoarea din array */}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-2xl font-bold text-custom-textMenu py-2">
-                  {t(`packages.${pkg.name}.price`)} {/* Translated price */}
-                </p>
-                <Button
-                  label={t("requestOffer")}
-                  targetSectionId="contact"
-                  className="mt-6 mx-1"
-                />
-                <Button
-                  label={t("payNow")}
-                  aria-label="Închide formularul de plată"
-                  onClick={() => openPaymentPage(pkg.type)}
-                  primaryColor="bg-blue-500"
-                  hoverColor="bg-blue-600"
-                  className="mt-6 px-6 py-2 text-white rounded mb-6 mx-1"
-                />
-                {activePackage === pkg.type && (
-                  <div className="relative">
-                    <button
-                      onClick={closePaymentPage}
-                      className="absolute top-0 right-2 text-custom-textMenu font-bold text-xl p-2"
-                    >
-                      x
-                    </button>
-                    {loading && (
-                      <Elements stripe={stripePromise}>
-                        <PaymentPage />
-                      </Elements>
-                    )}
-                  </div>
-                )}
-              </div>
-            </div>
+        <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12 items-stretch justify-center">
+  {packages.map((pkg) => (
+    <div
+      key={pkg.type}
+      id={pkg.id}
+      className={`flex-1 relative transition-all duration-1000 ease-in-out transform bg-white rounded-lg shadow-lg p-6 min-h-full flex flex-col justify-between`}
+    >
+      <div>
+        <h2 className="text-2xl font-bold text-custom-textMenu mb-4">
+          {t(`packages.${pkg.name}.name`)}
+        </h2>
+        <p className="text-gray-600 mb-6">
+          {t(`packages.${pkg.name}.description`)}
+        </p>
+        <ul className="text-gray-700 space-y-2 mb-6">
+          {pkg.features.map((feature, index) => (
+            <li key={index}>
+              {t(`packages.${pkg.name}.features.${index}`) || feature}
+            </li>
           ))}
-        </div>
+        </ul>
+      </div>
+
+      {/* ✅ Aliniere perfectă a butoanelor la bază */}
+      <div className="mt-auto flex flex-col items-center pb-6">
+        <p className="text-2xl font-bold text-custom-textMenu py-2">
+          {t(`packages.${pkg.name}.price`)}
+        </p>
+        <Button
+          label={t("requestOffer")}
+          targetSectionId="contact"
+          className="mt-3 mx-1 text-lg"
+        />
+        <Button
+          label={t("payNow")}
+          aria-label="Închide formularul de plată"
+          onClick={() => openPaymentPage(pkg.type)}
+          primaryColor="bg-blue-500"
+          hoverColor="bg-blue-600"
+          className="mt-3 px-6 py-2 text-white rounded mb-3 mx-1 text-lg"
+        />
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );
