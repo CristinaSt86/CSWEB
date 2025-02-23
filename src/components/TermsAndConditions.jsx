@@ -37,8 +37,8 @@ const TermsAndConditions = () => {
       <ul className="text-gray-700 list-disc list-inside mb-4">
         <li>
           <strong>{t("termsAndConditions.phoneWhatsapp")}:</strong>{" "}
-          <a href="tel:+40736690118" className="text-blue-500">
-            +40736690118
+          <a href="tel:+4915731871996" className="text-blue-500">
+            +4915731871996
           </a>
         </li>
         <li>
