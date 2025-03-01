@@ -2,24 +2,24 @@
 <html lang="ro">
 
 <head>
-  <!-- Codificarea caracterelor -->
+  <!-- 🔹 Character Encoding -->
   <meta charset="utf-8" />
 
-  <!-- Viewport pentru design responsiv -->
+  <!-- 🔹 Responsive Design -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Culoarea temei pentru UI mobil -->
+  <!-- 🔹 Theme Color -->
   <meta name="theme-color" content="#000000" />
 
-  <!-- Descriere SEO -->
+  <!-- 🔹 SEO Meta Description -->
   <meta name="description"
     content="Oferim servicii profesionale de creare website-uri accesibile pentru întreprinderi mici și mijlocii (IMM-uri). Soluții web personalizate pentru afacerea ta." />
 
-  <!-- Cuvinte cheie -->
+  <!-- 🔹 SEO Keywords -->
   <meta name="keywords"
-    content="creare website accesibil,creare site convenabil, dezvoltare site IMM, soluții web personalizate, design web profesional, servicii web pentru afaceri mici, creare site-uri la prețuri accesibile" />
+    content="creare website accesibil, creare site convenabil, dezvoltare site IMM, soluții web personalizate, design web profesional, servicii web pentru afaceri mici, creare site-uri la prețuri accesibile" />
 
-  <!-- Autor -->
+  <!-- 🔹 Author -->
   <meta name="author" content="CSWEB" />
 
   <!-- 🔹 Open Graph (Facebook & LinkedIn) -->
@@ -30,7 +30,6 @@
   <meta property="og:url" content="https://www.csweb.pro/" />
   <meta property="og:image" content="https://www.csweb.pro/csweb-preview-1200x630.png" />
   <meta property="og:image:alt" content="CSWEB - Logo" />
-
   <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=61572491164002" />
 
   <!-- 🔹 Twitter Cards -->
@@ -40,18 +39,28 @@
     content="Servicii profesionale de dezvoltare web pentru întreprinderi mici și mijlocii. Oferim soluții personalizate pentru a-ți crește prezența online." />
   <meta name="twitter:image" content="https://www.csweb.pro/csweb-preview-1200x630.png" />
 
-  <!-- 🔹 Favicon & Icon pentru dispozitive Apple -->
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/logo192.png" />
+  <!-- ✅ Preconnect to speed up external requests -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://www.facebook.com" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" />
+
+  <!-- ✅ Preload Critical Assets (logo, main fonts) -->
+  <link rel="preload" as="image" href="https://www.csweb.pro/logo.webp" type="image/webp" />
+  <link rel="preload" as="font" href="/fonts/custom-font.woff2" type="font/woff2" crossorigin="anonymous" />
+
+  <!-- 🔹 Favicon & Apple Icons -->
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.json" />
 
-  <!-- 🔹 SEO: URL canonic -->
+  <!-- 🔹 Canonical URL -->
   <link rel="canonical" href="https://www.csweb.pro/" />
 
-  <!-- 🔹 Cod de verificare Google -->
+  <!-- 🔹 Google Verification -->
   <meta name="google-site-verification" content="lj8NPq3WRLuj-OQ2WOzGxr1kV72bB1NWu6N5yBHOjBc" />
 
-  <!-- Titlu optimizat pentru SEO -->
+  <!-- 🔹 Optimized Title -->
   <title>CSWEB - Creare Site-uri & Optimizare SEO</title>
 </head>
 
@@ -59,10 +68,11 @@
   <h1 id="seo-h1" style="visibility: hidden; height: 0; overflow: hidden; position: absolute;">
     Creare Site-uri Web Profesionale - CSWEB
   </h1>
-  <!-- Avertisment pentru utilizatorii fără JavaScript -->
+
+  <!-- ✅ NoScript Message -->
   <noscript>Este necesar să activați JavaScript pentru a putea utiliza acest site.</noscript>
 
-  <!-- Containerul principal al aplicației React -->
+  <!-- ✅ React Root -->
   <div id="root"></div>
 </body>
 
