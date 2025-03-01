@@ -178,5 +178,13 @@
     "learnMore": "Află mai multe",
     "accept": "Accept",
     "decline": "Refuz"
-  }
+  },
+  "payment_title": "Plata cu cardul",
+  "payment_success": "Plată reușită!",
+  "payment_success_message": "Mulțumim pentru achiziție. Veți primi detalii prin e-mail.",
+  "error_message": "A apărut o eroare neașteptată. Vă rugăm să încercați din nou.",
+  "stripe_not_initialized": "Stripe nu este încă inițializat. Încercați din nou.",
+  "pay_button": "Plătește",
+  "processing": "Procesare...",
+  "error_label": "Eroare"
 }

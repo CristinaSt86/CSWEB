@@ -174,5 +174,14 @@
     "learnMore": "Erfahren Sie mehr",
     "accept": "Akzeptieren",
     "decline": "Ablehnen"
-  }
+  },
+
+  "payment_title": "Kartenzahlung",
+  "payment_success": "Zahlung erfolgreich!",
+  "payment_success_message": "Vielen Dank für Ihren Einkauf. Sie erhalten die Details per E-Mail.",
+  "error_message": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+  "stripe_not_initialized": "Stripe ist noch nicht initialisiert. Bitte versuchen Sie es erneut.",
+  "pay_button": "Bezahlen",
+  "processing": "Verarbeitung...",
+  "error_label": "Fehler"
 }

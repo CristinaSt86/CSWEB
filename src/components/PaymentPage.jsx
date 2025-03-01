@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import { useTranslation } from "react-i18next";
 
 const PaymentPage = () => {
   const stripe = useStripe();
   const elements = useElements();
+  const { t } = useTranslation(); // Hook pentru traduceri
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
@@ -12,27 +15,26 @@ const PaymentPage = () => {
     event.preventDefault();
     setError("");
     setLoading(true);
-  
-    // Scroll la secțiunea corespunzătoare
+
     const packageElement = document.getElementById(packageId);
     if (packageElement) {
       packageElement.scrollIntoView({ behavior: "smooth", block: "center" });
     }
-  
+
     if (!stripe || !elements) {
-      setError("Stripe nu este încă inițializat. Încercați din nou.");
+      setError(t("stripe_not_initialized"));
       setLoading(false);
       return;
     }
-  
+
     const cardElement = elements.getElement(CardElement);
-  
+
     try {
       const { error, paymentMethod } = await stripe.createPaymentMethod({
         type: "card",
         card: cardElement,
       });
-  
+
       if (error) {
         setError(error.message);
       } else {
@@ -40,21 +42,20 @@ const PaymentPage = () => {
         setSuccess(true);
       }
     } catch (err) {
-      setError("A apărut o eroare neașteptată. Vă rugăm să încercați din nou.");
+      setError(t("error_message"));
       console.error("Stripe Error:", err);
     }
-  
+
     setLoading(false);
   };
-  
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white shadow-lg rounded-lg border-2">
-      <h2 className="text-2xl font-bold mb-4 text-center">Plata cu cardul</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">{t("payment_title")}</h2>
       {success ? (
         <div className="text-center text-green-600">
-          <p className="text-lg font-semibold">Plată reușită!</p>
-          <p>Mulțumim pentru achiziție. Veți primi detalii prin e-mail.</p>
+          <p className="text-lg font-semibold">{t("payment_success")}</p>
+          <p>{t("payment_success_message")}</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
@@ -75,7 +76,7 @@ const PaymentPage = () => {
           </div>
           {error && (
             <p className="text-red-500 text-sm mb-4">
-              <strong>Eroare:</strong> {error}
+              <strong>{t("error_label")}:</strong> {error}
             </p>
           )}
           <button
@@ -87,7 +88,7 @@ const PaymentPage = () => {
                 : "bg-blue-500 hover:bg-blue-600"
             }`}
           >
-            {loading ? "Procesare..." : "Plătește"}
+            {loading ? t("processing") : t("pay_button")}
           </button>
         </form>
       )}
