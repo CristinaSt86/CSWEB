@@ -5,6 +5,7 @@ import Button from "../components/Button";
 const HomeSection = () => {
   const { t } = useTranslation(); // Folosim hook-ul useTranslation pentru a obține funcția de traducere
   const [isTitleVisible, setIsTitleVisible] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [isSubtitleVisible, setIsSubtitleVisible] = useState(false);
 
   useEffect(() => {
@@ -69,12 +70,7 @@ const HomeSection = () => {
           </h1>
           <h2
             id="home-section-subtitle"
-            className={`text-2xl sm:text-3xl opacity-100 transition-opacity duration-700 ease-out ${
-              isSubtitleVisible
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
-            }`}
-            style={{ willChange: "opacity, transform" }}
+            className="text-2xl sm:text-3xl opacity-100 ease-out"
             itemProp="description"
           >
             {t("home.subtitle")}
