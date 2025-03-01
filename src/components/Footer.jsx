@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-transparent backdrop-blur-md shadow-2xl text-center py-4 text-custom-textMenu"
+      className="bg-transparent backdrop-blur-md shadow-2xl text-center py-4 text-custom-textMenu min-h-[50px] sm:min-h-[80px]"
       aria-labelledby="footer-heading"
       itemScope
       itemType="http://schema.org/Organization"
@@ -38,12 +38,15 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <FaFacebook size={32} color="#372a25" />
+              <FaFacebook size={32} className="w-8 h-8" color="#372a25" />
             </a>
           </div>
 
           <div>
-            <p className="text-xs p-4">{t("footer.copyright")}</p>
+            <p className="text-xs p-4  min-h-[20px]">
+              {" "}
+              {t("footer.copyright") || "© 2025 CS|WEB"}
+            </p>
           </div>
 
           {/* Link-uri către secțiuni */}

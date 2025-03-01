@@ -21,13 +21,19 @@ const HomeSection = () => {
       entries.forEach((entry) => {
         if (entry.target.id === "home-section-title" && entry.isIntersecting) {
           setIsTitleVisible(true);
-        } else if (entry.target.id === "home-section-subtitle" && entry.isIntersecting) {
+        } else if (
+          entry.target.id === "home-section-subtitle" &&
+          entry.isIntersecting
+        ) {
           setIsSubtitleVisible(true);
         }
       });
     };
 
-    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions
+    );
 
     // Observăm titlul și subtitlul
     if (title) observer.observe(title);
@@ -63,9 +69,12 @@ const HomeSection = () => {
           </h1>
           <h2
             id="home-section-subtitle"
-            className={`text-2xl sm:text-3xl transition-opacity duration-1000 ${
-              isSubtitleVisible ? "opacity-100" : "opacity-0"
+            className={`text-2xl sm:text-3xl opacity-100 transition-opacity duration-700 ease-out ${
+              isSubtitleVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
+            style={{ willChange: "opacity, transform" }}
             itemProp="description"
           >
             {t("home.subtitle")}
