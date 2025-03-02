@@ -1,7 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next"; // Import i18n for translations
-import Form from "../components/Form";
 
+const Form = lazy(() => import("../components/Form"));
 
 const ContactSection = () => {
   const { t } = useTranslation(); // Initialize translation hook
@@ -45,7 +45,6 @@ const ContactSection = () => {
       className="min-h-screen bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-gray-700 flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
       aria-labelledby="contact-heading"
     >
-
       <div
         className={`flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-24 md:mt-48 mb-24 md:mb-48 ${
           isInView
@@ -103,7 +102,9 @@ const ContactSection = () => {
 
         {/* Contact Form */}
         <div className="w-full md:w-5/12">
-          <Form ref={formRef} aria-labelledby="contact-heading" />
+          <Suspense fallback={<div>Loading form...</div>}>
+            <Form ref={formRef} aria-labelledby="contact-heading" />
+          </Suspense>
         </div>
       </div>
     </section>

@@ -10,6 +10,8 @@
 
 # production
 /build
+!build/static/js/*.map  # Keep JS source maps
+!build/static/css/*.map # Keep CSS source maps
 
 # misc
 .DS_Store

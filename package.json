@@ -5,12 +5,11 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^3.1.1",
     "@stripe/stripe-js": "^5.5.0",
-    "cra-template": "1.2.0",
+    "customize-cra": "^1.0.0",
     "framer-motion": "^12.0.1",
-    "fs": "^0.0.1-security",
     "i18next": "^23.2.3",
-    "path": "^0.12.7",
     "react": "^18.3.1",
+    "react-app-rewired": "^2.2.1",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
@@ -25,10 +24,11 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": [
