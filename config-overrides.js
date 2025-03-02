@@ -1,9 +1,12 @@
-const { override } = require('customize-cra');
-const TerserPlugin = require('terser-webpack-plugin');
+const { override } = require("customize-cra");
+const TerserPlugin = require("terser-webpack-plugin");
 
-module.exports = override(
-  (config) => {
-    if (config.optimization && config.optimization.minimizer) {
+module.exports = override((config) => {
+  if (config.optimization) {
+    // Enable tree-shaking by marking unused exports
+    config.optimization.usedExports = true;
+
+    if (config.optimization.minimizer) {
       // Modify the existing TerserPlugin options
       config.optimization.minimizer = config.optimization.minimizer.map(
         (plugin) => {
@@ -27,6 +30,6 @@ module.exports = override(
         }
       );
     }
-    return config;
   }
-);
+  return config;
+});
