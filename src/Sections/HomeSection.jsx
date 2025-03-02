@@ -116,6 +116,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
+import bgImage from "../images/pic1.webp"
 
 const HomeSection = () => {
   const { t } = useTranslation(); // Folosim hook-ul useTranslation pentru traducere
@@ -123,8 +124,9 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center sm:text-custom-textMenu md:text-white text-center bg-home-bg bg-cover bg-center bg-no-repeat sm:flex-row py-32"
+      className="min-h-screen flex flex-col items-center justify-center sm:text-custom-textMenu md:text-white text-center  sm:flex-row py-32"
       aria-label="Home Section - Soluții digitale inovative pentru afacerea ta"
+      style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="flex flex-col gap-8">
         {/* SEO-friendly structured container */}
