@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next"; // Import i18n for translations
-import ViaNapoli from "../images/ViaNapoliTeam.webp";
-import LogoTplx from "../images/LogoTplx.webp";
-import EcoDesign from "../images/EcoDesign.webp";
 
 const testimonialsData = [
   {
     id: "testimonial1",
-    image: ViaNapoli,
+    image: "/images/ViaNapoliTeam.webp", // ✅ Updated path (from /public/)
+    cite: "https://via-napoli-client.com/testimonial1", // ✅ Replace with the actual source
   },
   {
     id: "testimonial2",
-    image: LogoTplx,
+    image: "/images/LogoTplx.webp",
+    cite: "https://tplx-client.com/testimonial2",
   },
   {
     id: "testimonial3",
-    image: EcoDesign,
+    image: "/images/EcoDesign.webp",
+    cite: "https://ecodesign-client.com/testimonial3",
   },
 ];
 
@@ -85,24 +85,23 @@ const TestimonialsSection = () => {
               <div className="bg-white shadow-lg rounded p-6">
                 <blockquote
                   className="text-gray-700 mb-4"
-                  cite="https://www.example.com"
                   itemProp="reviewBody"
                 >
-                  {t(`testimonials.${testimonial.id}.quote`)} {/* Translate quote */}
+                  {t(`testimonials.${testimonial.id}.quote`)}
                 </blockquote>
                 <div className="flex items-center justify-center">
                   <img
                     src={testimonial.image}
-                    alt={t(`testimonials.${testimonial.id}.name`)} 
+                    alt={t(`testimonials.${testimonial.id}.name`)}
                     className="w-12 h-12 rounded-full mr-4"
-                    loading="lazy"
+                    loading="lazy" // ✅ Improves performance
                   />
                   <div>
                     <p className="font-semibold text-gray-800">
-                      {t(`testimonials.${testimonial.id}.name`)} 
+                      {t(`testimonials.${testimonial.id}.name`)}
                     </p>
                     <p className="text-gray-600">
-                      {t(`testimonials.${testimonial.id}.role`)} {/* Translate role */}
+                      {t(`testimonials.${testimonial.id}.role`)}
                     </p>
                   </div>
                 </div>

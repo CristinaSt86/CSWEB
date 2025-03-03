@@ -223,7 +223,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Logo from "../images/logo1c.webp";
 import {
   FaHome,
   FaInfoCircle,
@@ -291,12 +290,12 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <a href="#home" aria-label={t("navbar.navigateToHome")}>
             <img
-              src={Logo}
+              src="/images/logo1c.webp"
               alt={t("navbar.logoAlt")}
               onClick={handleLogoClick}
               width="64"
               height="64" // ✅ Prevents CLS
-              className="h-16 w-16 cursor-pointer rounded shadow-lg"
+              className="h-16 w-16 cursor-pointer rounded shadow-lg bg-slate-200"
             />
           </a>
 

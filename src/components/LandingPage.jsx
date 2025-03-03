@@ -7,9 +7,7 @@ import ServicesSection from "../Sections/ServicesSection";
 import PricingSection from "../Sections/PricingSection";
 import TestimonialsSection from "../Sections/TestimonialsSection";
 import ContactSection from "../Sections/ContactSection";
-//import Footer from "../components/Footer";
-//import Banner from "../components/Banner";
-//import DiscountBanner from "../components/DiscountBanner"
+
 
 const LandingPage = () => {
   return (
