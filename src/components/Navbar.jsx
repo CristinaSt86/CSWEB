@@ -359,7 +359,7 @@ const Navbar = () => {
         <div
           className={`lg:hidden origin-top transform transition-all duration-500 overflow-hidden ${
             isMenuOpen
-              ? "bg-white/30 backdrop-blur-md max-h-screen scale-y-100 opacity-100"
+              ? "backdrop-blur-md max-h-screen scale-y-100 opacity-100"
               : "max-h-0 scale-y-0 opacity-0"
           }`}
           style={{
