@@ -95,6 +95,7 @@ const TestimonialsSection = () => {
                     alt={t(`testimonials.${testimonial.id}.name`)}
                     className="w-12 h-12 rounded-full mr-4"
                     loading="lazy" // ✅ Improves performance
+                    decoding="async"
                   />
                   <div>
                     <p className="font-semibold text-gray-800">
