@@ -1,9 +1,7 @@
-import React, { useState, useEffect, useCallback, lazy, Suspense } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { FaGlobe } from "react-icons/fa";
-
-// 🌟 Lazy load Flag component to improve performance
-const Flag = lazy(() => import("react-world-flags"));
+import { FlagIcon } from "react-flag-kit";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -48,23 +46,21 @@ const LanguageSwitcher = () => {
 
         {/* Dropdown Menu */}
         <div
-          className={`absolute right-0 mt-2 bg-custom-btn shadow-lg rounded-bl p-2 flex flex-col gap-2 transition-all duration-500 ease-in-out overflow-hidden will-change-transform ${
+          className={`absolute right-0 mt-2 bg-custom-btn shadow-lg rounded-bl p-2 flex flex-col gap-4 transition-all duration-500 ease-in-out overflow-hidden will-change-transform ${
             menuOpen
               ? "opacity-100 translate-y-0 scale-100"
               : "opacity-0 -translate-y-4 scale-95 pointer-events-none"
           }`}
         >
-          <Suspense fallback={<div>Loading...</div>}>
-            <button onClick={() => handleLanguageChange("ro")} aria-label="Set language to Romanian">
-              <Flag code="RO" alt="Romania Flag" style={{ width: 50, height: 30 }} />
-            </button>
-            <button onClick={() => handleLanguageChange("de")} aria-label="Set language to German">
-              <Flag code="DE" alt="Germany Flag" style={{ width: 50, height: 30 }} />
-            </button>
-            <button onClick={() => handleLanguageChange("en")} aria-label="Set language to English">
-              <Flag code="GB" alt="UK Flag" style={{ width: 50, height: 30 }} />
-            </button>
-          </Suspense>
+          <button onClick={() => handleLanguageChange("ro")} aria-label="Set language to Romanian">
+            <FlagIcon code="RO" size={30} />
+          </button>
+          <button onClick={() => handleLanguageChange("de")} aria-label="Set language to German">
+            <FlagIcon code="DE" size={30} />
+          </button>
+          <button onClick={() => handleLanguageChange("en")} aria-label="Set language to English">
+            <FlagIcon code="GB" size={30} />
+          </button>
         </div>
       </div>
     </div>
