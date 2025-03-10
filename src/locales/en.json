@@ -42,7 +42,7 @@
       }
     ]
   },
-  "pricingHeading": "Smart Investments for the Web",
+  "pricingHeading": "Smart Digital Investments",
   "description": "Choose the solution that fits your business. Each package includes SEO optimization, attractive design, and features tailored to your needs.",
   "requestOffer": "Request an Offer",
   "payNow": "Pay Now",
@@ -51,12 +51,12 @@
       "name": "Basic Package",
       "description": "Perfect for a simple presentation website.",
       "features": [
-        "✔ Up to 10 simple pages.",
+        "✔ Up to 5 simple pages.",
         "✔ Integrated contact form to interact with visitors.",
         "✔ Basic SEO optimization to reach more users on Google.",
         "✔ 'Back to Top' button for easy navigation on the page.",
         "✔ Ability to add custom text and images to each page.",
-        "✔ Translation in the main language of the site (one language only, no advanced multilingual)."
+        "✔ Basic Website Translation (One Language)."
       ],
       "price": "From 300 EUR"
     },
@@ -64,7 +64,7 @@
       "name": "E-commerce Package",
       "description": "Ideal for small and medium-sized online stores.",
       "features": [
-        "✔ Online store with up to 50 products.",
+        "✔ Online store with up to 30 products.",
         "✔ Integrated shopping cart functionality to add and purchase products.",
         "✔ Secure online payments (via card or PayPal).",
         "✔ Ability to add product reviews.",

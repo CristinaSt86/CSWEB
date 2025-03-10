@@ -43,7 +43,7 @@
       }
     ]
   },
-  "pricingHeading": "Investiții Smart pentru Web",
+  "pricingHeading": "Investiții Digitale Inteligente",
   "description": "Alege soluția care se potrivește afacerii tale. Fiecare pachet include optimizare SEO, design atractiv și funcționalități adaptate nevoilor tale.",
   "requestOffer": "Solicită ofertă",
   "payNow": "Plătește acum",
@@ -52,12 +52,12 @@
       "name": "Pachet Basic",
       "description": "Perfect pentru un site simplu de prezentare.",
       "features": [
-        "✔ Până la 10 pagini simple.",
+        "✔ Până la 5 pagini simple.",
         "✔ Formular de contact integrat pentru a putea interacționa cu vizitatorii.",
         "✔ Optimizare SEO de bază pentru a ajunge la mai mulți utilizatori pe Google.",
         "✔ Buton \"Back to Top\" pentru o navigare ușoară pe pagină.",
         "✔ Posibilitatea de a adăuga texte și imagini personalizate pe fiecare pagină.",
-        "✔ Traducere în limba principală a site-ului (una singură, fără multilingvistică avansată)."
+        "✔ Traducere de bază a site-ului (o singură limbă)."
       ],
       "price": "De la 300 EUR"
     },
@@ -65,7 +65,7 @@
       "name": "Pachet E-commerce",
       "description": "Ideal pentru magazine online mici și mijlocii.",
       "features": [
-        "✔ Magazin online cu până la 50 de produse.",
+        "✔ Magazin online cu până la 30 de produse.",
         "✔ Funcționalitate coș de cumpărături integrat pentru a adăuga și cumpăra produse.",
         "✔ Plăți sigure online (prin card sau PayPal).",
         "✔ Posibilitatea de a adăuga review-uri pentru produse.",

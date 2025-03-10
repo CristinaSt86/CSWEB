@@ -42,7 +42,7 @@
       }
     ]
   },
-  "pricingHeading": "Smarte Investitionen fürs Web",
+  "pricingHeading": "Intelligente digitale Investitionen",
   "description": "Wählen Sie die Lösung, die zu Ihrem Unternehmen passt. Jedes Paket beinhaltet SEO-Optimierung, attraktives Design und Funktionen, die auf Ihre Bedürfnisse zugeschnitten sind.",
   "requestOffer": "Angebot anfordern",
   "payNow": "Jetzt bezahlen",
@@ -51,12 +51,12 @@
       "name": "Basispaket",
       "description": "Perfekt für eine einfache Präsentations-Website.",
       "features": [
-        "✔ Bis zu 10 einfache Seiten.",
+        "✔ Bis zu 5 einfache Seiten.",
         "✔ Integriertes Kontaktformular zur Interaktion mit Besuchern.",
         "✔ Grundlegende SEO-Optimierung, um mehr Nutzer auf Google zu erreichen.",
         "✔ 'Zurück nach oben'-Button für eine einfache Navigation.",
         "✔ Möglichkeit, benutzerdefinierte Texte und Bilder auf jeder Seite hinzuzufügen.",
-        "✔ Übersetzung in die Hauptsprache der Website (nur eine Sprache, keine erweiterte Mehrsprachigkeit)."
+        "✔ Grundlegende Website-Übersetzung (eine Sprache)."
       ],
       "price": "Ab 300 EUR"
     },
@@ -64,7 +64,7 @@
       "name": "E-Commerce-Paket",
       "description": "Ideal für kleine und mittelständische Online-Shops.",
       "features": [
-        "✔ Online-Shop mit bis zu 50 Produkten.",
+        "✔ Online-Shop mit bis zu 30 Produkten.",
         "✔ Integrierte Warenkorbfunktion zum Hinzufügen und Kaufen von Produkten.",
         "✔ Sichere Online-Zahlungen (per Karte oder PayPal).",
         "✔ Möglichkeit zur Anzeige von Produktbewertungen.",
