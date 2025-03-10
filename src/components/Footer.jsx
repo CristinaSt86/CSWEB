@@ -80,13 +80,15 @@ const Footer = () => {
           <div className="flex space-x-4 text-xs mt-4 sm:mt-0">
             <Link
               to="/terms-and-conditions"
-              className=" hover:text-custom-btn-hover hover:underline transition-colors"
+              className="hover:text-custom-btn-hover hover:underline transition-colors"
+              aria-label="Read our Terms and Conditions"
             >
               {t("footer.termsAndConditions")}
             </Link>
             <Link
               to="/privacy-policy"
-              className=" hover:text-custom-btn-hover hover:underline transition-colors"
+              className="hover:text-custom-btn-hover hover:underline transition-colors"
+              aria-label="Read our Privacy Policy"
             >
               {t("footer.privacyPolicy")}
             </Link>
