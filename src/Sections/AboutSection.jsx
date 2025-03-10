@@ -48,12 +48,14 @@ const AboutSection = () => {
       className="min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center sm:flex-row sm:justify-start sm:text-left py-24"
       aria-label="Despre noi - Cine suntem și ce facem"
     >
-      <div className="px-4 sm:px-8">
+      <div className="px-4 sm:px-8 max-w-6xl mx-auto">
         {/* Cine suntem? */}
         <div
           aria-labelledby="about-who-title"
           className={`transition-all duration-1000 ease-in-out transform ${
-            isInView.who ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
+            isInView.who
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-10 opacity-0"
           }`}
         >
           <h1
@@ -74,7 +76,9 @@ const AboutSection = () => {
         {/* Less is More */}
         <div
           className={`mt-12 transition-all duration-1000 ease-in-out transform ${
-            isInView.less ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+            isInView.less
+              ? "translate-x-0 opacity-100"
+              : "translate-x-10 opacity-0"
           }`}
           aria-labelledby="about-less-title"
         >
