@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
       "src": "/robots.txt",
       "dest": "/robots.txt"
     },
