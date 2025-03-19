@@ -137,6 +137,7 @@
     "contact": "Contact",
     "termsAndConditions": "Termeni si condiții",
     "privacyPolicy": "Politica de confidențialitate",
+    "impressum": "Informații legale",
     "copyright": "© 2025 CS|WEB"
   },
   "privacyPolicy": {
@@ -172,7 +173,21 @@
     "phone": "Telefon",
     "email": "Email"
   },
-
+  "impressum": {
+    "operator": "CS|WEB",
+    "descriere": "Acest site oferă servicii profesionale de web design, dezvoltare web și optimizare digitală, adaptate nevoilor fiecărui client.",
+    "contactTitle": "Informații de contact",
+    "contact": {
+      "emailLabel": "Email",
+      "email": "contact@csweb.pro",
+      "phoneLabel": "Telefon",
+      "telefon": "Telefon",
+      "addressLabel": "Adresă",
+      "adresa": "Adresă disponibilă la cerere"
+    },
+    "disclaimerTitle": "Declarație de responsabilitate",
+    "disclaimer": "Toate serviciile oferite sunt furnizate cu profesionalism și conform acordurilor stabilite cu fiecare client. Pentru detalii specifice privind colaborarea, vă rugăm să ne contactați."
+  },
   "cookieBanner": {
     "message": "Acest site folosește cookie-uri pentru a îmbunătăți experiența utilizatorului.",
     "learnMore": "Află mai multe",

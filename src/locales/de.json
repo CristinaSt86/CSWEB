@@ -135,6 +135,7 @@
     "contact": "Kontakt",
     "termsAndConditions": "Allgemeine Geschäftsbedingungen",
     "privacyPolicy": "Datenschutzrichtlinie",
+    "impressum": "Impressum",
     "copyright": "© 2025 CS|WEB"
   },
   "privacyPolicy": {
@@ -168,6 +169,21 @@
     "phoneWhatsapp": "WhatsApp-Telefon",
     "phone": "Telefon",
     "email": "E-Mail"
+  },
+  "impressum": {
+    "operator": "CS|WEB",
+    "descriere": "Diese Website bietet professionelle Dienstleistungen in den Bereichen Webdesign, Webentwicklung und digitale Optimierung, die individuell an die Bedürfnisse jedes Kunden angepasst sind.",
+    "contactTitle": "Kontaktinformationen",
+    "contact": {
+      "emailLabel": "E-Mail",
+      "email": "contact@csweb.pro",
+      "phoneLabel": "Telefon",
+      "telefon": "Telefon",
+      "addressLabel": "Adresse",
+      "adresa": "Adresse auf Anfrage erhältlich"
+    },
+    "disclaimerTitle": "Haftungsausschluss",
+    "disclaimer": "Alle Dienstleistungen werden professionell und gemäß den mit jedem Kunden getroffenen Vereinbarungen erbracht. Für spezifische Kooperationsdetails kontaktieren Sie uns bitte."
   },
   "cookieBanner": {
     "message": "Diese Website verwendet Cookies, um das Benutzererlebnis zu verbessern.",

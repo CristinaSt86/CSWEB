@@ -92,6 +92,13 @@ const Footer = () => {
             >
               {t("footer.privacyPolicy")}
             </Link>
+            <Link
+              to="/impressum"
+              className="hover:text-custom-btn-hover hover:underline transition-colors"
+              aria-label="Read our Privacy Policy"
+            >
+              {t("footer.impressum")}
+            </Link>
           </div>
         </div>
       </div>
