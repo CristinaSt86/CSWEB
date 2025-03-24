@@ -257,7 +257,7 @@ const PricingSection = () => {
       className="min-h-screen bg-gradient-to-r from-bej-300 via-gray-400 to-bej-500 flex flex-col items-center justify-center px-2 py-24"
       aria-labelledby="pricing-heading"
     >
-      <div className="container mx-auto px-8 backdrop-blur-lg rounded text-lg">
+      <div className="container mx-auto px-4 backdrop-blur-lg rounded text-lg">
         <h1
           id="pricing-heading"
           className="text-4xl font-bold text-center mb-12 text-custom-textMenu"
@@ -297,14 +297,14 @@ const PricingSection = () => {
                 <Button
                   label={t("requestOffer")}
                   targetSectionId="contact"
-                  className="mt-3 mx-1 text-lg"
+                  className="mt-3 mx-1 text-lg hover:bg-custom-btn-hover"
                 />
                 <Button
                   label={t("payNow")}
                   primaryColor="bg-blue-500"
                   hoverColor="bg-blue-600"
                   onClick={() => openPaymentPage(pkg.type)}
-                  className="mt-3 px-6 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded mb-3 mx-1 text-lg"
+                  className="mt-6 px-6 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded mb-3 mx-1 text-lg"
                 />
               </div>
             </div>
