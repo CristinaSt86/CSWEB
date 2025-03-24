@@ -58,7 +58,7 @@
         "✔ Ability to add custom text and images to each page.",
         "✔ Basic Website Translation (One Language)."
       ],
-      "price": "From 300 EUR"
+      "price": "From 299 EUR"
     },
     "ecommercePackage": {
       "name": "E-commerce Package",
@@ -73,7 +73,7 @@
         "✔ Translation in multiple languages to reach an international audience (depending on your choice).",
         "✔ 'Back to Top' button to improve navigation in the store."
       ],
-      "price": "From 600 EUR"
+      "price": "From 599 EUR"
     },
     "customPackage": {
       "name": "Custom Package",
@@ -88,7 +88,7 @@
         "✔ Customized 'Back to Top' button based on the page design.",
         "✔ Premium SEO optimization to attract customers from all around the world."
       ],
-      "price": "From 1000 EUR"
+      "price": "From 999 EUR"
     }
   },
 

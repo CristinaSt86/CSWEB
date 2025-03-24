@@ -27,7 +27,7 @@ const LanguageSwitcher = () => {
     <div className="relative">
       {/* Language Button */}
       <div
-        className={`fixed top-32 right-0 sm:top-[10rem] md:top-32 md:right-0 rounded-tl md:rounded-tl p-2 bg-custom-btn text-white shadow-lg transition-opacity duration-500 ease-in-out transform ${
+        className={`fixed top-28 right-0 sm:top-[10rem] md:top-32 md:right-0 rounded-tl md:rounded-tl p-2 bg-custom-btn text-white shadow-lg transition-opacity duration-500 ease-in-out transform ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         style={{ zIndex: 100 }} // 🔹 Redus z-index pentru a evita supraîncărcarea GPU

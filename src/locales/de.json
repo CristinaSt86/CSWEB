@@ -58,7 +58,7 @@
         "✔ Möglichkeit, benutzerdefinierte Texte und Bilder auf jeder Seite hinzuzufügen.",
         "✔ Grundlegende Website-Übersetzung (eine Sprache)."
       ],
-      "price": "Ab 300 EUR"
+      "price": "Ab 299 EUR"
     },
     "ecommercePackage": {
       "name": "E-Commerce-Paket",
@@ -73,7 +73,7 @@
         "✔ Mehrsprachige Übersetzung, um ein internationales Publikum zu erreichen (je nach Wahl).",
         "✔ 'Zurück nach oben'-Button zur Verbesserung der Navigation im Shop."
       ],
-      "price": "Ab 600 EUR"
+      "price": "Ab 599 EUR"
     },
     "customPackage": {
       "name": "Individuelles Paket",
@@ -88,7 +88,7 @@
         "✔ Anpassbarer 'Zurück nach oben'-Button basierend auf dem Seitendesign.",
         "✔ Premium-SEO-Optimierung, um Kunden weltweit zu gewinnen."
       ],
-      "price": "Ab 1000 EUR"
+      "price": "Ab 999 EUR"
     }
   },
   "testimonials": {
