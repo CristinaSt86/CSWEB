@@ -15,6 +15,9 @@ const Impressum = () => {
         {t("impressum.contactTitle")}
       </h2>
       <p className="text-gray-700 mb-2">
+        <strong>{t("impressum.contact.nameLabel")}:</strong> Cristina Stoian
+      </p>
+      <p className="text-gray-700 mb-2">
         <strong>{t("impressum.contact.emailLabel")}:</strong>{" "}
         <a
           href={`mailto:${t("impressum.contact.email")}`}
@@ -26,8 +29,8 @@ const Impressum = () => {
       <p className="text-gray-700 mb-2">
         <strong>{t("impressum.contact.phoneLabel")}:</strong>{" "}
         <a href="tel:+4915731871996" className="text-blue-500">
-            +4915731871996
-          </a>
+          +4915731871996
+        </a>
       </p>
       <p className="text-gray-700 mb-4">
         <strong>{t("impressum.contact.addressLabel")}:</strong>{" "}

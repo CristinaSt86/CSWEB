@@ -175,6 +175,7 @@
     "descriere": "Diese Website bietet professionelle Dienstleistungen in den Bereichen Webdesign, Webentwicklung und digitale Optimierung, die individuell an die Bedürfnisse jedes Kunden angepasst sind.",
     "contactTitle": "Kontaktinformationen",
     "contact": {
+      "nameLabel": "Vollständiger Name",
       "emailLabel": "E-Mail",
       "email": "contact@csweb.pro",
       "phoneLabel": "Telefon",

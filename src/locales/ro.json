@@ -178,6 +178,7 @@
     "descriere": "Acest site oferă servicii profesionale de web design, dezvoltare web și optimizare digitală, adaptate nevoilor fiecărui client.",
     "contactTitle": "Informații de contact",
     "contact": {
+      "nameLabel": "Nume complet",
       "emailLabel": "Email",
       "email": "contact@csweb.pro",
       "phoneLabel": "Telefon",
