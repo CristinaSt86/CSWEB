@@ -12,8 +12,8 @@ i18n
       en: { translation: enTranslation },
       de: { translation: deTranslation }, // Adăugarea limbii germane
     },
-    lng: "en", // Limba implicită
-    fallbackLng: "de", // Limba fallback
+    lng: "de", // Limba implicită
+    fallbackLng: "en", // Limba fallback
     interpolation: {
       escapeValue: false, // React nu necesită escapare a valorilor
     },
