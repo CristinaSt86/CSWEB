@@ -1,48 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- 🌍 Home -->
   <url>
-    <loc>https://www.csweb.pro/</loc>
-    <lastmod>2025-02-11</lastmod>
+    <loc>https://www.csweb.pro/de/</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-  
-  <!-- 🔥 Adăugare favicon -->
-  <url>
-    <loc>https://www.csweb.pro/favicon.ico</loc>
-    <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.csweb.pro/ro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/" />
   </url>
 
+  <!-- 💼 Services -->
   <url>
-    <loc>https://www.csweb.pro/despre</loc>
-    <lastmod>2025-02-11</lastmod>
+    <loc>https://www.csweb.pro/de/services</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/services" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.csweb.pro/ro/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/services" />
   </url>
+
+  <!-- 📞 Contact -->
   <url>
-    <loc>https://www.csweb.pro/services</loc>
-    <lastmod>2025-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.csweb.pro/contact</loc>
-    <lastmod>2025-02-11</lastmod>
+    <loc>https://www.csweb.pro/de/contact</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.csweb.pro/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/contact" />
   </url>
+
+  <!-- 📄 Terms & Conditions -->
   <url>
-    <loc>https://www.csweb.pro/terms-and-conditions</loc>
-    <lastmod>2025-02-11</lastmod>
+    <loc>https://www.csweb.pro/de/terms-and-conditions</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.csweb.pro/ro/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/terms-and-conditions" />
   </url>
+
+  <!-- 🔒 Privacy Policy -->
   <url>
-    <loc>https://www.csweb.pro/privacy-policy</loc>
-    <lastmod>2025-02-11</lastmod>
+    <loc>https://www.csweb.pro/de/privacy-policy</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.csweb.pro/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/privacy-policy" />
+  </url>
+
+  <!-- 🧾 Impressum -->
+  <url>
+    <loc>https://www.csweb.pro/de/impressum</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/impressum" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.csweb.pro/ro/impressum" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/impressum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/impressum" />
+  </url>
+  <!-- 🔥 Favicon -->
+  <url>
+    <loc>https://www.csweb.pro/favicon.ico</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>

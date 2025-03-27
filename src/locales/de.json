@@ -12,6 +12,15 @@
     "navigateToServices": "Zur Dienstleistungen Sektion navigieren",
     "navigateToContact": "Zur Kontakt Sektion navigieren"
   },
+  "seo": {
+    "title": "CSWEB - Webseiten-Erstellung & SEO-Optimierung",
+    "description": "CSWEB bietet professionelle Dienstleistungen in Webentwicklung, SEO, App-Entwicklung und individuellen digitalen Lösungen für Ihr Unternehmen.",
+    "keywords": "Website, SEO, App-Entwicklung, Onlineshop, digitales Marketing, modernes Webdesign, individuelle Weblösungen",
+    "og_title": "CSWEB - Webentwicklung, SEO & Digitale Lösungen",
+    "og_description": "Professionelle Dienstleistungen für Webdesign, Apps, SEO und Online-Präsenz.",
+    "twitter_title": "CSWEB - Webdesign & SEO",
+    "twitter_description": "Moderne Webseiten, SEO-Optimierung, individuelle Apps und digitales Wachstum."
+  },
   "home": {
     "title": "Innovative digitale Lösungen für Ihr Unternehmen",
     "subtitle": "CS|Web bietet maßgeschneiderte, SEO-optimierte Weblösungen, die KMU helfen, Kunden zu gewinnen und online zu wachsen. Sie erhalten qualitativ hochwertige Websites, die auf Ihr Budget zugeschnitten sind, um Ihre Sichtbarkeit und Ihren Geschäftserfolg zu steigern.",

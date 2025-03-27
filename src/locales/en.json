@@ -12,6 +12,15 @@
     "navigateToServices": "Navigate to Services section",
     "navigateToContact": "Navigate to Contact section"
   },
+  "seo": {
+    "title": "CSWEB - Website Creation & SEO Optimization",
+    "description": "CSWEB provides professional services in website creation, SEO optimization, app development, and custom digital solutions for your business.",
+    "keywords": "website, SEO, app development, online store, digital marketing, modern web design, custom web solutions",
+    "og_title": "CSWEB - Website Development, SEO & Digital Solutions",
+    "og_description": "Professional services for web design, mobile apps, SEO, and online presence.",
+    "twitter_title": "CSWEB - Web Design & SEO",
+    "twitter_description": "Modern websites, SEO optimization, custom apps, and digital growth."
+  },
   "home": {
     "title": "Innovative Digital Solutions for Your Business",
     "subtitle": "CS|Web offers customized, SEO-optimized web solutions that help SMEs attract customers and grow online. You get quality websites tailored to your budget to boost your visibility and business success.",
@@ -173,7 +182,7 @@
     "phone": "Phone",
     "email": "Email"
   },
- "impressum": {
+  "impressum": {
     "operator": "CS|WEB",
     "descriere": "This website provides professional web design, web development, and digital optimization services tailored to each client's needs.",
     "contactTitle": "Contact Information",

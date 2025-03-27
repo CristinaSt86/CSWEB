@@ -12,12 +12,21 @@
     "navigateToServices": "Navighează la secțiunea Servicii",
     "navigateToContact": "Navighează la secțiunea Contact"
   },
-
+  "seo": {
+    "title": "CSWEB - Creare Website-uri & Optimizare SEO",
+    "description": "CSWEB îți oferă servicii profesionale de creare de site-uri web, optimizare SEO, dezvoltare aplicații și soluții digitale personalizate pentru afacerea ta.",
+    "keywords": "site web, dezvoltare aplicații, SEO, creare magazin online, promovare digitală, design web modern, soluții web personalizate",
+    "og_title": "CSWEB - Creare Site-uri Web, SEO și Soluții Digitale",
+    "og_description": "Servicii profesionale de web design, aplicații și SEO.",
+    "twitter_title": "CSWEB - Web Design & SEO",
+    "twitter_description": "Site-uri moderne, SEO, aplicații personalizate."
+  },
   "home": {
     "title": "Soluții digitale inovative pentru afacerea ta",
     "subtitle": "CS|Web îți oferă soluții web personalizate, optimizate SEO, care ajută IMM-urile să atragă clienți și să crească online. Beneficiezi de site-uri de calitate, adaptate bugetului tău, pentru a-ți spori vizibilitatea și succesul afacerii.",
     "button": "Descoperă mai multe"
   },
+
   "about": {
     "who_title": "Cine suntem?",
     "who_description": "Suntem o echipă pasionată de tehnologie și inovație, dedicată să sprijinim IMM-urile în construirea unor site-uri web moderne și funcționale. Abordăm fiecare proiect cu maximă seriozitate și dorința de a învăța și de a ne îmbunătăți constant. Ne axăm pe soluții simple, elegante și optimizate SEO, care îți ajută afacerea să crească online și să ajungă la un public mai larg. Fiecare proiect este adaptat nevoilor tale specifice, cu un design curat și intuitiv la un cost accesibil.",
