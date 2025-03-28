@@ -46,7 +46,7 @@ const ContactSection = () => {
       aria-labelledby="contact-heading"
     >
       <div
-        className={`flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-24 md:mt-48 mb-24 md:mb-48 ${
+        className={`flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-32 md:mt-48 mb-24 md:mb-48 ${
           isInView
             ? "opacity-100 transform translate-y-0"
             : "opacity-0 transform translate-y-10"

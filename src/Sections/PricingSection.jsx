@@ -254,10 +254,11 @@ const PricingSection = () => {
   return (
     <section
       id="pricing"
-      className="min-h-screen bg-gradient-to-r from-bej-300 via-gray-400 to-bej-500 flex flex-col items-center justify-center px-2 py-24"
+      className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24"
       aria-labelledby="pricing-heading"
+      style={{  backgroundImage: `url('/images/j.webp')`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
-      <div className="container mx-auto px-4 backdrop-blur-lg rounded text-lg">
+      <div className="container mx-auto px-4 rounded text-lg">
         <h1
           id="pricing-heading"
           className="text-4xl font-bold text-center mb-12 text-custom-textMenu"
@@ -265,7 +266,7 @@ const PricingSection = () => {
           {t("pricingHeading")}
         </h1>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
-        <p className="text-center text-gray-700 mb-16">{t("description")}</p>
+        <p className="text-center text-gray-700 font-medium mb-16">{t("description")}</p>
 
         <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12 items-stretch justify-center">
           {packages.map((pkg) => (

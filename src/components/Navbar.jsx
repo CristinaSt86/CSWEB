@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   FaHome,
@@ -15,6 +15,9 @@ const Navbar = () => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const pathParts = location.pathname.split("/");
+  const lng = pathParts[1];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -25,9 +28,11 @@ const Navbar = () => {
     }
   };
 
-  const handleMenuClick = (sectionId, route = "/") => {
-    navigate(route);
-    scrollToSection(sectionId);
+  const handleMenuClick = (sectionId) => {
+    navigate(`/${lng}`);
+    setTimeout(() => {
+      scrollToSection(sectionId);
+    }, 300);
     setIsMenuOpen(false);
   };
 

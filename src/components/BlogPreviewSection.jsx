@@ -1,0 +1,69 @@
+import React from "react";
+import { Link, useParams, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import Button from "./Button";
+
+const BlogPreviewSection = () => {
+  const { lng } = useParams();
+  const { t } = useTranslation("blog");
+  const navigate = useNavigate();
+
+  const handleNavigateToAllArticles = () => {
+    navigate(`/${lng}/articole`);
+  };
+
+  const articles = t("articles", { returnObjects: true });
+  const latestArticles = articles.slice(0, 2); // ultimele 2 articole
+
+  return (
+    <section className="py-24 px-4 md:px-8 lg:px-16 bg-gray-50">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-10 text-center">
+          {t("latest") || "Ultimele articole"}
+        </h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          {latestArticles.map((article) => (
+            <div
+              key={article.id}
+              className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+            >
+              <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                {new Date(article.date).toLocaleDateString()}
+              </p>
+              <p className="text-gray-700 mb-4">
+                {Array.isArray(article.content)
+                  ? article.content[0].slice(0, 150) + "..."
+                  : article.content.slice(0, 150) + "..."}
+              </p>
+              <Link
+                to={`/${lng}/articole/${article.slug}`}
+                className="text-custom-btn hover:underline font-medium"
+              >
+                {t("readMore") || "Citește mai mult"} →
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-8">
+          {/* <Link
+            to={`/${lng}/articole`}
+            className="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition"
+          >
+            {t("seeAll") || "Vezi toate articolele"}
+          </Link> */}
+          <Button
+            label={t("seeAll") || "Vezi toate articolele"}
+            onClick={handleNavigateToAllArticles}
+            size="medium"
+            ariaLabel="Navighează către toate articolele"
+            className="mt-6"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BlogPreviewSection;

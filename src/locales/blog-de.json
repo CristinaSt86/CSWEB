@@ -1,0 +1,47 @@
+{
+  "latest": "Neueste Artikel",
+  "seeAll": "Alle anzeigen",
+  "allArticlesTitle": "Alle Artikel",
+  "readMore": "Weiterlesen",
+  "notFound": "Artikel wurde nicht gefunden.",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Warum eine maßgeschneiderte Website die beste Wahl ist",
+      "slug": "custom-coded-website",
+      "date": "2025-03-29",
+      "image": "/images/d.webp",
+      "content": [
+        "Eine maßgeschneiderte Website bietet weit mehr als nur ein schönes Design. Sie wird von Grund auf individuell entwickelt, um genau den Anforderungen deines Unternehmens zu entsprechen – ohne die Einschränkungen von Standardplattformen. Das Ergebnis ist eine deutlich bessere Leistung, schnellere Ladezeiten, höhere Sicherheit, optimale SEO-Anpassung und langfristige Skalierbarkeit. Eine professionelle und zukunftssichere Lösung, die den Wert deiner Marke unterstreicht.",
+        "✔️ Höchste Leistung — keine unnötigen Elemente, schnelle Ladezeiten",
+        "✔️ Volle Kontrolle — über Funktionalität, Design und Sicherheit",
+        "✔️ Native SEO — sauberer Code, der für Google optimiert ist",
+        "✔️ Skalierbar — wächst mit deinem Unternehmen"
+      ],
+      "ctaSection": {
+        "textLine1": "Bereit, über deine Website zu sprechen?",
+        "textLine2": "Lass uns gemeinsam passende Lösungen finden.",
+        "button": "Kostenlose Beratung vereinbaren"
+      }
+    },
+    {
+      "id": 2,
+      "title": "3 Gründe, warum SEO wichtig ist",
+      "slug": "importanta-seo",
+      "date": "2025-03-25",
+      "image": "/images/b.webp",
+      "content": [
+        "SEO ist keine Option mehr – es ist eine grundlegende Strategie für den langfristigen Online-Erfolg. Ohne Suchmaschinenoptimierung bleibt deine Website für potenzielle Kunden unsichtbar, egal wie gut dein Angebot ist. SEO hilft dabei, deine Sichtbarkeit zu erhöhen, mehr organischen Traffic zu generieren und deine Marke langfristig aufzubauen.",
+        "✔️ Höhere Sichtbarkeit – erreiche Kunden genau dann, wenn sie nach deinen Dienstleistungen suchen",
+        "✔️ Vertrauen aufbauen – eine gut platzierte Website wirkt professionell und glaubwürdig",
+        "✔️ Mehr Conversions – mit relevanten Besuchern steigt die Chance auf echte Anfragen und Umsatz",
+        "SEO ist ein nachhaltiger Prozess, der sich mit der Zeit auszahlt. Es ist kein schneller Trick, sondern eine Investition in die Zukunft deiner Website und deines Unternehmens."
+      ],
+      "ctaSection": {
+        "textLine1": "Bereit, über deine Website zu sprechen?",
+        "textLine2": "Lass uns gemeinsam passende Lösungen finden.",
+        "button": "Kostenlose Beratung vereinbaren"
+      }
+    }
+  ]
+}

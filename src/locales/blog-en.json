@@ -1,0 +1,48 @@
+{
+  "latest": "Latest Articles",
+  "seeAll": "See All Articles",
+  "allArticlesTitle": "All Articles",
+  "readMore": "Read more",
+  "notFound": "The article was not found.",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Why a custom-coded website is the smart choice",
+      "slug": "custom-coded-website",
+      "date": "2025-03-29",
+      "image": "/images/d.webp",
+      "content": [
+        "A custom-coded website delivers much more than just a nice design. It’s built from the ground up to meet your business’s specific needs, without the limitations of generic platforms. You get better performance, faster loading times, increased security, improved SEO flexibility, and long-term scalability. It's a professional and future-proof solution that represents the true value of your brand.",
+        "✔️ Top performance — no bloated elements, lightning-fast loading",
+        "✔️ Full control — over features, design and security",
+        "✔️ Native SEO — clean code built for Google visibility",
+        "✔️ Scalable — grows with your business"
+      ],
+      "ctaSection": {
+        "textLine1": "Ready to talk about your website?",
+        "textLine2": "Let’s see how I can support your goals.",
+        "button": "Book your free consultation"
+      }
+    },
+    {
+      "id": 2,
+      "title": "3 Reasons Why SEO Matters",
+      "slug": "importanta-seo",
+      "date": "2025-03-25",
+      "image": "/images/b.webp",
+      "content": [
+        "SEO is no longer optional — it's a core strategy for long-term online success. Without proper search engine optimization, your website risks remaining invisible to potential clients, regardless of how great your offer is. SEO boosts your visibility, drives organic traffic, and helps build trust around your brand.",
+        "✔️ Higher visibility — appear in front of clients right when they're searching for your services",
+        "✔️ Builds trust — top results in Google signal professionalism and credibility",
+        "✔️ More conversions — targeted traffic means more leads and potential sales",
+        "SEO is a long-term process, but the benefits are cumulative. It's a smart investment in the future of your website and business."
+      ],
+      "ctaSection": {
+        "textLine1": "Ready to talk about your website?",
+        "textLine2": "Let’s find the right solution together.",
+        "button": "Book a free consultation"
+      }
+    }
+    
+  ]
+}

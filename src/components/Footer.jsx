@@ -1,22 +1,26 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next"; // Import i18n for translations
 
 const Footer = () => {
   const navigate = useNavigate();
   const { t } = useTranslation(); // Initialize translation hook
+  const location = useLocation();
+  const pathParts = location.pathname.split("/");
+  const lng = pathParts[1] || "de"; // fallback dacă nu există
 
   // Funcție care gestionează scroll-ul și navigarea
   const handleNavigation = (sectionId) => {
-    navigate("/"); // Navighează către LandingPage
+    navigate(`/${lng}`);
     setTimeout(() => {
       const section = document.getElementById(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" }); // Scroll lin la secțiunea respectivă
+        section.scrollIntoView({ behavior: "smooth" });
       }
-    }, 100); // Așteaptă ca DOM-ul să fie actualizat
+    }, 300); // suficient delay pentru a lăsa LandingPage să se încarce
   };
+  
 
   return (
     <footer
@@ -79,21 +83,21 @@ const Footer = () => {
 
           <div className="flex flex-col gap-4 md:flex-row space-x-4 text-xs mt-4 sm:mt-0">
             <Link
-              to="/terms-and-conditions"
+              to={`/${lng}/terms-and-conditions`}
               className="hover:text-custom-btn-hover hover:underline transition-colors"
               aria-label="Read our Terms and Conditions"
             >
               {t("footer.termsAndConditions")}
             </Link>
             <Link
-              to="/privacy-policy"
+              to={`/${lng}/privacy-policy`}
               className="hover:text-custom-btn-hover hover:underline transition-colors"
               aria-label="Read our Privacy Policy"
             >
               {t("footer.privacyPolicy")}
             </Link>
             <Link
-              to="/impressum"
+              to={`/${lng}/impressum`}
               className="hover:text-custom-btn-hover hover:underline transition-colors"
               aria-label="Read our Privacy Policy"
             >

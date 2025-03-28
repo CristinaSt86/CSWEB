@@ -13,21 +13,23 @@ const LandingPage = lazy(() => import("./components/LandingPage"));
 const AboutSection = lazy(() => import("./Sections/AboutSection"));
 const ServicesSection = lazy(() => import("./Sections/ServicesSection"));
 const ContactSection = lazy(() => import("./Sections/ContactSection"));
-const TermsAndConditions = lazy(() =>
-  import("./components/TermsAndConditions")
-);
+const TermsAndConditions = lazy(() => import("./components/TermsAndConditions"));
 const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
 const Impressum = lazy(() => import("./components/Impressum"));
 const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
 const CookieBanner = lazy(() => import("./components/CookieBanner"));
 const PaymentPage = lazy(() => import("./components/PaymentPage"));
 
+// 🌟 Articles
+const ArticlesList = lazy(() => import("./components/ArticlesList"));
+const ArticlePage = lazy(() => import("./components/ArticlePage"));
+
 function AppContent() {
   const [isLoading, setIsLoading] = useState(true);
   const { i18n, t } = useTranslation();
   const location = useLocation();
   const pathParts = location.pathname.split("/");
-  const lng = pathParts[1]; // prima parte după slash
+  const lng = pathParts[1];
   const currentPath = location.pathname.replace(/^\/(ro|en|de)/, "").trim();
 
   useEffect(() => {
@@ -57,33 +59,14 @@ function AppContent() {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t("seo.twitter_title")} />
-        <meta
-          name="twitter:description"
-          content={t("seo.twitter_description")}
-        />
+        <meta name="twitter:description" content={t("seo.twitter_description")} />
         <meta name="twitter:image" content="https://csweb.pro/preview.webp" />
 
         <link rel="canonical" href="https://www.csweb.pro/" />
-        <link
-          rel="alternate"
-          hreflang="ro"
-          href={`https://csweb.pro/ro${currentPath}`}
-        />
-        <link
-          rel="alternate"
-          hreflang="de"
-          href={`https://csweb.pro/de${currentPath}`}
-        />
-        <link
-          rel="alternate"
-          hreflang="en"
-          href={`https://csweb.pro/en${currentPath}`}
-        />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href={`https://csweb.pro/de${currentPath}`}
-        />
+        <link rel="alternate" hreflang="ro" href={`https://csweb.pro/ro${currentPath}`} />
+        <link rel="alternate" hreflang="de" href={`https://csweb.pro/de${currentPath}`} />
+        <link rel="alternate" hreflang="en" href={`https://csweb.pro/en${currentPath}`} />
+        <link rel="alternate" hreflang="x-default" href={`https://csweb.pro/de${currentPath}`} />
       </Helmet>
 
       {isLoading ? (
@@ -99,16 +82,16 @@ function AppContent() {
                 <Route path="/:lng/about" element={<AboutSection />} />
                 <Route path="/:lng/services" element={<ServicesSection />} />
                 <Route path="/:lng/contact" element={<ContactSection />} />
-                <Route
-                  path="/:lng/terms-and-conditions"
-                  element={<TermsAndConditions />}
-                />
-                <Route
-                  path="/:lng/privacy-policy"
-                  element={<PrivacyPolicy />}
-                />
+                <Route path="/:lng/terms-and-conditions" element={<TermsAndConditions />} />
+                <Route path="/:lng/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/:lng/impressum" element={<Impressum />} />
                 <Route path="/:lng/payment" element={<PaymentPage />} />
+
+                {/* ✅ Articole */}
+                <Route path="/:lng/articole" element={<ArticlesList />} />
+                <Route path="/:lng/articole/:slug" element={<ArticlePage />} />
+
+                {/* Catch all */}
                 <Route path="*" element={<Navigate to="/de" replace />} />
               </Routes>
             </Suspense>

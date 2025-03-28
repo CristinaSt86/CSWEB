@@ -7,6 +7,7 @@ import ServicesSection from "../Sections/ServicesSection";
 import PricingSection from "../Sections/PricingSection";
 import TestimonialsSection from "../Sections/TestimonialsSection";
 import ContactSection from "../Sections/ContactSection";
+import BlogPreviewSection from "./BlogPreviewSection";
 
 
 const LandingPage = () => {
@@ -29,6 +30,9 @@ const LandingPage = () => {
         </section>
         <section id="services">
           <ServicesSection />
+        </section>
+        <section id="pricing">
+          <BlogPreviewSection />
         </section>
         <section id="pricing">
           <PricingSection />
