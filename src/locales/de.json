@@ -53,11 +53,14 @@
   },
   "pricingHeading": "Intelligente digitale Investitionen",
   "description": "Wählen Sie die Lösung, die zu Ihrem Unternehmen passt. Jedes Paket beinhaltet SEO-Optimierung, attraktives Design und Funktionen, die auf Ihre Bedürfnisse zugeschnitten sind.",
+  "pricingNote": "Die Preise beginnen ab 299 EUR. Gern erstellen wir ein individuelles Angebot für Sie.",
   "requestOffer": "Angebot anfordern",
   "payNow": "Jetzt bezahlen",
   "packages": {
     "basicPackage": {
       "name": "Basispaket",
+      "tagline": "Einfach. Effektiv. Schnell live.",
+      "image": "/images/basic.webp",
       "description": "Perfekt für eine einfache Präsentations-Website.",
       "features": [
         "✔ Bis zu 5 einfache Seiten.",
@@ -71,6 +74,8 @@
     },
     "ecommercePackage": {
       "name": "E-Commerce-Paket",
+      "tagline": "Ihr Online-Shop – sicher, schnell, skalierbar.",
+      "image": "/images/ecommerce.webp",
       "description": "Ideal für kleine und mittelständische Online-Shops.",
       "features": [
         "✔ Online-Shop mit bis zu 30 Produkten.",
@@ -86,6 +91,8 @@
     },
     "customPackage": {
       "name": "Individuelles Paket",
+      "tagline": "Maximale Freiheit, maximale Wirkung.",
+      "image": "/images/custom.webp",
       "description": "Maßgeschneiderte und innovative Lösung für Ihr Unternehmen.",
       "features": [
         "✔ Individuelle Funktionen, die den Anforderungen Ihres Unternehmens entsprechen.",

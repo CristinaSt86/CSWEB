@@ -53,12 +53,14 @@
     ]
   },
   "pricingHeading": "Investiții Digitale Inteligente",
-  "description": "Alege soluția care se potrivește afacerii tale. Fiecare pachet include optimizare SEO, design atractiv și funcționalități adaptate nevoilor tale.",
+  "description": "Alege soluția potrivită pentru afacerea ta. Fiecare pachet vine cu optimizare SEO, design atractiv și funcționalități flexibile.",
+  "pricingNote": "Prețurile pornesc de la {{price}}. Pentru o ofertă personalizată adaptată nevoilor tale, te invităm să ne contactezi.",
   "requestOffer": "Solicită ofertă",
   "payNow": "Plătește acum",
   "packages": {
     "basicPackage": {
       "name": "Pachet Basic",
+      "tagline": "Simplu. Eficient. Rapid online.",
       "description": "Perfect pentru un site simplu de prezentare.",
       "features": [
         "✔ Până la 5 pagini simple.",
@@ -72,6 +74,7 @@
     },
     "ecommercePackage": {
       "name": "Pachet E-commerce",
+      "tagline": "Magazinul tău online – sigur, rapid, scalabil.",
       "description": "Ideal pentru magazine online mici și mijlocii.",
       "features": [
         "✔ Magazin online cu până la 30 de produse.",
@@ -87,6 +90,7 @@
     },
     "customPackage": {
       "name": "Pachet Personalizat",
+      "tagline": "Libertate maximă, impact maxim.",
       "description": "Soluție personalizată și inovativă pentru afacerea ta.",
       "features": [
         "✔ Funcționalități personalizate care răspund cerințelor afacerii tale.",

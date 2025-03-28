@@ -53,11 +53,13 @@
   },
   "pricingHeading": "Smart Digital Investments",
   "description": "Choose the solution that fits your business. Each package includes SEO optimization, attractive design, and features tailored to your needs.",
+  "pricingNote": "Prices start from {{price}}. Reach out for a custom quote.",
   "requestOffer": "Request an Offer",
   "payNow": "Pay Now",
   "packages": {
     "basicPackage": {
       "name": "Basic Package",
+      "tagline": "Simple. Effective. Quickly online.",
       "description": "Perfect for a simple presentation website.",
       "features": [
         "✔ Up to 5 simple pages.",
@@ -71,6 +73,7 @@
     },
     "ecommercePackage": {
       "name": "E-commerce Package",
+      "tagline": "Your online shop – secure, fast, scalable.",
       "description": "Ideal for small and medium-sized online stores.",
       "features": [
         "✔ Online store with up to 30 products.",
@@ -86,6 +89,7 @@
     },
     "customPackage": {
       "name": "Custom Package",
+      "tagline": "Maximum freedom, maximum impact.",
       "description": "Customized and innovative solution for your business.",
       "features": [
         "✔ Custom functionalities that meet your business requirements.",
