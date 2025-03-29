@@ -61,7 +61,7 @@ const ServicesSection = () => {
     <section
       ref={sectionRef}
       id="services"
-      className="min-h-screen bg-services-bg bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center px-8 text-gray-700 py-24"
+      className="min-h-screen bg-services-bg bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center px-8 text-gray-700 py-20"
       aria-label={t("services.title")}
     >
       <Helmet>
@@ -89,7 +89,7 @@ const ServicesSection = () => {
         </script>
       </Helmet>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-20 md:mt-26">
         <h2 className="text-4xl font-bold mb-10">{t("services.title")}</h2>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
 

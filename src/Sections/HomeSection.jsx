@@ -128,7 +128,7 @@ const HomeSection = () => {
       aria-label="Home Section - Soluții digitale inovative pentru afacerea ta"
       style={{  backgroundImage: `url('/images/pic1.webp')`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 mt-20 md:mt-26">
         {/* SEO-friendly structured container */}
         <div
           className="md:bg-black md:bg-opacity-40 p-6 rounded container"

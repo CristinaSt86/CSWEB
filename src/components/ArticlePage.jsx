@@ -21,7 +21,7 @@ const ArticlePage = () => {
   }
 
   return (
-    <article className="container mx-auto px-4 pt-36 pb-16 overflow-x-hidden">
+    <article className="container mx-auto px-4 pt-36 pb-16 overflow-x-hidden mt-20 md:mt-26">
       <h1 className="text-3xl font-semibold mb-2 md:mb-8 text-center">{article.title}</h1>
       <div className="flex flex-col md:flex-row justify-center items-center gap-4">
         <div className="flex flex-col lg:flex-row gap-8 items-start my-12">
