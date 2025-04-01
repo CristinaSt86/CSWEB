@@ -3,11 +3,7 @@ import Button from "../components/Button";
 import { useTranslation } from "react-i18next";
 //import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import {
-  FaLaptopCode,
-  FaShoppingCart,
-  FaPuzzlePiece,
-} from "react-icons/fa"; 
+import { FaLaptopCode, FaShoppingCart, FaPuzzlePiece } from "react-icons/fa";
 
 const LazyPaymentPage = lazy(() => import("../components/PaymentPage"));
 // const stripePromise = loadStripe(
@@ -151,11 +147,22 @@ const PricingSection = () => {
                 {/* <p className="text-2xl font-bold text-custom-textMenu py-2">
                   {t(`packages.${pkg.name}.price`) || pkg.price}
                 </p> */}
-                <Button
-                  label={t("requestOffer")}
-                  targetSectionId="contact"
-                  className="mt-3 mx-1 text-lg hover:bg-custom-btn-hover"
-                />
+                <a
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.getElementById("contact");
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  aria-label={t("requestOffer")}
+                >
+                  <Button
+                    label={t("requestOffer")}
+                    className="mt-3 mx-1 text-lg hover:bg-custom-btn-hover"
+                  />
+                </a>
                 {/* <Button
                   label={t("payNow")}
                   primaryColor="bg-blue-500"

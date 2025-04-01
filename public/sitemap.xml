@@ -14,6 +14,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/" />
   </url>
 
+  <!-- ℹ️ About -->
+<url>
+  <loc>https://www.csweb.pro/de/about</loc>
+  <lastmod>2025-03-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/about" />
+  <xhtml:link rel="alternate" hreflang="ro" href="https://www.csweb.pro/ro/about" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/about" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://www.csweb.pro/de/about" />
+</url>
+ 
   <!-- 💼 Services -->
   <url>
     <loc>https://www.csweb.pro/de/services</loc>

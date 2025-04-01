@@ -62,7 +62,7 @@ function AppContent() {
         <meta name="twitter:description" content={t("seo.twitter_description")} />
         <meta name="twitter:image" content="https://csweb.pro/preview.webp" />
 
-        <link rel="canonical" href="https://www.csweb.pro/" />
+ 
         <link rel="alternate" hreflang="ro" href={`https://csweb.pro/ro${currentPath}`} />
         <link rel="alternate" hreflang="de" href={`https://csweb.pro/de${currentPath}`} />
         <link rel="alternate" hreflang="en" href={`https://csweb.pro/en${currentPath}`} />

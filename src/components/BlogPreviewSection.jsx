@@ -53,13 +53,13 @@ const BlogPreviewSection = () => {
           >
             {t("seeAll") || "Vezi toate articolele"}
           </Link> */}
-          <Button
-            label={t("seeAll") || "Vezi toate articolele"}
-            onClick={handleNavigateToAllArticles}
-            size="medium"
-            ariaLabel="Navighează către toate articolele"
-            className="mt-6"
-          />
+          <a
+            href={`/${lng}/articole`}
+            className="inline-block bg-custom-btn text-white px-6 py-2 rounded hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1 transition-all duration-300 transform mt-6"
+            aria-label={t("seeAll") || "Vezi toate articolele"}
+          >
+            {t("seeAll") || "Vezi toate articolele"}
+          </a>
         </div>
       </div>
     </section>

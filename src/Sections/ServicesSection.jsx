@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 // ✅ Correct Import: Dynamic Import for Framer Motion
 let motion;
@@ -14,6 +15,7 @@ const ServicesSection = () => {
   const { t } = useTranslation();
   const [isMotionLoaded, setIsMotionLoaded] = useState(false);
   const sectionRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     if (!motion) {
@@ -65,25 +67,41 @@ const ServicesSection = () => {
       aria-label={t("services.title")}
     >
       <Helmet>
+        <title>{t("services.title")} | CSWEB</title>
+        <meta name="description" content={t("service.description")} />
+        <link
+          rel="canonical"
+          href={`https://www.csweb.pro${location.pathname}`}
+        />
         {/* Structured Data for SEO */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ServicePage",
-            "headline": t("services.title"),
-            "description": t("services.description"),
-            "mainEntityOfPage": "https://www.csweb.pro/services",
-            "breadcrumb": {
+            headline: t("services.title"),
+            description: t("services.description"),
+            mainEntityOfPage: "https://www.csweb.pro/services",
+            breadcrumb: {
               "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.csweb.pro" },
-                { "@type": "ListItem", "position": 2, "name": t("services.title"), "item": "https://www.csweb.pro/services" },
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://www.csweb.pro",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: t("services.title"),
+                  item: "https://www.csweb.pro/services",
+                },
               ],
             },
-            "service": services.map((service) => ({
+            service: services.map((service) => ({
               "@type": "Service",
-              "name": service.title,
-              "description": service.description,
+              name: service.title,
+              description: service.description,
             })),
           })}
         </script>
@@ -108,7 +126,10 @@ const ServicesSection = () => {
                 variants={serviceVariants}
                 viewport={{ once: true, amount: 0.5 }}
               >
-                <h3 id={`${service.id}-title`} className="text-xl font-bold mb-2">
+                <h3
+                  id={`${service.id}-title`}
+                  className="text-xl font-bold mb-2"
+                >
                   {service.title}
                 </h3>
                 <p className="text-gray-700">{service.description}</p>
