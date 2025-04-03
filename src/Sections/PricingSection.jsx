@@ -1,11 +1,11 @@
 import React, { useState, lazy, Suspense } from "react";
-import Button from "../components/Button";
+//import Button from "../components/Button";
 import { useTranslation } from "react-i18next";
 //import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
+//import { Elements } from "@stripe/react-stripe-js";
 import { FaLaptopCode, FaShoppingCart, FaPuzzlePiece } from "react-icons/fa";
 
-const LazyPaymentPage = lazy(() => import("../components/PaymentPage"));
+//const LazyPaymentPage = lazy(() => import("../components/PaymentPage"));
 // const stripePromise = loadStripe(
 //   "pk_live_51QjKAx077Yw0Kd8saYZsAqoZcg6c05Cc2i0xRbBVnYVjSZI6gKoGcGCnXtXbLYcs9FotWsSxsM0HhJejvzuVlTzR00ZW1rAWj2"
 // );
@@ -91,7 +91,7 @@ const PricingSection = () => {
       className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24"
       aria-labelledby="pricing-heading"
       style={{
-        backgroundImage: `url('/images/j.webp')`,
+        backgroundImage: `url('/images/cercuri.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
