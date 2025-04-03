@@ -88,12 +88,14 @@ const ArticlePage = () => {
               {article.ctaSection.textLine1}
             </p>
             <p className="text-gray-600 mb-6">{article.ctaSection.textLine2}</p>
-            <Button
-              label={article.ctaSection.button}
-              onClick={() => navigate(`/${lng}/contact`)}
-              size="medium"
-              ariaLabel="CTA pentru consultanță"
-            />
+            <a
+              href={`/${lng}/contact`}
+              aria-label="CTA pentru consultanță"
+              className="inline-flex items-center justify-center px-4 py-2 text-base text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 focus:outline-none"
+            >
+              {article.ctaSection.button}
+              <span className="ml-2">&#8594;</span>
+            </a>
           </div>
         )}
       </article>

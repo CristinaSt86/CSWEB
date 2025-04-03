@@ -24,7 +24,8 @@
   "home": {
     "title": "Innovative digitale Lösungen für Ihr Unternehmen",
     "subtitle": "CS|Web bietet maßgeschneiderte, SEO-optimierte Weblösungen, die KMU helfen, Kunden zu gewinnen und online zu wachsen. Sie erhalten qualitativ hochwertige Websites, die auf Ihr Budget zugeschnitten sind, um Ihre Sichtbarkeit und Ihren Geschäftserfolg zu steigern.",
-    "button": "Mehr erfahren"
+    "button": "Mehr erfahren",
+    "ariaScrollAbout": "Zum Abschnitt Über uns scrollen"
   },
   "about": {
     "who_title": "Wer sind wir?",
@@ -205,6 +206,7 @@
   "cookieBanner": {
     "message": "Diese Website verwendet Cookies, um das Benutzererlebnis zu verbessern.",
     "learnMore": "Erfahren Sie mehr",
+    "learnMoreAria": "Datenschutzerklärung anzeigen",
     "accept": "Akzeptieren",
     "decline": "Ablehnen"
   },

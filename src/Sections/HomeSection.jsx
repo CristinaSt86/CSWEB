@@ -49,7 +49,7 @@ const HomeSection = () => {
                 section.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            aria-label="Scroll către secțiunea Despre noi"
+            aria-label={t("home.ariaScrollAbout")}
           >
             <Button label={t("home.button")} className="w-fit" />
           </a>

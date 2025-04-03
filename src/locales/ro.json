@@ -24,7 +24,8 @@
   "home": {
     "title": "Soluții digitale inovative pentru afacerea ta",
     "subtitle": "CS|Web îți oferă soluții web personalizate, optimizate SEO, care ajută IMM-urile să atragă clienți și să crească online. Beneficiezi de site-uri de calitate, adaptate bugetului tău, pentru a-ți spori vizibilitatea și succesul afacerii.",
-    "button": "Descoperă mai multe"
+    "button": "Descoperă mai multe",
+    "ariaScrollAbout": "Scroll către secțiunea Despre noi"
   },
 
   "about": {
@@ -205,6 +206,7 @@
   "cookieBanner": {
     "message": "Acest site folosește cookie-uri pentru a îmbunătăți experiența utilizatorului.",
     "learnMore": "Află mai multe",
+    "learnMoreAria": "Vezi politica de confidențialitate",
     "accept": "Accept",
     "decline": "Refuz"
   },

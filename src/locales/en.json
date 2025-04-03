@@ -24,7 +24,8 @@
   "home": {
     "title": "Innovative Digital Solutions for Your Business",
     "subtitle": "CS|Web offers customized, SEO-optimized web solutions that help SMEs attract customers and grow online. You get quality websites tailored to your budget to boost your visibility and business success.",
-    "button": "Learn More"
+    "button": "Learn More",
+    "ariaScrollAbout": "Scroll to the About Us section"
   },
   "about": {
     "who_title": "Who are we?",
@@ -205,6 +206,7 @@
   "cookieBanner": {
     "message": "This website uses cookies to enhance user experience.",
     "learnMore": "Learn more",
+    "learnMoreAria": "View the privacy policy",
     "accept": "Accept",
     "decline": "Decline"
   },

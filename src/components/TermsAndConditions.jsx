@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
 
   return (
     <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden">
-      <h1 className="text-4xl font-bold mb-8 text-gray-800">
+      <h1 className="text-3xl font-bold my-8 mx-2 text-gray-800 text-center md:text-left">
         {t("termsAndConditions.title")}
       </h1>
       <p className="text-gray-700 mb-4">{t("termsAndConditions.intro")}</p>

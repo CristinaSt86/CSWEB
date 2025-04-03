@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next"; // Importăm hook-ul pentru traducere
 
 const CookieBanner = () => {
-  const { t } = useTranslation(); // Folosim traducerea
+  const { t, i18n } = useTranslation(); // Folosim traducerea
   const [showBanner, setShowBanner] = useState(false);
+  const lng = i18n.language;
 
   useEffect(() => {
     const consent = localStorage.getItem("userConsent");
@@ -25,11 +26,12 @@ const CookieBanner = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-black bg-opacity-70 text-white p-4 text-center">
+    <div className="fixed bottom-0 left-0 w-full bg-black bg-opacity-80 text-white p-4 text-center z-50">
       <p>
         {t("cookieBanner.message")}
         <a
-          href="/privacy-policy"
+          href={`/${lng}/privacy-policy`}
+          aria-label={t("cookieBanner.learnMoreAria")} 
           className="text-green-400 underline ml-2 hover:text-green-700"
         >
           {t("cookieBanner.learnMore")}
