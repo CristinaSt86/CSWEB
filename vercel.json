@@ -21,6 +21,11 @@
       "dest": "/robots.txt"
     },
     {
+      "src": "/csweb-preview-1200x630.png",
+      "dest": "/csweb-preview-1200x630.png"
+    },
+
+    {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml"
     },
