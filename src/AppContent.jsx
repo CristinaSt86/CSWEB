@@ -3,7 +3,6 @@ import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 
 const supportedLanguages = ["ro", "en", "de"];
@@ -19,10 +18,9 @@ const Impressum = lazy(() => import("./components/Impressum"));
 const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
 const CookieBanner = lazy(() => import("./components/CookieBanner"));
 const PaymentPage = lazy(() => import("./components/PaymentPage"));
-
-// 🌟 Articles
 const ArticlesList = lazy(() => import("./components/ArticlesList"));
 const ArticlePage = lazy(() => import("./components/ArticlePage"));
+const Footer = lazy(() => import("./components/Footer")); // ✅ Lazy-load Footer
 
 function AppContent() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +31,7 @@ function AppContent() {
   const currentPath = location.pathname.replace(/^\/(ro|en|de)/, "").trim();
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 1000);
+    setTimeout(() => setIsLoading(false), 1000); // Simulează delay
   }, []);
 
   useEffect(() => {
@@ -62,48 +60,43 @@ function AppContent() {
         <meta name="twitter:description" content={t("seo.twitter_description")} />
         <meta name="twitter:image" content="https://csweb.pro/preview.webp" />
 
- 
         <link rel="alternate" hreflang="ro" href={`https://csweb.pro/ro${currentPath}`} />
         <link rel="alternate" hreflang="de" href={`https://csweb.pro/de${currentPath}`} />
         <link rel="alternate" hreflang="en" href={`https://csweb.pro/en${currentPath}`} />
         <link rel="alternate" hreflang="x-default" href={`https://csweb.pro/de${currentPath}`} />
       </Helmet>
 
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <Navbar />
-          <main className="flex-grow">
-            <Suspense fallback={<Loader />}>
-              <Routes>
-                <Route path="/" element={<Navigate to="/de" replace />} />
-                <Route path="/:lng" element={<LandingPage />} />
-                <Route path="/:lng/about" element={<AboutSection />} />
-                <Route path="/:lng/services" element={<ServicesSection />} />
-                <Route path="/:lng/contact" element={<ContactSection />} />
-                <Route path="/:lng/terms-and-conditions" element={<TermsAndConditions />} />
-                <Route path="/:lng/privacy-policy" element={<PrivacyPolicy />} />
-                <Route path="/:lng/impressum" element={<Impressum />} />
-                <Route path="/:lng/payment" element={<PaymentPage />} />
+      <Navbar />
 
-                {/* ✅ Articole */}
-                <Route path="/:lng/articole" element={<ArticlesList />} />
-                <Route path="/:lng/articole/:slug" element={<ArticlePage />} />
+      <main className="flex-grow">
+        <Suspense fallback={<Loader />}>
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <Routes>
+              <Route path="/" element={<Navigate to="/de" replace />} />
+              <Route path="/:lng" element={<LandingPage />} />
+              <Route path="/:lng/about" element={<AboutSection />} />
+              <Route path="/:lng/services" element={<ServicesSection />} />
+              <Route path="/:lng/contact" element={<ContactSection />} />
+              <Route path="/:lng/terms-and-conditions" element={<TermsAndConditions />} />
+              <Route path="/:lng/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/:lng/impressum" element={<Impressum />} />
+              <Route path="/:lng/payment" element={<PaymentPage />} />
+              <Route path="/:lng/articole" element={<ArticlesList />} />
+              <Route path="/:lng/articole/:slug" element={<ArticlePage />} />
+              <Route path="*" element={<Navigate to="/de" replace />} />
+            </Routes>
+          )}
+        </Suspense>
+      </main>
 
-                {/* Catch all */}
-                <Route path="*" element={<Navigate to="/de" replace />} />
-              </Routes>
-            </Suspense>
-
-            <Suspense fallback={<></>}>
-              <ScrollToTopButton />
-              <CookieBanner />
-            </Suspense>
-          </main>
-          <Footer />
-        </>
-      )}
+      {/* Lazy Footer & Extra Components */}
+      <Suspense fallback={<></>}>
+        <Footer />
+        <ScrollToTopButton />
+        <CookieBanner />
+      </Suspense>
     </div>
   );
 }
