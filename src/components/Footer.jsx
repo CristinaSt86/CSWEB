@@ -20,7 +20,6 @@ const Footer = () => {
       }
     }, 300); // suficient delay pentru a lăsa LandingPage să se încarce
   };
-  
 
   return (
     <footer
@@ -34,7 +33,7 @@ const Footer = () => {
       </h2>
 
       <div className="container mx-auto px-4">
-        <div className="z-10 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div className="z-10 flex flex-col sm:flex-row justify-between items-center gap-4 md:gap-2">
           <div>
             <a
               href="https://www.facebook.com/profile.php?id=61572491164002"
@@ -46,9 +45,8 @@ const Footer = () => {
             </a>
           </div>
 
-          <div>
-            <p className="text-xs p-4  min-h-[20px]">
-              {" "}
+          <div className="order-last md:order-none">
+            <p className="text-xs p-4 min-h-[20px]">
               {t("footer.copyright") || "© 2025 CS|WEB"}
             </p>
           </div>
