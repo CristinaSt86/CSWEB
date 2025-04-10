@@ -88,12 +88,9 @@ const PricingSection = () => {
   return (
     <section
       id="pricing"
-      className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24"
-      aria-labelledby="pricing-heading"
+      className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24 bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: `url('/images/cercuri.webp')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
       <div className="container mx-auto px-4 rounded text-lg">

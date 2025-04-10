@@ -79,7 +79,7 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="flex flex-col gap-4 md:flex-row space-x-4 text-xs mt-4 sm:mt-0">
+          <div className="flex flex-col items-center justify-center gap-4 md:flex-row space-x-4 text-xs mt-4 sm:mt-0">
             <Link
               to={`/${lng}/terms-and-conditions`}
               className="hover:text-custom-btn-hover hover:underline transition-colors"

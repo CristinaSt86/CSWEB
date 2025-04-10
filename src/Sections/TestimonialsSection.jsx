@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next"; // Import i18n for translations
+import { useTranslation } from "react-i18next";
 
 const testimonialsData = [
   {
     id: "testimonial1",
-    image: "/images/ViaNapoliTeam.webp", // ✅ Updated path (from /public/)
-    cite: "https://via-napoli-client.com/testimonial1", // ✅ Replace with the actual source
+    image: "/images/ViaNapoliTeam.webp",
+    cite: "https://www.vianapoli.ro/",
   },
   {
     id: "testimonial2",
     image: "/images/LogoTplx.webp",
-    cite: "https://tplx-client.com/testimonial2",
+    cite: "https://www.topalxscoalaauto.ro/",
   },
   {
     id: "testimonial3",
@@ -20,14 +20,14 @@ const testimonialsData = [
 ];
 
 const TestimonialsSection = () => {
-  const { t } = useTranslation(); // Initialize translation hook
+  const { t } = useTranslation();
   const [visibleTestimonials, setVisibleTestimonials] = useState({});
 
   useEffect(() => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, // Activates when 30% of the element is in the viewport
+      threshold: 0.3,
     };
 
     const handleIntersection = (entries) => {
@@ -66,23 +66,25 @@ const TestimonialsSection = () => {
           className="text-4xl font-bold text-gray-700 mb-8 px-6"
           itemProp="headline"
         >
-          {t("testimonials.heading")} {/* Heading from JSON */}
+          {t("testimonials.heading")}
         </h2>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
         <div className="flex flex-wrap justify-center gap-8">
           {testimonialsData.map((testimonial) => (
-            <div
+            <a
               key={testimonial.id}
               id={testimonial.id}
-              className={`testimonial w-full sm:w-1/2 lg:w-1/3 p-6 transition-all duration-1000 transform ease-in-out ${
+              href={testimonial.cite}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Testimonial by ${t(`testimonials.${testimonial.id}.name`)}`}
+              className={`testimonial w-full sm:w-1/2 lg:w-1/3 p-6 transition-all duration-1000 transform hover:rounded-md ease-in-out ${
                 visibleTestimonials[testimonial.id]
                   ? "opacity-100 scale-100 translate-y-0"
                   : "opacity-0 scale-90 translate-y-10"
-              }`}
-              role="region"
-              aria-labelledby={testimonial.id}
+              } hover:shadow-xl hover:-translate-y-1 block`}
             >
-              <div className="bg-white shadow-lg rounded p-6">
+              <div className="bg-white shadow-lg rounded-md p-6 h-full">
                 <blockquote
                   className="text-gray-700 mb-4"
                   itemProp="reviewBody"
@@ -94,7 +96,7 @@ const TestimonialsSection = () => {
                     src={testimonial.image}
                     alt={t(`testimonials.${testimonial.id}.name`)}
                     className="w-12 h-12 rounded-full mr-4"
-                    loading="lazy" // ✅ Improves performance
+                    loading="lazy"
                     decoding="async"
                   />
                   <div>
@@ -107,7 +109,7 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
