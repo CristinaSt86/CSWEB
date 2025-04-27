@@ -1,8 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { FaGlobe } from "react-icons/fa";
 import { FlagIcon } from "react-flag-kit";
+import { MdTranslate } from "react-icons/md";
+
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -32,7 +33,7 @@ const LanguageSwitcher = () => {
         }`}
         style={{ zIndex: 100 }} // 🔹 Redus z-index pentru a evita supraîncărcarea GPU
       >
-        <FaGlobe
+        <MdTranslate
           onClick={toggleMenu}
           className={`text-2xl cursor-pointer hover:text-gray-300 transition-transform duration-300 ease-in-out ${
             menuOpen ? "rotate-180" : "rotate-0"
