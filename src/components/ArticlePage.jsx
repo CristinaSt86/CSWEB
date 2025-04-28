@@ -27,28 +27,39 @@ const ArticlePage = () => {
         <meta name="description" content={article.content[0].slice(0, 150)} />
 
         <meta property="og:title" content={article.title} />
-        <meta property="og:description" content={article.content[0].slice(0, 150)} />
+        <meta
+          property="og:description"
+          content={article.content[0].slice(0, 150)}
+        />
         <meta property="og:image" content={article.image} />
-        <meta property="og:url" content={`https://csweb.pro/${lng}/articole/${slug}`} />
+        <meta
+          property="og:url"
+          content={`https://csweb.pro/${lng}/articole/${slug}`}
+        />
         <meta property="og:type" content="article" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={article.title} />
-        <meta name="twitter:description" content={article.content[0].slice(0, 150)} />
+        <meta
+          name="twitter:description"
+          content={article.content[0].slice(0, 150)}
+        />
         <meta name="twitter:image" content={article.image} />
 
-        <link rel="canonical" href={`https://csweb.pro/${lng}/articole/${slug}`} />
+        <link
+          rel="canonical"
+          href={`https://csweb.pro/${lng}/articole/${slug}`}
+        />
       </Helmet>
 
-      <article className="container mx-auto px-4 pt-36 pb-16 overflow-x-hidden mt-20 md:mt-26">
+      <article className="container mx-auto px-4 py-24 overflow-x-hidden mt-20 md:mt-26">
         <h1 className="text-3xl font-semibold mb-16 text-center">
           {article.title}
         </h1>
 
         <div className="flex flex-col justify-center items-center gap-8 my-12">
-
           {/* Imaginea */}
-          <div className="w-full max-w-4xl mb-8">
+          <div className="w-full max-w-2xl md:max-w-2xl lg:max-w-3xl mb-8 mx-auto">
             <img
               src={article.image}
               alt="Imagine articol"
@@ -69,7 +80,6 @@ const ArticlePage = () => {
               <p className="text-gray-800">{article.content}</p>
             )}
           </div>
-
         </div>
 
         {/* CTA Section */}
@@ -78,9 +88,7 @@ const ArticlePage = () => {
             <p className="text-xl font-semibold mb-2">
               {article.ctaSection.textLine1}
             </p>
-            <p className="text-gray-600 mb-6">
-              {article.ctaSection.textLine2}
-            </p>
+            <p className="text-gray-600 mb-6">{article.ctaSection.textLine2}</p>
             <a
               href={`/${lng}/contact`}
               aria-label="CTA pentru consultanță"
