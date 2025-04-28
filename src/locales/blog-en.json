@@ -27,7 +27,7 @@
     {
       "id": 2,
       "title": "3 Reasons Why SEO Matters",
-      "slug": "importanta-seo",
+      "slug": "Why SEO Matters",
       "date": "2025-03-25",
       "image": "/images/b.webp",
       "content": [
@@ -42,7 +42,35 @@
         "textLine2": "Let’s find the right solution together.",
         "button": "Book a free consultation"
       }
+    },
+    {
+      "id": 3,
+      "title": "How a simple online presence can change your life",
+      "slug": "online-presence-changes-life",
+      "date": "2025-04-29",
+      "image": "/images/smiley.webp",
+      "content": [
+        "Have you ever thought how different your life could be if your idea, passion, or work reached more people? Every day, thousands of people search online for services, products, or solutions – exactly what you can offer.",
+
+        "Opportunities are there. The real question is: Can they find you?",
+
+        "Ana makes delicious cakes, but without a website, local customers don't know about her.",
+
+        "Mihai is a talented photographer, but without an online portfolio, he remains just \"the friend who takes pictures.\"",
+
+        "Andreea offers parenting advice, but without a place to share her story, those who need her help cannot find her.",
+
+        "A website is not just a page. It's the bridge between you and the world looking for you.",
+
+        "What do you lose without being online? Clients turning to competitors, missed opportunities, and time invested without visible results.",
+
+        "It's time to get seen. We help you make the first step – simple, fast, and perfectly adapted to your needs."
+      ],
+      "ctaSection": {
+        "textLine1": "Want to stand out online?",
+        "textLine2": "Contact us today and let's start together!",
+        "button": "Schedule a consultation"
+      }
     }
-    
   ]
 }

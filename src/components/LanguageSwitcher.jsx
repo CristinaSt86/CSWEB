@@ -43,7 +43,7 @@ const LanguageSwitcher = () => {
 
         {/* Dropdown Menu */}
         <div
-          className={`absolute right-0 mt-2 bg-custom-btn shadow-lg rounded-bl p-2 flex flex-col gap-4 transition-opacity duration-300 ease-in-out ${
+          className={`absolute right-0 mt-2 bg-custom-btn shadow-lg rounded-bl p-2 flex flex-col gap-5 transition-opacity duration-300 ease-in-out ${
             menuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
           }`}
         >

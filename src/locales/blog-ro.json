@@ -27,7 +27,7 @@
     {
       "id": 2,
       "title": "3 motive pentru care SEO-ul contează",
-      "slug": "importanta-seo",
+      "slug": "Why SEO Matters",
       "date": "2025-03-25",
       "image": "/images/b.webp",
       "content": [
@@ -41,6 +41,35 @@
         "textLine1": "Ești gata să discutăm despre website-ul tău?",
         "textLine2": "Hai să vedem cum te pot ajuta.",
         "button": "Programează o consultație gratuită"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Cum o simplă prezență online îți poate schimba viața",
+      "slug": "online-presence-changes-life",
+      "date": "2025-04-29",
+      "image": "/images/smiley.webp",
+      "content": [
+        "Te-ai gândit vreodată cât de diferită ar fi viața ta dacă ideea ta, pasiunea ta sau munca ta ar ajunge în fața mai multor oameni? În fiecare zi, mii de oameni caută online servicii, produse sau soluții – exact ceea ce tu știi să oferi.",
+
+        "Oportunitățile sunt acolo. Întrebarea e: Te pot găsi?",
+
+        "Ana face prăjituri delicioase, dar fără un site, clienții din orașul ei nu știu de ea.",
+
+        "Mihai este un fotograf talentat, dar fără o galerie online, rămâne doar \"prietenul care face poze\".",
+
+        "Andreea oferă consiliere pentru părinți, dar fără un loc unde să-și spună povestea, cei care au nevoie de ajutorul ei nu știu unde să o găsească.",
+
+        "Un site web nu este doar o pagină. Este puntea dintre tine și lumea care te caută.",
+
+        "Ce pierzi dacă nu ești online? Clienți care merg către concurenți, oportunități ratate și timp investit fără rezultate vizibile.",
+
+        "E momentul să te faci văzut. Noi te ajutăm să faci primul pas – simplu, rapid și adaptat exact nevoilor tale."
+      ],
+      "ctaSection": {
+        "textLine1": "Vrei să te faci remarcat online?",
+        "textLine2": "Contactează-ne astăzi și hai să începem împreună!",
+        "button": "Programează o consultanță"
       }
     }
   ]

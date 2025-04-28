@@ -27,7 +27,7 @@
     {
       "id": 2,
       "title": "3 Gründe, warum SEO wichtig ist",
-      "slug": "importanta-seo",
+      "slug": "Why SEO Matters",
       "date": "2025-03-25",
       "image": "/images/b.webp",
       "content": [
@@ -41,6 +41,35 @@
         "textLine1": "Bereit, über deine Website zu sprechen?",
         "textLine2": "Lass uns gemeinsam passende Lösungen finden.",
         "button": "Kostenlose Beratung vereinbaren"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Wie eine einfache Online-Präsenz Ihr Leben verändern kann",
+      "slug": "online-presence-changes-life",
+      "date": "2025-04-29",
+      "image": "/images/smiley.webp",
+      "content": [
+        "Haben Sie sich jemals gefragt, wie anders Ihr Leben wäre, wenn Ihre Idee, Leidenschaft oder Arbeit mehr Menschen erreichen würde? Jeden Tag suchen Tausende von Menschen online nach Dienstleistungen, Produkten oder Lösungen – genau das, was Sie anbieten können.",
+
+        "Die Möglichkeiten sind da. Die eigentliche Frage ist: Können sie Sie finden?",
+
+        "Ana backt köstliche Kuchen, aber ohne eine Website wissen die Leute in ihrer Stadt nichts von ihr.",
+
+        "Mihai ist ein talentierter Fotograf, aber ohne ein Online-Portfolio bleibt er nur \"der Freund, der Fotos macht\".",
+
+        "Andreea bietet Elternberatung an, aber ohne einen Ort, an dem sie ihre Geschichte erzählen kann, finden die Hilfesuchenden sie nicht.",
+
+        "Eine Website ist nicht nur eine Seite. Sie ist die Brücke zwischen Ihnen und der Welt, die nach Ihnen sucht.",
+
+        "Was verlieren Sie ohne Online-Präsenz? Kunden wenden sich an Konkurrenten, verpasste Chancen und Zeitinvestition ohne sichtbare Ergebnisse.",
+
+        "Es ist Zeit, sichtbar zu werden. Wir helfen Ihnen, den ersten Schritt zu machen – einfach, schnell und genau auf Ihre Bedürfnisse zugeschnitten."
+      ],
+      "ctaSection": {
+        "textLine1": "Möchten Sie online auffallen?",
+        "textLine2": "Kontaktieren Sie uns noch heute und starten wir gemeinsam!",
+        "button": "Beratung vereinbaren"
       }
     }
   ]

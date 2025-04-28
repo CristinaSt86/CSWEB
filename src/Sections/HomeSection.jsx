@@ -32,7 +32,7 @@ const HomeSection = () => {
           </h1>
           <h2
             id="home-section-subtitle"
-            className="text-2xl sm:text-3xl"
+            className="text-2xl pt-4 sm:text-3xl"
             itemProp="description"
           >
             {t("home.subtitle")}
