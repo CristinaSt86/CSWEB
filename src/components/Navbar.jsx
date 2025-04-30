@@ -11,8 +11,9 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 
+
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -37,9 +38,14 @@ const Navbar = () => {
   };
 
   const handleLogoClick = () => {
-    navigate("/");
+    // Obține limba salvată în localStorage sau limba activă din i18next
+    const currentLang = localStorage.getItem("i18nextLng") || i18n.language || 'ro';  // Limba implicită: 'ro'
+  
+    // Navighează la homepage cu limba aleasă
+    navigate(`/${currentLang}`);
     scrollToSection("home");
   };
+  
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
