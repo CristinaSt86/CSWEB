@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Button from "./Button";
 
 const BlogPreviewSection = () => {
   const { lng } = useParams();
@@ -13,7 +12,10 @@ const BlogPreviewSection = () => {
   };
 
   const articles = t("articles", { returnObjects: true });
-  const latestArticles = articles.slice(0, 2); // ultimele 2 articole
+  const latestArticles = articles
+    .slice() // facem o copie pentru a nu modifica array-ul original
+    .sort((a, b) => new Date(b.date) - new Date(a.date)) // sortare descrescător după dată
+    .slice(0, 2); // primele 2 articole, cele mai recente
 
   return (
     <section className="py-24 px-4 md:px-8 lg:px-16 bg-gray-50">
@@ -47,12 +49,6 @@ const BlogPreviewSection = () => {
         </div>
 
         <div className="text-center mt-8">
-          {/* <Link
-            to={`/${lng}/articole`}
-            className="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition"
-          >
-            {t("seeAll") || "Vezi toate articolele"}
-          </Link> */}
           <a
             href={`/${lng}/articole`}
             className="inline-block bg-custom-btn text-white px-6 py-2 rounded hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1 transition-all duration-300 transform mt-6"
