@@ -42,7 +42,7 @@ const Button = ({
     <button
       onClick={handleButtonClick}
       type="button"
-      className={`${primaryColor} ${sizeClass} text-white shadow-md rounded focus:outline-none transition-all duration-300 hover:${hoverColor} hover:shadow-xl hover:-translate-y-1 ${className}`}
+      className={`${primaryColor} ${sizeClass} text-white border-white border-[0.5px] shadow-md rounded focus:outline-none transition-all duration-300 hover:${hoverColor} hover:shadow-xl hover:-translate-y-1 ${className}`}
       style={additionalStyles}
       disabled={disabled}
       aria-label={ariaLabel} // For better accessibility
