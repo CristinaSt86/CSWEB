@@ -3,59 +3,47 @@ import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
 
 const HomeSection = () => {
-  const { t, i18n } = useTranslation(); // Folosim hook-ul useTranslation pentru traducere
+  const { t, i18n } = useTranslation();
   const lng = i18n.language;
 
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center sm:text-custom-textMenu md:text-white text-center  sm:flex-row py-32"
+      className="relative min-h-screen flex items-center justify-center text-white text-center overflow-hidden"
       aria-label="Home Section - Soluții digitale inovative pentru afacerea ta"
-      style={{
-        backgroundImage: `url('/images/pic1.webp')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
     >
-      <div className="flex flex-col gap-8 mt-20 md:mt-26">
-        {/* SEO-friendly structured container */}
-        <div
-          className="md:bg-black md:bg-opacity-40 p-6 rounded container"
-          aria-labelledby="home-section-title"
+      {/* Imaginea de fundal absolută */}
+      <img
+        src="/images/pic1.webp"
+        alt="Fundal CSWEB"
+        className="absolute inset-0 w-full h-full object-cover z-[-1]"
+        fetchpriority="high"
+      />
+      {/* Conținutul întins */}
+      <div className="md:bg-black/40 text-custom-textMenu md:text-white w-full max-w-7xl px-8 py-12 mt-28 md:mt-22 rounded">
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8" itemProp="headline">
+          {t("home.title")}
+        </h1>
+        <h2
+          className="text-xl sm:text-xl md:text-3xl leading-relaxed mb-8"
+          itemProp="description"
         >
-          <h1
-            id="home-section-title"
-            className="text-4xl font-semibold mb-8 sm:text-5xl"
-            itemProp="headline"
-          >
-            {t("home.title")}
-          </h1>
-          <h2
-            id="home-section-subtitle"
-            className="text-2xl pt-4 sm:text-3xl"
-            itemProp="description"
-          >
-            {t("home.subtitle")}
-          </h2>
-        </div>
-        {/* Accessible Button */}
-        <div className="flex justify-center sm:mt-2 md:mt-6">
-          <a
-            href={`/${lng}#about`}
-            onClick={(e) => {
-              e.preventDefault(); // prevenim comportamentul implicit
-              const section = document.getElementById("about");
-              if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            aria-label={t("home.ariaScrollAbout")}
-          >
-            <Button label={t("home.button")} className="w-fit" />
-          </a>
-        </div>
+          {t("home.subtitle")}
+        </h2>
+        <a
+          href={`/${lng}#about`}
+          onClick={(e) => {
+            e.preventDefault();
+            const section = document.getElementById("about");
+            if (section) section.scrollIntoView({ behavior: "smooth" });
+          }}
+          aria-label={t("home.ariaScrollAbout")}
+        >
+          <Button label={t("home.button")} />
+        </a>
       </div>
-      {/* Structured data (JSON-LD) */}
+
+      {/* Structured data (SEO) */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "http://schema.org",
