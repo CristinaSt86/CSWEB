@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
+import { AiOutlineDown } from "react-icons/ai";
 
 const HomeSection = () => {
   const { t, i18n } = useTranslation();

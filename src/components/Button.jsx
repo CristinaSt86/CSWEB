@@ -1,16 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import { HiArrowDown } from "react-icons/hi";
 
 const Button = ({
   label,
   onClick = null, // Default parameter
   targetSectionId = null, // Default parameter
-  className = '', // Default parameter
+  className = "", // Default parameter
   additionalStyles = {}, // Default parameter
-  size = 'medium', // Default parameter
+  size = "medium", // Default parameter
   disabled = false, // Default parameter
-  primaryColor = 'bg-custom-btn', // Default parameter
-  hoverColor = 'hover:bg-custom-btn-hover', // Default parameter
+  primaryColor = "bg-custom-btn", // Default parameter
+  hoverColor = "hover:bg-custom-btn-hover", // Default parameter
   ariaLabel = null, // Default parameter
 }) => {
   const handleButtonClick = () => {
@@ -21,8 +22,8 @@ const Button = ({
       const targetSection = document.getElementById(targetSectionId);
       if (targetSection) {
         targetSection.scrollIntoView({
-          behavior: 'smooth', // Smooth scrolling
-          block: 'start',
+          behavior: "smooth", // Smooth scrolling
+          block: "start",
         });
       }
     }
@@ -30,9 +31,9 @@ const Button = ({
 
   // Define button size classes
   const sizeClasses = {
-    small: 'px-3 py-2 text-sm',
-    medium: 'px-4 py-2 text-base',
-    large: 'px-6 py-3 text-lg',
+    small: "px-3 py-2 text-sm",
+    medium: "px-4 py-2 text-base",
+    large: "px-6 py-3 text-lg",
   };
 
   // Determine the button's size class
@@ -47,7 +48,7 @@ const Button = ({
       disabled={disabled}
       aria-label={ariaLabel} // For better accessibility
     >
-      {label} <span className="ml-2">&#8594;</span>
+      {label}
     </button>
   );
 };
@@ -59,7 +60,7 @@ Button.propTypes = {
   targetSectionId: PropTypes.string,
   className: PropTypes.string,
   additionalStyles: PropTypes.object,
-  size: PropTypes.oneOf(['small', 'medium', 'large']), // Button size options
+  size: PropTypes.oneOf(["small", "medium", "large"]), // Button size options
   disabled: PropTypes.bool, // Disable the button
   primaryColor: PropTypes.string, // Primary button color
   hoverColor: PropTypes.string, // Hover color

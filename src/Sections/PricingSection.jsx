@@ -156,7 +156,7 @@ const PricingSection = () => {
                   aria-label={t("requestOffer")}
                   className="mt-3 mx-1 text-lg text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 px-4 py-2 inline-flex items-center justify-center"
                 >
-                  {t("requestOffer")} <span className="ml-2">&#8594;</span>
+                  {t("requestOffer")} 
                 </a>
 
                 {/* <Button
