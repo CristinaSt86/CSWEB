@@ -77,13 +77,19 @@ const TestimonialsSection = () => {
               href={testimonial.cite}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Testimonial by ${t(`testimonials.${testimonial.id}.name`)}`}
+              aria-label={`Testimonial by ${t(
+                `testimonials.${testimonial.id}.name`
+              )}`}
               className={`testimonial w-full sm:w-1/2 lg:w-1/3 p-6 transition-all duration-1000 transform hover:rounded-md ease-in-out ${
                 visibleTestimonials[testimonial.id]
                   ? "opacity-100 scale-100 translate-y-0"
                   : "opacity-0 scale-90 translate-y-10"
               } hover:shadow-xl hover:-translate-y-1 block`}
             >
+              <span className="sr-only">
+                {t(`testimonials.${testimonial.id}.name`)} –{" "}
+                {t(`testimonials.${testimonial.id}.role`)}
+              </span>
               <div className="bg-white shadow-lg rounded-md p-6 h-full">
                 <blockquote
                   className="text-gray-700 mb-4"
