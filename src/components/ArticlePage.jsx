@@ -90,6 +90,7 @@ const ArticlePage = () => {
             </p>
             <p className="text-gray-600 mb-6">{article.ctaSection.textLine2}</p>
             <a
+              translate="no"
               href={`/${lng}/contact`}
               aria-label="CTA pentru consultanță"
               className="inline-flex items-center justify-center px-6 py-3 text-base text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 focus:outline-none"
