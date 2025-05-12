@@ -156,7 +156,7 @@ const Navbar = () => {
             transitionTimingFunction: "ease-in-out",
           }}
         >
-          <ul className="flex flex-col items-center space-y-4 py-6 text-custom-textMenu font-medium text-lg">
+          <ul className="flex flex-col items-center space-y-4 py-16 text-custom-textMenu font-medium text-lg">
             <li>
               <button
                 onClick={() => handleMenuClick("home")}

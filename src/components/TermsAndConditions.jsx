@@ -5,7 +5,7 @@ const TermsAndConditions = () => {
   const { t } = useTranslation(); // Initializează hook-ul de traducere
 
   return (
-    <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden">
+    <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden my-20">
       <h1 className="text-3xl font-bold my-8 mx-2 text-gray-800 text-center md:text-left">
         {t("termsAndConditions.title")}
       </h1>

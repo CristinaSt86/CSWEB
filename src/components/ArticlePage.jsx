@@ -1,13 +1,14 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Button from "./Button";
-import { Helmet } from "react-helmet";
+//import Button from "./Button";
+import { Helmet } from "react-helmet-async"
+
 
 const ArticlePage = () => {
   const { slug, lng } = useParams();
   const { t } = useTranslation("blog");
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const articles = t("articles", { returnObjects: true });
   const article = articles.find((item) => item.slug === slug);

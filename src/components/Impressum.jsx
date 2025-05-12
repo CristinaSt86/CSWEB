@@ -5,8 +5,8 @@ const Impressum = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden">
-      <h1 className="text-4xl font-bold mb-8 text-gray-800">
+    <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden my-20">
+      <h1 className="text-4xl font-bold mb-8  text-gray-800">
         {t("impressum.operator")}
       </h1>
       <p className="text-gray-700 mb-4">{t("impressum.descriere")}</p>

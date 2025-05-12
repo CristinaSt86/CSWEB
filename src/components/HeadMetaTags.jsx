@@ -1,6 +1,5 @@
-// components/HeadMetaTags.js
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const HeadMetaTags = () => {
   return (
@@ -9,11 +8,14 @@ const HeadMetaTags = () => {
       <link rel="alternate" hreflang="ro" href="https://www.csweb.pro/" />
       <link rel="alternate" hreflang="de" href="https://www.csweb.pro/de/" />
       <link rel="alternate" hreflang="en" href="https://www.csweb.pro/en/" />
-      
+
       {/* Alte meta tag-uri */}
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Servicii web profesionale in Romania si Germania." />
+      <meta
+        name="description"
+        content="Servicii web profesionale in Romania si Germania."
+      />
       <title>CSWEB - Creare Site-uri & Optimizare SEO</title>
     </Helmet>
   );

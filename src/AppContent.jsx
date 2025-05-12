@@ -1,6 +1,6 @@
 import React, { Suspense, lazy, useEffect } from "react";
 import { Route, Routes, Navigate, useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";

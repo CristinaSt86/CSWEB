@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
 const Form = lazy(() => import("../components/Form"));
