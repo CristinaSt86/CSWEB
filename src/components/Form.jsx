@@ -40,7 +40,7 @@ const Form = React.forwardRef((props, ref) => {
   };
 
   return (
-    <div className="bg-white p-8 rounded shadow-lg max-w-md w-full">
+    <div className="bg-white p-8 rounded shadow-lg max-w-md w-full text-custom-textMenu">
       <h3 className="text-2xl font-bold mb-6">{t("form.heading")}</h3>
       <form onSubmit={handleSubmit} noValidate>
         {/* Câmpul pentru Nume */}
