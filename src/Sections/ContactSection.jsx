@@ -58,7 +58,7 @@ const ContactSection = () => {
 
       <section
         id="contact-section"
-        className="min-h-screen bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-gray-700 flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
+        className="min-h-screen bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-custom-textMenu flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
         aria-labelledby="contact-heading"
       >
         <div

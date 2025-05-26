@@ -77,7 +77,7 @@ const AboutSection = () => {
 
       <section
         id="about"
-        className="min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center sm:flex-row sm:justify-start sm:text-left py-20"
+        className="text-custom-textMenu min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center sm:flex-row sm:justify-start sm:text-left py-20"
         aria-label="Despre noi - Cine suntem și ce facem"
       >
         <div className="px-4 sm:px-8 max-w-6xl mx-auto mt-20 md:mt-26">
@@ -90,12 +90,12 @@ const AboutSection = () => {
           >
             <h1
               id="about-who-title"
-              className="text-4xl font-bold mb-12 text-gray-700"
+              className="text-4xl font-bold mb-12"
               itemProp="headline"
             >
               {t("about.who_title")}
             </h1>
-            <p className="text-gray-700 text-xl text-left" itemProp="description">
+            <p className="-text-xl text-left" itemProp="description">
               {t("about.who_description")}
             </p>
           </div>
@@ -112,12 +112,12 @@ const AboutSection = () => {
           >
             <h2
               id="about-less-title"
-              className="text-4xl font-bold mb-12 text-gray-700"
+              className="text-4xl font-bold mb-12 "
               itemProp="headline"
             >
               {t("about.less_title")}
             </h2>
-            <p className="text-gray-700 text-xl text-left" itemProp="description">
+            <p className="text-xl text-left" itemProp="description">
               {t("about.less_description")}
             </p>
           </div>

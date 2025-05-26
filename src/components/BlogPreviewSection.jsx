@@ -18,7 +18,7 @@ const BlogPreviewSection = () => {
     .slice(0, 2); // primele 2 articole, cele mai recente
 
   return (
-    <section className="py-24 px-4 md:px-8 lg:px-16 bg-gray-50">
+    <section className="py-24 px-4 md:px-8 lg:px-16 bg-gray-50 text-custom-textMenu">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-10 text-center">
           {t("latest") || "Ultimele articole"}
@@ -33,7 +33,7 @@ const BlogPreviewSection = () => {
               <p className="text-gray-600 text-sm mb-4">
                 {new Date(article.date).toLocaleDateString()}
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 {Array.isArray(article.content)
                   ? article.content[0].slice(0, 150) + "..."
                   : article.content.slice(0, 150) + "..."}

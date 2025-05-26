@@ -88,7 +88,7 @@ const PricingSection = () => {
   return (
     <section
       id="pricing"
-      className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24 bg-center bg-no-repeat bg-cover"
+      className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24 bg-center bg-no-repeat bg-cover text-custom-textMenu"
       style={{
         backgroundImage: `url('/images/cercuri.webp')`,
       }}
@@ -96,12 +96,12 @@ const PricingSection = () => {
       <div className="container mx-auto px-4 rounded text-lg">
         <h1
           id="pricing-heading"
-          className="text-4xl font-bold text-center mb-12 text-custom-textMenu"
+          className="text-4xl font-bold text-center mb-12 "
         >
           {t("pricingHeading")}
         </h1>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
-        <p className="text-center text-gray-700 font-medium mb-12">
+        <p className="text-center  font-medium mb-12">
           {t("description")}
         </p>
         <p className="text-center text-gray-600 mb-12">
@@ -129,10 +129,10 @@ const PricingSection = () => {
                 <p className="text-sm italic text-gray-500 text-center mb-4">
                   {t(`packages.${pkg.name}.tagline`) || pkg.tagline}
                 </p>
-                <p className="text-gray-600 mb-6 text-center">
+                <p className=" mb-6 text-center">
                   {t(`packages.${pkg.name}.description`)}
                 </p>
-                <ul className="text-gray-700 space-y-2 mb-6">
+                <ul className="space-y-2 mb-6">
                   {pkg.features.map((feature, index) => (
                     <li key={index}>
                       {t(`packages.${pkg.name}.features.${index}`) || feature}

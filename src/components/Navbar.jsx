@@ -146,7 +146,7 @@ const Navbar = () => {
 
         {/* ✅ Optimized Mobile Menu */}
         <div
-          className={`lg:hidden origin-top transform transition-all duration-500 overflow-hidden ${
+          className={`lg:hidden origin-top transform transition-all duration-500 text-custom-textMenu overflow-hidden ${
             isMenuOpen
               ? "backdrop-blur-md max-h-screen scale-y-100 opacity-100"
               : "max-h-0 scale-y-0 opacity-0"

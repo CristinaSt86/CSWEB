@@ -57,13 +57,13 @@ const TestimonialsSection = () => {
   return (
     <section
       id="testimonials"
-      className="bg-gray-100 py-16 pt-24"
+      className="bg-gray-100 py-16 pt-24 text-custom-textMenu"
       aria-labelledby="testimonials-heading"
     >
       <div className="container mx-auto text-center">
         <h2
           id="testimonials-heading"
-          className="text-4xl font-bold text-gray-700 mb-8 px-6"
+          className="text-4xl font-bold  mb-8 px-6"
           itemProp="headline"
         >
           {t("testimonials.heading")}
@@ -92,7 +92,7 @@ const TestimonialsSection = () => {
               </span>
               <div className="bg-white shadow-lg rounded-md p-6 h-full">
                 <blockquote
-                  className="text-gray-700 mb-4"
+                  className=" mb-4"
                   itemProp="reviewBody"
                 >
                   {t(`testimonials.${testimonial.id}.quote`)}
@@ -106,7 +106,7 @@ const TestimonialsSection = () => {
                     decoding="async"
                   />
                   <div>
-                    <p className="font-semibold text-gray-800">
+                    <p className="font-semibold">
                       {t(`testimonials.${testimonial.id}.name`)}
                     </p>
                     <p className="text-gray-600">

@@ -107,13 +107,13 @@ const ServicesSection = () => {
         </script>
       </Helmet>
 
-      <div className="container mx-auto mt-20 md:mt-26">
-        <h2 className="text-4xl font-bold mb-10">{t("services.title")}</h2>
+      <div className="container mx-auto mt-20 md:mt-26 text-custom-textMenu">
+        <h2 className="text-4xl  font-bold mb-10">{t("services.title")}</h2>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
 
         {/* 🔹 Wait for Framer Motion to Load */}
         {isMotionLoaded ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-custom-textMenu">
             {services.map((service, index) => (
               <motion.div
                 key={service.id}
@@ -132,7 +132,7 @@ const ServicesSection = () => {
                 >
                   {service.title}
                 </h3>
-                <p className="text-gray-700">{service.description}</p>
+                <p >{service.description}</p>
               </motion.div>
             ))}
           </div>

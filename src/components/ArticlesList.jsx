@@ -10,7 +10,7 @@ const ArticlesList = () => {
   const articles = t("articles", { returnObjects: true });
 
   return (
-    <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden bg-white">
+    <section className="container mx-auto px-6 pt-36 pb-16 overflow-x-hidden text-custom-textMenu bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold my-16 text-center">
           {t("allArticlesTitle") || "Toate articolele"}
@@ -29,7 +29,7 @@ const ArticlesList = () => {
                 <p className="text-gray-600 text-sm mb-4">
                   {new Date(article.date).toLocaleDateString()}
                 </p>
-                <p className="text-gray-700 mb-4">
+                <p className=" mb-4">
                   {Array.isArray(article.content)
                     ? article.content[0].slice(0, 150) + "..."
                     : article.content.slice(0, 150) + "..."}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 //import Button from "./Button";
 import { Helmet } from "react-helmet-async"
@@ -53,7 +53,7 @@ const ArticlePage = () => {
         />
       </Helmet>
 
-      <article className="container mx-auto px-4 py-24 overflow-x-hidden mt-20 md:mt-26">
+      <article className="container mx-auto px-4 py-24 overflow-x-hidden text-custom-textMenu mt-20 md:mt-26">
         <h1 className="text-3xl font-semibold mb-16 text-center">
           {article.title}
         </h1>
@@ -73,12 +73,12 @@ const ArticlePage = () => {
           <div className="w-full max-w-3xl">
             {Array.isArray(article.content) ? (
               article.content.map((paragraph, idx) => (
-                <p key={idx} className="mb-6 text-gray-800 leading-relaxed">
+                <p key={idx} className="mb-6  leading-relaxed">
                   {paragraph}
                 </p>
               ))
             ) : (
-              <p className="text-gray-800">{article.content}</p>
+              <p className="">{article.content}</p>
             )}
           </div>
         </div>
