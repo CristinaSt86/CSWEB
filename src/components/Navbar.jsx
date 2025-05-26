@@ -104,7 +104,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("home")}
-                className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
+                className=" hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToHome")}
               >
                 <FaHome className="mr-2 text-custom-btn-hover" />
@@ -114,7 +114,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("about")}
-                className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
+                className=" hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToAbout")}
               >
                 <FaInfoCircle className="mr-2 text-custom-btn-hover" />
@@ -124,7 +124,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("services")}
-                className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
+                className=" hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToServices")}
               >
                 <FaCogs className="mr-2 text-custom-btn-hover" />
@@ -134,7 +134,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => handleMenuClick("contact")}
-                className="text-gray-700 hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
+                className=" hover:text-custom-btn-hover hover:underline bg-gray-100 px-3 py-1 rounded flex items-center"
                 aria-label={t("navbar.navigateToContact")}
               >
                 <FaEnvelope className="mr-2 text-custom-btn-hover" />
