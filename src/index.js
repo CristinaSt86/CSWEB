@@ -16,7 +16,6 @@ root.render(
     <HelmetProvider>
       <I18nextProvider i18n={i18n}>
         <App />
-        <LanguageSwitcher />
       </I18nextProvider>
     </HelmetProvider>
   </React.StrictMode>
