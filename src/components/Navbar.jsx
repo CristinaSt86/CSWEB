@@ -11,7 +11,6 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 
-
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,13 +38,13 @@ const Navbar = () => {
 
   const handleLogoClick = () => {
     // Obține limba salvată în localStorage sau limba activă din i18next
-    const currentLang = localStorage.getItem("i18nextLng") || i18n.language || 'ro';  // Limba implicită: 'ro'
-  
+    const currentLang =
+      localStorage.getItem("i18nextLng") || i18n.language || "ro"; // Limba implicită: 'ro'
+
     // Navighează la homepage cu limba aleasă
     navigate(`/${currentLang}`);
     scrollToSection("home");
   };
-  
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
@@ -144,83 +143,95 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* ✅ Optimized Mobile Menu */}
-        <div
-          className={`lg:hidden origin-top transform transition-all duration-500 text-custom-textMenu overflow-hidden ${
-            isMenuOpen
-              ? "backdrop-blur-md max-h-screen scale-y-100 opacity-100"
-              : "max-h-0 scale-y-0 opacity-0"
-          }`}
-          style={{
-            transformOrigin: "top",
-            transitionTimingFunction: "ease-in-out",
-          }}
-        >
-          <ul className="flex flex-col items-center space-y-4 py-16 text-custom-textMenu font-medium text-lg">
-            <li>
-              <button
-                onClick={() => handleMenuClick("home")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
-              >
-                <FaHome className="mr-2 text-custom-btn" />
-                {t("navbar.home")}
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => handleMenuClick("about")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
-              >
-                <FaInfoCircle className="mr-2 text-custom-btn" />
-                {t("navbar.about")}
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => handleMenuClick("services")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
-              >
-                <FaCogs className="mr-2 text-custom-btn" />
-                {t("navbar.services")}
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => handleMenuClick("contact")}
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
-              >
-                <FaEnvelope className="mr-2 text-custom-btn" />
-                {t("navbar.contact")}
-              </button>
-            </li>
-            <li>
-              <a
-                href="mailto:contact.csweb@gmail.com"
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
-              >
-                <FaMailBulk className="mr-2 text-custom-btn" />
-                contact.csweb@gmail.com
-              </a>
-            </li>
-            <li>
-              <a
-                href="tel:+4915731871996"
-                className="flex items-center hover:text-custom-btn-hover hover:underline pb-4"
-              >
-                <FaPhone className="mr-2 text-custom-btn" />
-                +49 1573 187 1996
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/people/CSWEB/61572491164002/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook className="text-custom-btn text-3xl" />
-              </a>
-            </li>
-          </ul>
+      {/* ✅ Optimized Mobile Menu */}
+<div
+  className={`lg:hidden origin-top transform transition-all duration-500 text-custom-textMenu overflow-hidden ${
+    isMenuOpen
+      ? "backdrop-blur-md max-h-screen scale-y-100 opacity-100"
+      : "max-h-0 scale-y-0 opacity-0"
+  }`}
+>
+
+          <div className="flex flex-row w-full px-6 py-10">
+            {/* 🔸 Linie verticală subțire */}
+            <div className="w-[1px] bg-custom-btn rounded self-stretch mr-6" />
+
+            {/* 🔹 Meniul */}
+              <ul className="flex flex-col items-start space-y-4 text-custom-textMenu font-medium text-lg pl-1">
+              <li>
+                <button
+                  onClick={() => handleMenuClick("home")}
+                  className="flex items-center hover:text-custom-btn-hover hover:underline pb-2"
+                >
+                  <FaHome className="mr-2 text-custom-btn" />
+                  {t("navbar.home")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleMenuClick("about")}
+                  className="flex items-center hover:text-custom-btn-hover hover:underline pb-2"
+                >
+                  <FaInfoCircle className="mr-2 text-custom-btn" />
+                  {t("navbar.about")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleMenuClick("services")}
+                  className="flex items-center hover:text-custom-btn-hover hover:underline pb-2"
+                >
+                  <FaCogs className="mr-2 text-custom-btn" />
+                  {t("navbar.services")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleMenuClick("contact")}
+                  className="flex items-center hover:text-custom-btn-hover hover:underline pb-2"
+                >
+                  <FaEnvelope className="mr-2 text-custom-btn" />
+                  {t("navbar.contact")}
+                </button>
+              </li>
+
+              {/* 🔸 Separator */}
+              <hr className="w-full border-t border-gray-300 my-4" />
+
+              {/* 🔹 Email */}
+              <li>
+                <a
+                  href="mailto:contact.csweb@gmail.com"
+                  className="flex items-center hover:text-custom-btn-hover hover:underline pb-2"
+                >
+                  <FaMailBulk className="mr-2 text-custom-btn" />
+                  contact.csweb@gmail.com
+                </a>
+              </li>
+
+              {/* 🔹 Telefon */}
+              <li>
+                <a
+                  href="tel:+4915731871996"
+                  className="flex items-center hover:text-custom-btn-hover hover:underline pb-2"
+                >
+                  <FaPhone className="mr-2 text-custom-btn" />
+                  +49 1573 187 1996
+                </a>
+              </li>
+
+              {/* 🔹 Facebook */}
+              <li>
+                <a
+                  href="https://www.facebook.com/people/CSWEB/61572491164002/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="text-custom-btn text-2xl hover:text-custom-btn-hover" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </>
