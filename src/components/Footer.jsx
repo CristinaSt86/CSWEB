@@ -41,7 +41,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <FaFacebook size={32} className="w-8 h-8" color="#372a25" />
+              <FaFacebook size={32} className="w-8 h-8" color="#B3003F" />
             </a>
           </div>
 

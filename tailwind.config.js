@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Include all relevant file paths
-    "./public/index.html", // Include HTML fișiere pentru a verifica utilizarea claselor
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
       backgroundImage: {
@@ -14,14 +11,12 @@ module.exports = {
         "contact-bg-overlay":
           "linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3)), url('./images/LOGO.png')",
       },
-
       colors: {
-        "custom-textMenu": "	#1F2937", // Add your custom color
-        "custom-btn": "#F97316 ",
-        "custom-btn-hover": "#EA580C ",
+        "custom-textMenu": "#1F2937",
+        "custom-btn": "#990033",
+        "custom-btn-hover": "#B3003F",
         "custom-titlu-seo": "#dbdadf",
       },
-
       animation: {
         slideIn: "slideIn 1s ease-out forwards",
         slideOut: "slideOut 1s ease-in forwards",
@@ -42,16 +37,17 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Roboto", "Arial", "sans-serif"], // Example custom font family
+        sans: ["Roboto", "Arial", "sans-serif"],
       },
     },
   },
   plugins: [],
   safelist: [
-    // Adăugați aici orice clasă Tailwind care trebuie să fie păstrată în ciuda purgării
     "bg-custom-btn",
     "bg-custom-btn-hover",
     "text-custom-textMenu",
     "text-xl",
+    "placeholder-gray-500",
+    "placeholder-custom-textMenu",
   ],
 };

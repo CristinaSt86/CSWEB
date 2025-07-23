@@ -36,7 +36,7 @@ const ArticlesList = () => {
                 </p>
                 <Link
                   to={`/${lng}/articole/${article.slug}`}
-                  className="text-custom-btn hover:underline font-medium"
+                  className="text-custom-btn hover:underline font-semibold text-xl"
                 >
                   {t("readMore") || "Citește mai mult"} →
                 </Link>

@@ -155,6 +155,9 @@
     "impressum": "Impressum",
     "copyright": "© 2025 CS|WEB"
   },
+  "search": {
+    "placeholder": "Suchen..."
+  },
   "privacyPolicy": {
     "title": "Datenschutzrichtlinie",
     "intro": "Ihre Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Ihre persönlichen Daten erfassen, nutzen und schützen.",

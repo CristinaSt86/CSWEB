@@ -21,7 +21,7 @@ const HomeSection = () => {
         fetchpriority="high"
       />
       {/* Conținutul întins */}
-      <div className="md:bg-black/40 text-custom-textMenu md:text-white w-full max-w-7xl px-8 py-12 mt-28 md:mt-22 rounded">
+      <div className="md:bg-black/40 text-custom-textMenu md:text-white w-full max-w-7xl px-8 py-12 mt-22 md:mt-22 rounded">
         <h1 className="text-4xl sm:text-5xl font-semibold md:font-bold mb-8" itemProp="headline">
           {t("home.title")}
         </h1>
@@ -40,7 +40,7 @@ const HomeSection = () => {
           }}
           aria-label={t("home.ariaScrollAbout")}
         >
-          <Button label={t("home.button")} />
+          <Button label={t("home.button")} size="large" className="font-semibold border-2 border-white"/>
         </a>
       </div>
 

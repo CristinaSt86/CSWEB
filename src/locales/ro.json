@@ -154,6 +154,10 @@
     "impressum": "Informații legale",
     "copyright": "© 2025 CS|WEB"
   },
+
+  "search": {
+    "placeholder": "Caută..."
+  },
   "privacyPolicy": {
     "title": "Politica de Confidențialitate",
     "intro": "Confidențialitatea dumneavoastră este importantă pentru noi. Această politică explică modul în care colectăm, utilizăm și protejăm informațiile dumneavoastră personale.",

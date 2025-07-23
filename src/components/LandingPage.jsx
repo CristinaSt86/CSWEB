@@ -35,7 +35,7 @@ const LandingPage = () => {
           <section id="services">
             <ServicesSection />
           </section>
-          <section id="pricing">
+          <section id="blog">
             <BlogPreviewSection />
           </section>
           <section id="pricing">
