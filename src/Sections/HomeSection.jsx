@@ -21,8 +21,9 @@ const HomeSection = () => {
         fetchpriority="high"
       />
       {/* Conținutul întins */}
-      <div className="md:bg-black/40 text-custom-textMenu md:text-white w-full max-w-7xl px-8 py-12 mt-22 md:mt-22 rounded">
-        <h1 className="text-4xl sm:text-5xl font-semibold md:font-bold mb-8" itemProp="headline">
+      <div className="md:bg-black/40 text-custom-textMenu md:text-white w-full max-w-7xl px-8 py-12 pt-40 md:pt-24 rounded">
+
+        <h1 className="text-2xl sm:text-4xl font-bold md:font-bold mb-6" itemProp="headline">
           {t("home.title")}
         </h1>
         <h2
