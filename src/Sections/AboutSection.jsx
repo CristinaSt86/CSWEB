@@ -47,7 +47,7 @@ const AboutSection = () => {
       <Helmet>
         <title>{t("about.who_title")} | CSWEB</title>
         <meta name="description" content={t("about.who_description")} />
-        <link rel="canonical" href={`https://www.csweb.pro${location.pathname}`} />
+        <link rel="canonical" href="https://www.csweb.pro/about" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "http://schema.org",

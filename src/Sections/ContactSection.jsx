@@ -52,7 +52,7 @@ const ContactSection = () => {
         <meta name="description" content={t("contact.infoText")} />
         <link
           rel="canonical"
-          href={`https://www.csweb.pro${location.pathname}`}
+          href="https://www.csweb.pro/contact"
         />
       </Helmet>
 
@@ -102,7 +102,7 @@ const ContactSection = () => {
             <button
               onClick={handleButtonClick}
               type="button"
-              className="bg-custom-btn text-white text-xl font-semibold px-6 py-3 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1"
+              className="bg-custom-btn text-white text-xl font-semibold px-16 py-3 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1"
               aria-label={t("contact.buttonText")}
             >
               {t("contact.buttonText")}

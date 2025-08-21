@@ -71,7 +71,7 @@ const ServicesSection = () => {
         <meta name="description" content={t("service.description")} />
         <link
           rel="canonical"
-          href={`https://www.csweb.pro${location.pathname}`}
+          href="https://www.csweb.pro/services"
         />
         {/* Structured Data for SEO */}
         <script type="application/ld+json">

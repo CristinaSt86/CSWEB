@@ -51,7 +51,7 @@ const BlogPreviewSection = () => {
         <div className="text-center mt-8">
           <a
             href={`/${lng}/articole`}
-            className="inline-block bg-custom-btn text-white text-xl font-semibold px-6 py-3 rounded hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1 transition-all duration-300 transform mt-6"
+            className="inline-block bg-custom-btn text-white text-xl font-semibold px-16 py-3 rounded hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1 transition-all duration-300 transform mt-6"
             aria-label={t("seeAll") || "Vezi toate articolele"}
           >
             {t("seeAll") || "Vezi toate articolele"}

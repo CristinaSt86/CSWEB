@@ -154,7 +154,7 @@ const PricingSection = () => {
                     }
                   }}
                   aria-label={t("requestOffer")}
-                  className="mt-3 mx-1 text-xl font-semibold text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 px-6 py-3 inline-flex items-center justify-center"
+                  className="mt-3 mx-1 text-xl font-semibold text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 w-[100%] py-3 inline-flex items-center justify-center"
                 >
                   {t("requestOffer")} 
                 </a>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import Button from "../components/Button";
-
 
 const HomeSection = () => {
   const { t, i18n } = useTranslation();
@@ -13,6 +13,11 @@ const HomeSection = () => {
       className="relative min-h-screen flex items-center justify-center text-white text-center overflow-hidden"
       aria-label="Home Section - Soluții digitale inovative pentru afacerea ta"
     >
+      {/* Canonical pentru homepage */}
+      <Helmet>
+        <link rel="canonical" href="https://www.csweb.pro/" />
+      </Helmet>
+
       {/* Imaginea de fundal absolută */}
       <img
         src="/images/pic1.webp"
@@ -20,9 +25,9 @@ const HomeSection = () => {
         className="absolute inset-0 w-full h-full object-cover z-[-1]"
         fetchpriority="high"
       />
+
       {/* Conținutul întins */}
       <div className="md:bg-black/40 text-custom-textMenu md:text-white w-full max-w-7xl px-8 py-12 pt-40 md:pt-24 rounded">
-
         <h1 className="text-4xl sm:text-4xl font-bold md:font-bold mb-6" itemProp="headline">
           {t("home.title")}
         </h1>
@@ -41,7 +46,7 @@ const HomeSection = () => {
           }}
           aria-label={t("home.ariaScrollAbout")}
         >
-          <Button label={t("home.button")} size="large" className="font-semibold"/>
+          <Button label={t("home.button")} size="large" className="font-semibold" />
         </a>
       </div>
 

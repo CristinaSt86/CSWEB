@@ -46,11 +46,6 @@ const ArticlePage = () => {
           content={article.content[0].slice(0, 150)}
         />
         <meta name="twitter:image" content={article.image} />
-
-        <link
-          rel="canonical"
-          href={`https://csweb.pro/${lng}/articole/${slug}`}
-        />
       </Helmet>
 
       <article className="container mx-auto px-4 py-24 overflow-x-hidden text-custom-textMenu mt-20 md:mt-26">
@@ -94,7 +89,7 @@ const ArticlePage = () => {
               translate="no"
               href={`/${lng}/contact`}
               aria-label="CTA pentru consultanță"
-              className="inline-flex items-center justify-center px-6 py-3 text-xl font-semibold text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 focus:outline-none"
+              className="inline-flex items-center justify-center px-16 py-3 text-xl font-semibold text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 focus:outline-none"
             >
               {article.ctaSection.button}
               <span className="ml-2">&#8594;</span>
