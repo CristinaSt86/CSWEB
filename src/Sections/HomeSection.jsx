@@ -41,7 +41,7 @@ const HomeSection = () => {
           }}
           aria-label={t("home.ariaScrollAbout")}
         >
-          <Button label={t("home.button")} size="large" className="font-semibold border-2 border-white"/>
+          <Button label={t("home.button")} size="large" className="font-semibold"/>
         </a>
       </div>
 
