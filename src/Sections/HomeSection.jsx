@@ -10,7 +10,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center text-white text-center overflow-hidden"
+      className="relative   min-h-[100svh] lg:min-h-[100svh] flex items-center justify-center text-white text-center overflow-hidden"
       aria-label="Home Section - Soluții digitale inovative pentru afacerea ta"
     >
       {/* Canonical pentru homepage */}
@@ -27,16 +27,21 @@ const HomeSection = () => {
       />
 
       {/* Conținutul întins */}
-      <div className="md:bg-black/40 text-custom-textMenu md:text-white w-full max-w-7xl px-8 py-12 pt-40 md:pt-24 rounded">
-        <h1 className="text-4xl sm:text-4xl font-bold md:font-bold mb-6" itemProp="headline">
-          {t("home.title")}
-        </h1>
-        <h2
-          className="text-xl sm:text-xl md:text-3xl leading-relaxed mb-8"
-          itemProp="description"
-        >
-          {t("home.subtitle")}
-        </h2>
+      <div className="flex flex-col md:gap-6 py-6">
+        <div className="md:bg-black/50 text-custom-textMenu md:text-white w-full max-w-6xl lg:max-w-5xl px-8 py-4 pt-48 md:pt-12 rounded">
+          <h1
+            className="text-4xl sm:text-4xl font-bold md:font-bold mb-6"
+            itemProp="headline"
+          >
+            {t("home.title")}
+          </h1>
+          <h2
+            className="text-xl sm:text-xl md:text-3xl leading-relaxed mb-8"
+            itemProp="description"
+          >
+            {t("home.subtitle")}
+          </h2>
+        </div>
         <a
           href={`/${lng}#about`}
           onClick={(e) => {
@@ -46,10 +51,13 @@ const HomeSection = () => {
           }}
           aria-label={t("home.ariaScrollAbout")}
         >
-          <Button label={t("home.button")} size="large" className="font-semibold" />
+          <Button
+            label={t("home.button")}
+            size="large"
+            className="font-semibold"
+          />
         </a>
       </div>
-
       {/* Structured data (SEO) */}
       <script type="application/ld+json">
         {JSON.stringify({

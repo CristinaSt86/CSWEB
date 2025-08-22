@@ -7,9 +7,27 @@ export default function SearchInput() {
   const [showOverlayInput, setShowOverlayInput] = useState(false);
 
   const sectionMap = {
-    ro: { servicii: "services", despre: "about", contact: "contact", preturi: "pricing", blog: "blog" },
-    en: { services: "services", about: "about", contact: "contact", pricing: "pricing", blog: "blog" },
-    de: { dienstleistungen: "services", über: "about", kontakt: "contact", preise: "pricing", blog: "blog" },
+    ro: {
+      servicii: "services",
+      despre: "about",
+      contact: "contact",
+      preturi: "pricing",
+      blog: "blog",
+    },
+    en: {
+      services: "services",
+      about: "about",
+      contact: "contact",
+      pricing: "pricing",
+      blog: "blog",
+    },
+    de: {
+      dienstleistungen: "services",
+      über: "about",
+      kontakt: "contact",
+      preise: "pricing",
+      blog: "blog",
+    },
   };
 
   const handleKeyDown = (e) => {
@@ -31,7 +49,7 @@ export default function SearchInput() {
   return (
     <div className="flex items-center relative">
       {/* 🔍 Icon mic pe mobil */}
-      <div 
+      <div
         onClick={() => setShowOverlayInput(true)}
         className="flex items-center justify-center w-12 h-8 border border-custom-btn rounded-full lg:hidden cursor-pointer"
       >
@@ -51,23 +69,24 @@ export default function SearchInput() {
       </div>
 
       {/* 🔍 Input pe desktop */}
-      <div className="hidden lg:block relative text-gray-600 focus-within:text-gray-900 w-80">
+      <div className="hidden lg:block relative text-gray-600 focus-within:text-gray-900 w-full">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
           className="
-            md:w-36 py-2
-            text-sm text-custom-textMenu bg-gray-100
-            rounded-full pl-10 pr-4
-            focus:outline-none focus:bg-white focus:shadow-md
-            border border-custom-btn
-          "
+      w-full h-10
+      text-sm text-custom-textMenu bg-gray-100
+      rounded-full pl-10 pr-4
+      focus:outline-none focus:bg-white focus:shadow-md
+      border border-custom-btn
+    "
           placeholder={t("search.placeholder")}
           autoComplete="off"
         />
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          {/* icon */}
           <svg
             className="w-5 h-5"
             fill="none"

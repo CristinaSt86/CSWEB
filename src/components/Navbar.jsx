@@ -102,12 +102,18 @@ const Navbar = () => {
           </a>
 
           {/* Search right on mobile */}
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 lg:static lg:transform-none flex-shrink-0 order-3 w-8 h-8">
+          <div
+            className="absolute right-4 top-1/2 -translate-y-1/2
+    lg:static lg:transform-none
+    order-3 z-20
+    w-8 h-8
+    lg:w-44 lg:h-9 lg:flex-shrink-0"
+          >
             <SearchInput />
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex flex-1 justify-center space-x-6 text-custom-textMenu font-semibold text-lg ml-8 order-2">
+          <ul className="hidden lg:flex flex-1 justify-center space-x-6 text-custom-textMenu font-semibold text-lg ml-8 order-2 whitespace-nowrap">
             <li>
               <button
                 onClick={() => handleMenuClick("home")}
