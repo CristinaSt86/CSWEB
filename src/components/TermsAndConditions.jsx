@@ -29,14 +29,14 @@ const TermsAndConditions = () => {
       <ul className=" list-disc list-inside mb-2">
         <li>
           <strong>{t("termsAndConditions.phoneWhatsapp")}:</strong>{" "}
-          <a href="tel:+4915731871996" className="text-blue-500">
-            +4915731871996
+          <a href="tel:+4915738171996" className="text-blue-500">
+            +4915738171996
           </a>
         </li>
         <li>
           <strong>{t("termsAndConditions.phone")}:</strong>{" "}
-          <a href="tel:+4915731871996" className="text-blue-500">
-            +4915731871996
+          <a href="tel:+4915738171996" className="text-blue-500">
+            +4915738171996
           </a>
         </li>
         <li>

@@ -212,7 +212,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="tel:+4915731871996"
+                  href="tel:+4915738171996"
                   className="flex items-center hover:text-custom-btn-hover hover:underline pb-2"
                 >
                   <FaPhone className="mr-2 text-custom-btn" />

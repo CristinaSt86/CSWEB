@@ -28,8 +28,8 @@ const Impressum = () => {
       </p>
       <p className="mb-2">
         <strong>{t("impressum.contact.phoneLabel")}:</strong>{" "}
-        <a href="tel:+4915731871996" className="text-blue-500">
-          +4915731871996
+        <a href="tel:+4915738171996" className="text-blue-500">
+          +4915738171996
         </a>
       </p>
       <p className="mb-4">
