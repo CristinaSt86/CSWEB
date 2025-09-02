@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "home-bg": "url('/public/images/pic1.webp')",
+        "hero-mobile": "url('/public/images/hero-mobile.webp')",
+        "hero-tablet": "url('/public/images/hero-tablet.webp')",
+        "hero-desktop": "url('/public/images/hero-desktop.webp')",
+        // "home-bg": "url('/public/images/pic1.webp')",
         "services-bg": "url('/public/images/img2copy.webp')",
         "contact-bg": "url('/public/images/5.webp')",
         "preturi-bg": "url('/public/images/8.webp')",
