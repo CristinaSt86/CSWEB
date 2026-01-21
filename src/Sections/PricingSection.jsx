@@ -42,7 +42,7 @@ const PricingSection = () => {
   return (
     <section
       id="pricing"
-      className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24 bg-center bg-no-repeat bg-cover text-custom-textMenu"
+      className="min-h-screen bg-fixed flex flex-col items-center justify-center px-2 py-24 bg-center bg-no-repeat bg-cover  text-custom-textMenu"
       style={{ backgroundImage: `url('/images/cercuri.webp')` }}
     >
       <div className="container max-w-6xl mx-auto px-4 rounded text-lg">

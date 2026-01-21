@@ -44,10 +44,11 @@ const SecondaryButton = ({
         ${sizeClass}
         inline-flex items-center justify-center text-center
         whitespace-nowrap
-        border border-white/70
+        border border-white
         text-white
         bg-transparent
         rounded
+      shadow-md
         transition-all duration-300
         hover:bg-white/10
         hover:border-white
