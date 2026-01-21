@@ -71,7 +71,7 @@ const Navbar = () => {
         })}
       </script>
 
-      <nav className="bg-white/30 backdrop-blur-md shadow fixed w-full z-10">
+      <nav className="bg-white/30 backdrop-blur-md shadow fixed w-full z-50">
         <div className="container mx-auto px-4 py-4 relative flex items-center justify-center lg:justify-between">
           {/* Hamburger left on mobile */}
           <button

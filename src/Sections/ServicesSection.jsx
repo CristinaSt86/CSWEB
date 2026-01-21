@@ -42,22 +42,28 @@ const ServicesSection = () => {
   };
 
   const services = [
-    {
-      id: "service-1",
-      title: t("services.services_list.0.title"),
-      description: t("services.services_list.0.description"),
-    },
-    {
-      id: "service-2",
-      title: t("services.services_list.1.title"),
-      description: t("services.services_list.1.description"),
-    },
-    {
-      id: "service-3",
-      title: t("services.services_list.2.title"),
-      description: t("services.services_list.2.description"),
-    },
-  ];
+  {
+    id: "service-1",
+    title: t("services.services_list.0.title"),
+    description: t("services.services_list.0.description"),
+  },
+  {
+    id: "service-2",
+    title: t("services.services_list.1.title"),
+    description: t("services.services_list.1.description"),
+  },
+  {
+    id: "service-3",
+    title: t("services.services_list.2.title"),
+    description: t("services.services_list.2.description"),
+  },
+  {
+    id: "service-4",
+    title: t("services.services_list.3.title"),
+    description: t("services.services_list.3.description"),
+  },
+];
+
 
   return (
     <section
@@ -107,13 +113,14 @@ const ServicesSection = () => {
         </script>
       </Helmet>
 
-      <div className="container mx-auto mt-20 md:mt-26 text-custom-textMenu">
+      <div className="container max-w-6xl mx-auto mt-20 md:mt-26 text-custom-textMenu">
         <h2 className="text-4xl  font-bold mb-10">{t("services.title")}</h2>
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
 
         {/* 🔹 Wait for Framer Motion to Load */}
         {isMotionLoaded ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-custom-textMenu">
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 text-custom-textMenu">
+
             {services.map((service, index) => (
               <motion.div
                 key={service.id}

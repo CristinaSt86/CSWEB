@@ -60,7 +60,7 @@ const TestimonialsSection = () => {
       className="bg-gray-100 py-16 pt-24 text-custom-textMenu"
       aria-labelledby="testimonials-heading"
     >
-      <div className="container mx-auto text-center">
+      <div className="container max-w-6xl mx-auto text-center">
         <h2
           id="testimonials-heading"
           className="text-4xl font-bold  mb-8 px-6"

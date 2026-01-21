@@ -24,8 +24,18 @@
   "home": {
     "title": "Innovative Digital Solutions for Your Business",
     "subtitle": "CS|Web offers customized, SEO-optimized web solutions that help SMEs attract customers and grow online. You get quality websites tailored to your budget to boost your visibility and business success.",
+    "subtitleHome": "Web design • SEO • Social media — simple, clear, effective.",
     "button": "Learn More",
-    "ariaScrollAbout": "Scroll to the About Us section"
+    "ariaScrollAbout": "Scroll to the About Us section",
+    "previewTitle": "What you get",
+    "previewNote": "Everything delivered clearly, quickly, and without stress.",
+    "secondaryCta": "Request a quote",
+    "previewList": [
+      "✓ Modern & responsive design",
+      "✓ Clear structure focused on conversion",
+      "✓ Basic SEO setup & contact forms",
+      "✓ Social media content aligned with your brand"
+    ]
   },
   "about": {
     "who_title": "Who are we?",
@@ -49,6 +59,10 @@
       {
         "title": "Maintenance and Technical Support",
         "description": "We ensure the optimal performance of your website in the long term. We provide regular updates, backups, and quickly solve any issues."
+      },
+      {
+        "title": "Social Media Management (Posts, Reels & Rebranding)",
+        "description": "Content planning, posts & reels creation, templates, visual rebranding, and profile optimization, consistent, modern, and easy to manage."
       }
     ]
   },
@@ -64,11 +78,10 @@
       "description": "Perfect for a simple presentation website.",
       "features": [
         "✔ Up to 5 simple pages.",
-        "✔ Integrated contact form to interact with visitors.",
-        "✔ Basic SEO optimization to reach more users on Google.",
-        "✔ 'Back to Top' button for easy navigation on the page.",
-        "✔ Ability to add custom text and images to each page.",
-        "✔ Basic Website Translation (One Language)."
+        "✔ Clean and modern design.",
+        "✔ Integrated contact form.",
+        "✔ Responsive layout (mobile-friendly).",
+        "✔ Ability to add custom text and images."
       ],
       "price": "From 299 EUR"
     },
@@ -78,13 +91,10 @@
       "description": "Ideal for small and medium-sized online stores.",
       "features": [
         "✔ Online store with up to 30 products.",
-        "✔ Integrated shopping cart functionality to add and purchase products.",
-        "✔ Secure online payments (via card or PayPal).",
-        "✔ Ability to add product reviews.",
-        "✔ Integration with Google Maps for store location (if necessary).",
-        "✔ Advanced SEO optimization to attract more visitors from online searches.",
-        "✔ Translation in multiple languages to reach an international audience (depending on your choice).",
-        "✔ 'Back to Top' button to improve navigation in the store."
+        "✔ Integrated shopping cart and checkout process.",
+        "✔ Secure online payments (card or PayPal).",
+        "✔ Modern and easy-to-use design.",
+        "✔ Responsive layout (mobile-friendly)."
       ],
       "price": "From 599 EUR"
     },
@@ -92,15 +102,14 @@
       "name": "Custom Package",
       "tagline": "Maximum freedom, maximum impact.",
       "description": "Customized and innovative solution for your business.",
+      "badge": "Most popular",
       "features": [
-        "✔ Custom functionalities that meet your business requirements.",
-        "✔ API integration to connect the website with external systems (e.g., CRM, ERP, etc.).",
-        "✔ Interactive Google Maps for multiple locations (regardless of your business type).",
-        "✔ Full translation in multiple languages to reach a global audience.",
-        "✔ Ability to implement advanced forms and functionalities (e.g., booking systems, custom price calculators, etc.).",
-        "✔ User login and account management functionalities (e.g., for social platforms or online stores).",
-        "✔ Customized 'Back to Top' button based on the page design.",
-        "✔ Premium SEO optimization to attract customers from all around the world."
+        "✔ Custom features tailored to your business needs.",
+        "✔ API integrations (CRM, ERP, or other external systems).",
+        "✔ Advanced functionality: complex forms, bookings, price calculators.",
+        "✔ User account system and authentication (login & management).",
+        "✔ Multilingual website (full translation into multiple languages).",
+        "✔ Premium SEO optimization for maximum visibility."
       ],
       "price": "From 999 EUR"
     }
@@ -193,7 +202,7 @@
   },
   "impressum": {
     "operator": "CS|WEB",
-    "descriere": "This website provides professional web design, web development, and digital optimization services tailored to each client's needs.",
+    "descriere": "This website provides professional web design, web development, digital optimization, and social media marketing services tailored to each client’s needs.",
     "contactTitle": "Contact Information",
     "contact": {
       "nameLabel": "Full name",

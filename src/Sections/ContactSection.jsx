@@ -1,13 +1,13 @@
 import React, { useRef, useEffect, useState, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 
 const Form = lazy(() => import("../components/Form"));
 
 const ContactSection = () => {
   const { t } = useTranslation();
-  const location = useLocation();
+  //const location = useLocation();
   const formRef = useRef();
   const [isInView, setIsInView] = useState(false);
 
@@ -62,7 +62,7 @@ const ContactSection = () => {
         aria-labelledby="contact-heading"
       >
         <div
-          className={`flex flex-col md:flex-row items-center justify-around w-full max-w-7xl mx-auto gap-8 px-4 mt-32 md:mt-48 mb-24 md:mb-48 ${
+          className={`max-w-6xl flex flex-col md:flex-row items-center justify-around w-full mx-auto gap-8 px-4 mt-32 md:mt-48 mb-24 md:mb-48 ${
             isInView
               ? "opacity-100 transform translate-y-0"
               : "opacity-0 transform translate-y-10"
@@ -102,7 +102,7 @@ const ContactSection = () => {
             <button
               onClick={handleButtonClick}
               type="button"
-              className="bg-custom-btn text-white text-xl font-semibold px-16 py-3 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1"
+              className="border border-custom-btn text-custom-btn text-lg font-medium px-16 py-2 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn/10 shadow-md hover:shadow-lg hover:-translate-y-1"
               aria-label={t("contact.buttonText")}
             >
               {t("contact.buttonText")}

@@ -24,8 +24,18 @@
   "home": {
     "title": "Innovative digitale Lösungen für Ihr Unternehmen",
     "subtitle": "CS|Web bietet maßgeschneiderte, SEO-optimierte Weblösungen, die KMU helfen, Kunden zu gewinnen und online zu wachsen. Sie erhalten qualitativ hochwertige Websites, die auf Ihr Budget zugeschnitten sind, um Ihre Sichtbarkeit und Ihren Geschäftserfolg zu steigern.",
+    "subtitleHome": "Webdesign • SEO • Social Media — einfach, klar, effektiv.",
     "button": "Mehr erfahren",
-    "ariaScrollAbout": "Zum Abschnitt Über uns scrollen"
+    "ariaScrollAbout": "Zum Abschnitt Über uns scrollen",
+    "previewTitle": "Was Sie erhalten",
+    "previewNote": "Alles klar, schnell und stressfrei umgesetzt.",
+    "secondaryCta": "Angebot anfordern",
+    "previewList": [
+      "✓ Modernes & responsives Design",
+      "✓ Klare Struktur für bessere Conversions",
+      "✓ Basis-SEO & Kontaktformulare",
+      "✓ Social-Media-Inhalte passend zu Ihrer Marke"
+    ]
   },
   "about": {
     "who_title": "Wer sind wir?",
@@ -49,6 +59,10 @@
       {
         "title": "Wartung und technischer Support",
         "description": "Wir sorgen für die optimale Leistung Ihrer Website auf lange Sicht. Regelmäßige Updates, Backups und schnelle Problemlösungen sind garantiert."
+      },
+      {
+        "title": "Social Media Management (Posts, Reels & Rebranding)",
+        "description": "Content-Planung, Erstellung von Posts & Reels, Templates, visuelles Rebranding und Profil-Optimierung, konsistent, modern und leicht zu verwalten."
       }
     ]
   },
@@ -65,11 +79,10 @@
       "description": "Perfekt für eine einfache Präsentations-Website.",
       "features": [
         "✔ Bis zu 5 einfache Seiten.",
-        "✔ Integriertes Kontaktformular zur Interaktion mit Besuchern.",
-        "✔ Grundlegende SEO-Optimierung, um mehr Nutzer auf Google zu erreichen.",
-        "✔ 'Zurück nach oben'-Button für eine einfache Navigation.",
-        "✔ Möglichkeit, benutzerdefinierte Texte und Bilder auf jeder Seite hinzuzufügen.",
-        "✔ Grundlegende Website-Übersetzung (eine Sprache)."
+        "✔ Sauberes und modernes Design.",
+        "✔ Integriertes Kontaktformular.",
+        "✔ Responsives Layout (für Mobilgeräte optimiert).",
+        "✔ Möglichkeit, individuelle Texte und Bilder hinzuzufügen."
       ],
       "price": "Ab 299 EUR"
     },
@@ -80,13 +93,10 @@
       "description": "Ideal für kleine und mittelständische Online-Shops.",
       "features": [
         "✔ Online-Shop mit bis zu 30 Produkten.",
-        "✔ Integrierte Warenkorbfunktion zum Hinzufügen und Kaufen von Produkten.",
-        "✔ Sichere Online-Zahlungen (per Karte oder PayPal).",
-        "✔ Möglichkeit zur Anzeige von Produktbewertungen.",
-        "✔ Integration mit Google Maps zur Standortanzeige (falls erforderlich).",
-        "✔ Erweiterte SEO-Optimierung zur Gewinnung weiterer Besucher über Online-Suchanfragen.",
-        "✔ Mehrsprachige Übersetzung, um ein internationales Publikum zu erreichen (je nach Wahl).",
-        "✔ 'Zurück nach oben'-Button zur Verbesserung der Navigation im Shop."
+        "✔ Integrierter Warenkorb und Bestellprozess.",
+        "✔ Sichere Online-Zahlungen (Kreditkarte oder PayPal).",
+        "✔ Modernes und benutzerfreundliches Design.",
+        "✔ Responsives Layout (für Mobilgeräte optimiert)."
       ],
       "price": "Ab 599 EUR"
     },
@@ -95,15 +105,14 @@
       "tagline": "Maximale Freiheit, maximale Wirkung.",
       "image": "/images/custom.webp",
       "description": "Maßgeschneiderte und innovative Lösung für Ihr Unternehmen.",
+      "badge": "Empfohlen",
       "features": [
-        "✔ Individuelle Funktionen, die den Anforderungen Ihres Unternehmens entsprechen.",
-        "✔ API-Integration zur Verbindung der Website mit externen Systemen (z. B. CRM, ERP usw.).",
-        "✔ Interaktive Google Maps für mehrere Standorte (unabhängig von der Art Ihres Unternehmens).",
-        "✔ Vollständige Übersetzung in mehrere Sprachen, um ein globales Publikum zu erreichen.",
-        "✔ Möglichkeit zur Implementierung erweiterter Formulare und Funktionen (z. B. Buchungssysteme, individuelle Preisrechner usw.).",
-        "✔ Benutzeranmeldung und Kontoverwaltung (z. B. für soziale Plattformen oder Online-Shops).",
-        "✔ Anpassbarer 'Zurück nach oben'-Button basierend auf dem Seitendesign.",
-        "✔ Premium-SEO-Optimierung, um Kunden weltweit zu gewinnen."
+        "✔ Individuelle Funktionen, angepasst an die Anforderungen deines Unternehmens.",
+        "✔ API-Integrationen (CRM, ERP oder andere externe Systeme).",
+        "✔ Erweiterte Funktionen: komplexe Formulare, Buchungen, Preisrechner.",
+        "✔ Benutzerkonten und Authentifizierung (Login & Verwaltung).",
+        "✔ Mehrsprachige Website (vollständige Übersetzung in mehrere Sprachen).",
+        "✔ Premium SEO-Optimierung für maximale Sichtbarkeit."
       ],
       "price": "Ab 999 EUR"
     }
@@ -192,7 +201,7 @@
   },
   "impressum": {
     "operator": "CS|WEB",
-    "descriere": "Diese Website bietet professionelle Dienstleistungen in den Bereichen Webdesign, Webentwicklung und digitale Optimierung, die individuell an die Bedürfnisse jedes Kunden angepasst sind.",
+    "descriere": "Diese Website bietet professionelle Dienstleistungen in den Bereichen Webdesign, Webentwicklung, digitale Optimierung sowie Social Media Marketing, individuell auf die Bedürfnisse jedes Kunden abgestimmt.",
     "contactTitle": "Kontaktinformationen",
     "contact": {
       "nameLabel": "Vollständiger Name",

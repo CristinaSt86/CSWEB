@@ -2,8 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 //import Button from "./Button";
-import { Helmet } from "react-helmet-async"
-
+import { Helmet } from "react-helmet-async";
 
 const ArticlePage = () => {
   const { slug, lng } = useParams();
@@ -92,7 +91,6 @@ const ArticlePage = () => {
               className="inline-flex items-center justify-center px-16 py-3 text-xl font-semibold text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 focus:outline-none"
             >
               {article.ctaSection.button}
-              <span className="ml-2">&#8594;</span>
             </a>
           </div>
         )}
