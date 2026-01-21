@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 const AboutSection = () => {
   const { t } = useTranslation();
   const [isInView, setIsInView] = useState({ who: false, less: false });
+  // eslint-disable-next-line no-unused-vars
   const location = useLocation();
 
   useEffect(() => {

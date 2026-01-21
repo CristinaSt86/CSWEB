@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./i18n";
+// eslint-disable-next-line no-unused-vars
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";

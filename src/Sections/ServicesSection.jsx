@@ -15,6 +15,7 @@ const ServicesSection = () => {
   const { t } = useTranslation();
   const [isMotionLoaded, setIsMotionLoaded] = useState(false);
   const sectionRef = useRef(null);
+  // eslint-disable-next-line no-unused-vars
   const location = useLocation();
 
   useEffect(() => {

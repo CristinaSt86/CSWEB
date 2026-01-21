@@ -7,6 +7,7 @@ const BlogPreviewSection = () => {
   const { t } = useTranslation("blog");
   const navigate = useNavigate();
 
+  // eslint-disable-next-line no-unused-vars
   const handleNavigateToAllArticles = () => {
     navigate(`/${lng}/articole`);
   };
