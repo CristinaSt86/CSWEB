@@ -28,7 +28,7 @@
     "button": "Learn More",
     "ariaScrollAbout": "Scroll to the About Us section",
     "previewTitle": "What you get",
-    "previewNote": "Everything delivered clearly, quickly, and without stress.",
+    "previewNote": "Everything delivered quickly and stressless.",
     "secondaryCta": "Request a quote",
     "previewList": [
       "✓ Modern & responsive design",
@@ -120,17 +120,22 @@
     "testimonial1": {
       "quote": "Working with the CS|WEB team was excellent! Our site looks fantastic and we've seen a boost in traffic in the first few weeks. I highly recommend them!",
       "name": "Mihaela Radu",
-      "role": "CEO, Via Napoli Restaurant"
+      "role": "CEO • Via Napoli Restaurant"
     },
     "testimonial2": {
       "quote": "The CS|WEB team perfectly understood our vision and created a website that reflects exactly what we wanted. We are very happy with the result!",
       "name": "Constantin Topală",
-      "role": "CEO, TopalX, Driving School"
+      "role": "CEO • TopalX Driving School"
     },
     "testimonial3": {
       "quote": "I had a very good experience with CS|WEB! Our website is fast, modern, and SEO-optimized. We are grateful for their help!",
       "name": "Rene Klemig",
-      "role": "Founder, EcoDesign"
+      "role": "Founder • EcoDesign"
+    },
+    "testimonial4": {
+      "quote": "Thank you from the bottom of my heart for all your help and for creating my candle website with so much care. It turned out wonderfully!",
+      "name": "Luana Ciopei",
+      "role": "Founder • Glowi by Luana"
     }
   },
   "contact": {
@@ -202,19 +207,32 @@
   },
   "impressum": {
     "operator": "CS|WEB",
-    "descriere": "This website provides professional web design, web development, digital optimization, and social media marketing services tailored to each client’s needs.",
-    "contactTitle": "Contact Information",
+    "descriere": "This website provides professional services in web design, web development, digital optimization, and social media marketing, tailored to each client’s individual needs.",
+
+    "contactTitle": "Contact information",
     "contact": {
       "nameLabel": "Full name",
+      "name": "Cristina Stoian",
       "emailLabel": "Email",
       "email": "contact@csweb.pro",
       "phoneLabel": "Phone",
-      "telefon": "Phone",
+      "phone": "+49 157 38171996",
       "addressLabel": "Address",
-      "adresa": "Limburgstraße 47, 73235 Weilheim an der Teck, Germany"
+      "address": "Limburgstraße 47, 73235 Weilheim an der Teck, Germany"
     },
+
+    "legalTitle": "Legal information",
+    "legal": {
+      "responsibleLabel": "Responsible person according to §5 TMG",
+      "responsible": "Cristina Stoian",
+      "taxNumberLabel": "Tax number (Steuernummer)",
+      "taxNumber": "69406/01063",
+      "vatLabel": "VAT",
+      "vat": "Small business regulation according to §19 UStG (VAT not applied)"
+    },
+
     "disclaimerTitle": "Disclaimer",
-    "disclaimer": "All services are provided professionally and in accordance with agreements established with each client. For specific collaboration details, please contact us."
+    "disclaimer": "All services are provided professionally and in accordance with the agreements individually established with each client. For specific cooperation details, please contact us."
   },
   "cookieBanner": {
     "message": "This website uses cookies to enhance user experience.",

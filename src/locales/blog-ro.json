@@ -71,6 +71,29 @@
         "textLine2": "Contactează-ne astăzi și hai să începem împreună!",
         "button": "Consultanță gratuită"
       }
+    },
+    {
+      "id": 4,
+      "title": "De ce social media nu funcționează când încerci să fii perfect",
+      "slug": "social-media-perfectiunea-nu-vinde",
+      "date": "2026-01-22",
+      "image": "/images/blog4.webp",
+      "content": [
+        "Te uiti la social media si ai impresia ca toata lumea stie exact ce face. Feed-uri perfecte, texte impecabile, viata aranjata. Si totusi… cand incerci si tu, parca nu iese nimic.",
+        "Adevarul? Nu pentru ca nu esti suficient de bun. Ci pentru ca incerci prea mult sa fii perfect.",
+        "Multi oameni simt o rusine subtila sa fie ei insisi online. Ne este teama sa vorbim simplu, sa aratam viata reala, sa nu parem neprofesionisti. Asa ca punem masti. Iar social media simte asta.",
+        "Suntem cu totii oameni. Si, de cele mai multe ori, ne asemanam mult mai mult decat ne imaginam. Emotiile de dinaintea unei postari – nesiguranta, teama de judecata, gandul 'oare e suficient de bun?' – sunt aproape universale. Diferenta nu este cine nu le simte, ci cine alege sa posteze oricum.",
+        "Oamenii nu cumpara perfectiunea. Cumpara incredere, naturalete si sentimentul ca vorbesc cu un om real.",
+        "Postarile care functioneaza nu sunt cele perfecte, ci cele sincere. Cele in care cineva spune: 'Asta sunt eu. Asa lucrez. Asa gandesc.'",
+        "Simplitatea vinde. Autenticitatea creeaza conexiune. Iar conexiunea aduce clienti.",
+        "Daca simti ca social media te oboseste sau nu aduce rezultate, poate nu ai nevoie de mai mult continut. Ci de un continut mai adevarat.",
+        "Noi te ajutam sa construiesti o prezenta online care sa te reprezinte cu adevarat – fara presiune, fara perfectiune fortata, fara retete copiate."
+      ],
+      "ctaSection": {
+        "textLine1": "Vrei social media care chiar funcționează?",
+        "textLine2": "Hai să construim ceva autentic, împreună.",
+        "button": "Consultanță gratuită"
+      }
     }
   ]
 }

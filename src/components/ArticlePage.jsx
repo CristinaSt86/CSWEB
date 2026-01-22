@@ -48,23 +48,23 @@ const ArticlePage = () => {
       </Helmet>
 
       <article className="container mx-auto px-4 py-24 overflow-x-hidden text-custom-textMenu mt-20 md:mt-26">
-        <h1 className="text-3xl font-semibold mb-16 text-center">
+        <h1 className="text-3xl font-semibold mb-12 text-center">
           {article.title}
         </h1>
 
-        <div className="flex flex-col justify-center items-center gap-8 my-12">
+        <div className="flex flex-col justify-center items-center gap-2 my-12">
           {/* Imaginea */}
-          <div className="w-full max-w-2xl md:max-w-2xl lg:max-w-3xl mb-8 mx-auto">
+          <div className="w-full max-w-2xl md:max-w-2xl lg:max-w-3xl mb-2 mx-auto">
             <img
               src={article.image}
               alt="Imagine articol"
-              className="w-full h-auto rounded-xl shadow-md"
+              className="max-w-xl w-full h-auto mx-auto rounded-xl shadow-md mb-8"
               loading="lazy"
             />
           </div>
 
           {/* Textul */}
-          <div className="w-full max-w-3xl">
+          <div className="w-full max-w-5xl">
             {Array.isArray(article.content) ? (
               article.content.map((paragraph, idx) => (
                 <p key={idx} className="mb-6  leading-relaxed">

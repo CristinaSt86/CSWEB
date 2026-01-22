@@ -28,7 +28,7 @@
     "button": "Descoperă mai multe",
     "ariaScrollAbout": "Scroll către secțiunea Despre noi",
     "previewTitle": "Ce primești",
-    "previewNote": "Totul livrat clar, rapid și fără stres.",
+    "previewNote": "Totul livrat rapid și fără stres.",
     "secondaryCta": "Cere ofertă",
     "previewList": [
       "✓ Design modern & responsive",
@@ -120,17 +120,22 @@
     "testimonial1": {
       "quote": "Colaborarea cu echipa CS|WEB a fost excelentă! Site-ul nostru arată fantastic și am observat o creștere a traficului în primele săptămâni. Recomand cu încredere!",
       "name": "Mihaela Radu",
-      "role": "CEO, Restaurant Via Napoli"
+      "role": "CEO • Restaurant Via Napoli"
     },
     "testimonial2": {
       "quote": "Echipa CS|WEB a înțeles perfect viziunea noastră și a creat un site care reflectă exact ceea ce ne-am dorit. Suntem foarte mulțumiți de rezultat!",
       "name": "Constantin Topală",
-      "role": "CEO, TopalX, Școala de șoferi"
+      "role": "CEO • TopalX Școala de șoferi"
     },
     "testimonial3": {
       "quote": "Am avut o experiență foarte bună cu CS|WEB! Site-ul nostru este rapid, modern și optimizat SEO. Suntem recunoscători pentru ajutorul lor!",
       "name": "Rene Klemig",
-      "role": "Fondator, EcoDesign"
+      "role": "Fondator • EcoDesign"
+    },
+     "testimonial4": {
+      "quote": "Îți mulțumesc din suflet pentru tot ajutorul și pentru că ai realizat cu atâta grijă site-ul pentru lumânările mele. A ieșit minunat!",
+      "name": "Luana Ciopei",
+      "role": "Fondatoare • Glowi by Luana"  
     }
   },
 
@@ -203,18 +208,31 @@
   "impressum": {
     "operator": "CS|WEB",
     "descriere": "Acest website oferă servicii profesionale de web design, dezvoltare web, optimizare digitală și social media marketing, adaptate nevoilor fiecărui client.",
+
     "contactTitle": "Informații de contact",
     "contact": {
       "nameLabel": "Nume complet",
+      "name": "Cristina Stoian",
       "emailLabel": "Email",
       "email": "contact@csweb.pro",
       "phoneLabel": "Telefon",
-      "telefon": "Telefon",
+      "phone": "+49 157 38171996",
       "addressLabel": "Adresă",
-      "adresa": "Limburgstraße 47, 73235 Weilheim an der Teck, Germania"
+      "address": "Limburgstraße 47, 73235 Weilheim an der Teck, Germania"
     },
+
+    "legalTitle": "Informații legale",
+    "legal": {
+      "responsibleLabel": "Persoană responsabilă conform §5 TMG",
+      "responsible": "Cristina Stoian",
+      "taxNumberLabel": "Număr fiscal (Steuernummer)",
+      "taxNumber": "69406/01063",
+      "vatLabel": "TVA",
+      "vat": "Kleinunternehmer conform §19 UStG (nu se aplică TVA)"
+    },
+
     "disclaimerTitle": "Declarație de responsabilitate",
-    "disclaimer": "Toate serviciile oferite sunt furnizate cu profesionalism și conform acordurilor stabilite cu fiecare client. Pentru detalii specifice privind colaborarea, vă rugăm să ne contactați."
+    "disclaimer": "Toate serviciile sunt oferite cu profesionalism și conform acordurilor stabilite individual cu fiecare client. Pentru detalii specifice privind colaborarea, vă rugăm să ne contactați."
   },
   "cookieBanner": {
     "message": "Acest site folosește cookie-uri pentru a îmbunătăți experiența utilizatorului.",

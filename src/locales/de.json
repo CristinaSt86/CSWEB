@@ -28,7 +28,7 @@
     "button": "Mehr erfahren",
     "ariaScrollAbout": "Zum Abschnitt Über uns scrollen",
     "previewTitle": "Was Sie erhalten",
-    "previewNote": "Alles klar, schnell und stressfrei umgesetzt.",
+    "previewNote": "Alles schnell und frei umgesetzt.",
     "secondaryCta": "Angebot anfordern",
     "previewList": [
       "✓ Modernes & responsives Design",
@@ -122,17 +122,22 @@
     "testimonial1": {
       "quote": "Die Zusammenarbeit mit dem CS|WEB-Team war ausgezeichnet! Unsere Website sieht fantastisch aus, und wir haben bereits in den ersten Wochen mehr Traffic bemerkt. Ich kann sie nur weiterempfehlen!",
       "name": "Mihaela Radu",
-      "role": "CEO, Via Napoli Restaurant"
+      "role": "CEO • Via Napoli Restaurant"
     },
     "testimonial2": {
       "quote": "Das CS|WEB-Team hat unsere Vision perfekt verstanden und eine Website erstellt, die genau unseren Erwartungen entspricht. Wir sind sehr zufrieden mit dem Ergebnis!",
       "name": "Constantin Topală",
-      "role": "CEO, TopalX, Fahrschule"
+      "role": "CEO • TopalX Fahrschule"
     },
     "testimonial3": {
       "quote": "Ich hatte eine sehr gute Erfahrung mit CS|WEB! Unsere Website ist schnell, modern und SEO-optimiert. Wir sind sehr dankbar für ihre Unterstützung!",
       "name": "Rene Klemig",
-      "role": "Gründer, EcoDesign"
+      "role": "Gründer • EcoDesign"
+    },
+    "testimonial4": {
+      "quote": "Ich danke dir von Herzen für deine ganze Hilfe und dafür, dass du die Website für meine Kerzen mit so viel Sorgfalt erstellt hast. Sie ist wunderschön geworden!",
+      "name": "Luana Ciopei",
+      "role": "Inhaberin • Glowi by Luana"
     }
   },
   "contact": {
@@ -202,16 +207,29 @@
   "impressum": {
     "operator": "CS|WEB",
     "descriere": "Diese Website bietet professionelle Dienstleistungen in den Bereichen Webdesign, Webentwicklung, digitale Optimierung sowie Social Media Marketing, individuell auf die Bedürfnisse jedes Kunden abgestimmt.",
+
     "contactTitle": "Kontaktinformationen",
     "contact": {
-      "nameLabel": "Vollständiger Name",
+      "nameLabel": "Name",
+      "name": "Cristina Stoian",
       "emailLabel": "E-Mail",
       "email": "contact@csweb.pro",
       "phoneLabel": "Telefon",
-      "telefon": "Telefon",
+      "phone": "+49 157 38171996",
       "addressLabel": "Adresse",
-      "adresa": "Limburgstraße 47, 73235 Weilheim an der Teck, Deutschland"
+      "address": "Limburgstraße 47, 73235 Weilheim an der Teck, Deutschland"
     },
+
+    "legalTitle": "Rechtliche Angaben",
+    "legal": {
+      "responsibleLabel": "Verantwortlich gemäß §5 TMG",
+      "responsible": "Cristina Stoian",
+      "taxNumberLabel": "Steuernummer",
+      "taxNumber": "69406/01063",
+      "vatLabel": "Umsatzsteuer",
+      "vat": "Kleinunternehmer gemäß §19 UStG"
+    },
+
     "disclaimerTitle": "Haftungsausschluss",
     "disclaimer": "Alle Dienstleistungen werden professionell und gemäß den mit jedem Kunden getroffenen Vereinbarungen erbracht. Für spezifische Kooperationsdetails kontaktieren Sie uns bitte."
   },

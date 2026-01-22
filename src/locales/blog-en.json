@@ -69,7 +69,30 @@
       "ctaSection": {
         "textLine1": "Want to stand out online?",
         "textLine2": "Contact us today and let's start together!",
-          "button": "Free consultation"
+        "button": "Free consultation"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Why social media doesn’t work when you try to be perfect",
+      "slug": "social-media-perfection-doesnt-sell",
+      "date": "2026-01-22",
+      "image": "/images/blog4.webp",
+      "content": [
+        "Scrolling through social media, it feels like everyone has it all figured out. Perfect feeds, flawless captions, perfectly curated lives. And yet… when you try, nothing really works.",
+        "The truth? Not because you are not good enough. But because you are trying too hard to be perfect.",
+        "Many people feel a subtle shame about being themselves online. We are afraid to sound simple, to show real life, to look unprofessional. So we put on masks. And social media notices.",
+        "We are all human. And most of the time, we are far more alike than we realize. The emotions before posting – doubt, fear of judgment, the thought 'is this good enough?' – are almost universal. The difference is not who feels them, but who chooses to post anyway.",
+        "People do not buy perfection. They buy trust, authenticity and the feeling of talking to a real human.",
+        "The posts that perform best are not the perfect ones, but the honest ones. The ones that say: 'This is me. This is how I work. This is what I believe in.'",
+        "Simplicity sells. Authenticity builds connection. And connection brings clients.",
+        "If social media feels exhausting or ineffective, maybe you do not need more content. You need more truth.",
+        "We help you build an online presence that truly represents you – without pressure, without forced perfection, without copied formulas."
+      ],
+      "ctaSection": {
+        "textLine1": "Want social media that actually works?",
+        "textLine2": "Let’s build something authentic together.",
+        "button": "Free consultation"
       }
     }
   ]

@@ -12,10 +12,17 @@ const testimonialsData = [
     image: "/images/LogoTplx.webp",
     cite: "https://www.topalxscoalaauto.ro/",
   },
+  // {
+  //   id: "testimonial3",
+  //   image: "/images/EcoDesign.webp",
+  //   cite: "https://ecodesign-client.com/testimonial3",
+  // },
+
+  // ✅ NEW: Glowi by Luana
   {
-    id: "testimonial3",
-    image: "/images/EcoDesign.webp",
-    cite: "https://ecodesign-client.com/testimonial3",
+    id: "testimonial4",
+    image: "/images/logoGlowi.webp",
+    cite: "https://glowibyluana.webflow.io/",
   },
 ];
 
@@ -41,10 +48,7 @@ const TestimonialsSection = () => {
       });
     };
 
-    const observer = new IntersectionObserver(
-      handleIntersection,
-      observerOptions
-    );
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
 
     const testimonials = document.querySelectorAll(".testimonial");
     testimonials.forEach((testimonial) => observer.observe(testimonial));
@@ -68,7 +72,9 @@ const TestimonialsSection = () => {
         >
           {t("testimonials.heading")}
         </h2>
+
         <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
+
         <div className="flex flex-wrap justify-center gap-8">
           {testimonialsData.map((testimonial) => (
             <a
@@ -90,13 +96,12 @@ const TestimonialsSection = () => {
                 {t(`testimonials.${testimonial.id}.name`)} –{" "}
                 {t(`testimonials.${testimonial.id}.role`)}
               </span>
+
               <div className="bg-white shadow-lg rounded-md p-6 h-full">
-                <blockquote
-                  className=" mb-4"
-                  itemProp="reviewBody"
-                >
+                <blockquote className=" mb-4" itemProp="reviewBody">
                   {t(`testimonials.${testimonial.id}.quote`)}
                 </blockquote>
+
                 <div className="flex items-center justify-center">
                   <img
                     src={testimonial.image}

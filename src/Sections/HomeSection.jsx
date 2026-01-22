@@ -40,11 +40,11 @@ const HomeSection = () => {
               {t("home.title")}
             </h1>
 
-            <p className="mt-5 text-lg sm:text-lg text-white/90 leading-relaxed max-w-xl">
+            <p className="mt-5 text-xl text-white/90 leading-relaxed max-w-xl">
               {t("home.subtitle")}
             </p>
 
-            <p className="mt-4 text-lg text-white/70 max-w-xl">
+            <p className="mt-4 text-xl text-white/70 max-w-xl">
               {t("home.subtitleHome")}
             </p>
 
@@ -70,7 +70,7 @@ const HomeSection = () => {
           {/* RIGHT */}
           <div className="relative">
             <div className="rounded-2xl bg-black/35 backdrop-blur-md ring-1 ring-white/15 p-6 sm:p-8 text-white shadow-2xl max-w-md ml-auto">
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-xl font-semibold">
                 {t("home.previewTitle")}
               </h3>
 
