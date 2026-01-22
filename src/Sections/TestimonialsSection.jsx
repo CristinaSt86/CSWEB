@@ -21,7 +21,7 @@ const testimonialsData = [
   // ✅ NEW: Glowi by Luana
   {
     id: "testimonial4",
-    image: "/images/logoGlowi.webp",
+    image: "/images/LogoGlowi.webp",
     cite: "https://glowibyluana.webflow.io/",
   },
 ];
