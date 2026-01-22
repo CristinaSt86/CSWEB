@@ -6,7 +6,7 @@ const Impressum = () => {
 
   return (
     <section className="container mx-auto px-6 pt-36 pb-16 my-20 text-custom-textMenu max-w-5xl">
-      <h1 className="text-4xl font-bold mb-8">
+      <h1 className="text-3xl md:text-4xl font-bold mb-8">
         {t("impressum.operator")}
       </h1>
 

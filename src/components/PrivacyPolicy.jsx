@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     <section className="mx-auto max-w-5xl px-6 pt-36 pb-20 my-20 text-custom-textMenu">
       
       {/* Title */}
-      <h1 className="text-4xl font-bold mb-10 text-center md:text-left">
+      <h1 className="text-3xl mx-2 md:text-4xl font-bold mb-10 text-center md:text-left">
         {t("privacyPolicy.title")}
       </h1>
 
