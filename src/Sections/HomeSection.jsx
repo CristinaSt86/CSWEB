@@ -6,7 +6,6 @@ import SecondaryButton from "../components/SecondaryButton";
 
 const HomeSection = () => {
   const { t } = useTranslation();
- 
 
   const previewListRaw = t("home.previewList", { returnObjects: true });
   const previewList = Array.isArray(previewListRaw) ? previewListRaw : [];
@@ -16,7 +15,7 @@ const HomeSection = () => {
       id="home"
       className="
     scroll-mt-24 
-    relative min-h-[100svh] overflow-hidden
+    relative min-h-[100svh] md:min-h-[60svh] overflow-hidden
     bg-hero-mobile sm:bg-hero-tablet lg:bg-hero-desktop
     bg-cover bg-center
   "
@@ -32,8 +31,11 @@ const HomeSection = () => {
       </Helmet>
 
       {/* CONTENT */}
-      <div className=" relative z-10 mx-auto max-w-6xl px-6 sm:px-6 pt-44 pb-16 lg:pt-48 lg:pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div
+        className="
+       relative  z-10 mx-auto max-w-6xl px-6 sm:px-6 pt-44 pb-16 lg:pt-48 lg:pb-20"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
           {/* LEFT */}
           <div className="text-left text-white">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-relaxed ">

@@ -78,7 +78,7 @@ const AboutSection = () => {
 
       <section
         id="about"
-        className="text-custom-textMenu min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center sm:flex-row sm:justify-start sm:text-left py-20"
+        className="text-custom-textMenu min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center sm:flex-row sm:justify-start sm:text-left py-20  md:min-h-[60svh]"
         aria-label="Despre noi - Cine suntem și ce facem"
       >
         <div className="px-4 sm:px-8 max-w-6xl mx-auto mt-20 md:mt-26">

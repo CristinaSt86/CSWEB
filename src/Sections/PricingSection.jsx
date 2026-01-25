@@ -53,15 +53,24 @@ const PricingSection = () => {
           {t("pricingHeading")}
         </h1>
 
-        <div className="my-16 border-t-2 border-gray-300 w-1/3 mx-auto"></div>
+        {/* divider modern */}
+        <div className="my-10 md:my-14 flex justify-center">
+          <div className="h-px w-24 md:w-32 bg-gradient-to-r from-transparent via-black/25 to-transparent" />
+        </div>
 
-        <p className="text-center font-medium mb-12">{t("description")}</p>
-
-        <p className="text-center text-gray-600 mb-12">
-          {t("pricingNote", { price: "299 EUR" })}
+        {/* description */}
+        <p className="mx-auto max-w-3xl text-center text-base sm:text-lg md:text-xl font-medium leading-relaxed text-custom-textMenu/90 mb-6 md:mb-8">
+          {t("description")}
         </p>
 
-        <div className="relative flex flex-col space-y-16 md:flex-row md:space-y-0 md:space-x-12  justify-center">
+        {/* pricing note - pill */}
+        <div className="flex justify-center mb-10 md:mb-12">
+          <p className="inline-flex items-center rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm sm:text-base text-gray-700 shadow-sm backdrop-blur">
+            {t("pricingNote", { price: "299 EUR" })}
+          </p>
+        </div>
+
+        <div className="relative flex flex-col space-y-16 lg:flex-row lg:space-y-0 lg:space-x-12 justify-center">
           {packages.map((pkg) => {
             const featuresToRender = getFeatures(pkg.name);
 
@@ -69,7 +78,11 @@ const PricingSection = () => {
               <div
                 key={pkg.type}
                 id={pkg.id}
-                className="relative flex-1 bg-white rounded-lg shadow-lg p-6  flex flex-col"
+                className="
+    relative bg-white rounded-lg shadow-lg p-6 flex flex-col
+    max-w-xl mx-auto
+    lg:max-w-none lg:flex-1
+  "
               >
                 {pkg.type === "custom" && (
                   <span className="absolute top-0 right-0 bg-green-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg">

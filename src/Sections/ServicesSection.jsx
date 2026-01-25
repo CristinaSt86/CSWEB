@@ -70,7 +70,7 @@ const ServicesSection = () => {
     <section
       ref={sectionRef}
       id="services"
-      className="min-h-screen bg-services-bg bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center px-8 text-gray-700 py-20"
+      className="min-h-screen  md:min-h-[60svh] bg-services-bg bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center px-8 text-gray-700 py-20"
       aria-label={t("services.title")}
     >
       <Helmet>
@@ -120,7 +120,7 @@ const ServicesSection = () => {
 
         {/* 🔹 Wait for Framer Motion to Load */}
         {isMotionLoaded ? (
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 text-custom-textMenu">
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 text-custom-textMenu ">
 
             {services.map((service, index) => (
               <motion.div

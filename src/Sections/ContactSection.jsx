@@ -58,7 +58,7 @@ const ContactSection = () => {
 
       <section
         id="contact-section"
-        className="min-h-screen bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-custom-textMenu flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
+        className="min-h-screen  md:min-h-[60svh] bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-custom-textMenu flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
         aria-labelledby="contact-heading"
       >
         <div
@@ -102,7 +102,7 @@ const ContactSection = () => {
             <button
               onClick={handleButtonClick}
               type="button"
-              className="border border-custom-btn text-custom-btn text-lg font-medium px-16 py-2 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn/10 shadow-md hover:shadow-lg hover:-translate-y-1"
+              className="border border-custom-btn text-custom-btn text-lg font-medium px-16 py-2 rounded focus:outline-none transition-all duration-300 whitespace-nowrap shadow-md hover:shadow-lg hover:-translate-y-1"
               aria-label={t("contact.buttonText")}
             >
               {t("contact.buttonText")}
