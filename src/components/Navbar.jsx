@@ -20,10 +20,7 @@ const Navbar = () => {
 
   const pathParts = location.pathname.split("/");
   const lng =
-    pathParts[1] ||
-    localStorage.getItem("i18nextLng") ||
-    i18n.language ||
-    "ro";
+    pathParts[1] || localStorage.getItem("i18nextLng") || i18n.language || "ro";
 
   const toggleMenu = () => setIsMenuOpen((v) => !v);
 
@@ -40,7 +37,8 @@ const Navbar = () => {
 
   const handleMenuClick = (sectionId) => {
     // dacă ești deja pe /{lng}, doar scroll
-    const onSamePage = location.pathname === `/${lng}` || location.pathname === `/${lng}/`;
+    const onSamePage =
+      location.pathname === `/${lng}` || location.pathname === `/${lng}/`;
     if (onSamePage) {
       scrollToSection(sectionId);
     } else {
@@ -68,7 +66,10 @@ const Navbar = () => {
   };
 
   // ===== Active section (dot) =====
-  const sectionIds = useMemo(() => ["home", "about", "services", "contact"], []);
+  const sectionIds = useMemo(
+    () => ["home", "about", "services", "contact"],
+    [],
+  );
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
@@ -86,7 +87,7 @@ const Navbar = () => {
           const visible = entries
             .filter((e) => e.isIntersecting)
             .sort(
-              (a, b) => (b.intersectionRatio || 0) - (a.intersectionRatio || 0)
+              (a, b) => (b.intersectionRatio || 0) - (a.intersectionRatio || 0),
             )[0];
 
           if (visible?.target?.id) setActiveSection(visible.target.id);
@@ -96,7 +97,7 @@ const Navbar = () => {
           root: null,
           rootMargin: "-45% 0px -45% 0px",
           threshold: [0.05, 0.15, 0.3, 0.45],
-        }
+        },
       );
 
       els.forEach((el) => observer.observe(el));
@@ -151,13 +152,31 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-4 relative flex items-center justify-center lg:justify-between">
           {/* Hamburger left on mobile (NU schimbăm) */}
           <button
-            className="flex lg:hidden flex-col justify-center items-center space-y-1 absolute left-4 top-1/2 -translate-y-1/2"
+            className="lg:hidden absolute left-4 top-1/2 -translate-y-1/2 inline-flex h-11 w-11 items-center justify-center rounded-xl"
             onClick={toggleMenu}
             aria-label={t("navbar.openMenu")}
+            aria-expanded={isMenuOpen}
           >
-            <span className="block w-6 h-0.5 bg-black"></span>
-            <span className="block w-4 h-0.5 bg-black"></span>
-            <span className="block w-2 h-0.5 bg-black"></span>
+            <span className="relative block h-5 w-6">
+              {/* top */}
+              <span
+                className={`absolute left-0 top-0 h-0.5 w-6 rounded-full bg-black transition-all duration-300 ease-out
+        ${isMenuOpen ? "top-2 rotate-45" : "rotate-0"}
+      `}
+              />
+              {/* middle */}
+              <span
+                className={`absolute left-0 top-2 h-0.5 w-5 rounded-full bg-black transition-all duration-200 ease-out
+        ${isMenuOpen ? "opacity-0 scale-x-0" : "opacity-100 scale-x-100"}
+      `}
+              />
+              {/* bottom */}
+              <span
+                className={`absolute left-0 top-4 h-0.5 w-4 rounded-full bg-black transition-all duration-300 ease-out
+        ${isMenuOpen ? "top-2 -rotate-45" : "rotate-0"}
+      `}
+              />
+            </span>
           </button>
 
           {/* LOGO: centru pe mobil / STÂNGA pe desktop */}

@@ -40,7 +40,7 @@ const Form = React.forwardRef((props, ref) => {
   };
 
   return (
-    <div className="bg-white p-8 rounded shadow-lg max-w-md w-full text-custom-textMenu">
+    <div className="bg-white/60 p-8 rounded shadow-lg max-w-md w-full text-custom-textMenu">
       <h3 className="text-2xl font-bold mb-6">{t("form.heading")}</h3>
       <form onSubmit={handleSubmit} noValidate>
         {/* Câmpul pentru Nume */}
@@ -56,7 +56,7 @@ const Form = React.forwardRef((props, ref) => {
             ref={nameInputRef}
             placeholder={t("form.namePlaceholder")}
             required
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-custom-btn focus:border-custom-btn"
+            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-custom-btn focus:border-custom-btn"
           />
         </div>
 
@@ -72,7 +72,7 @@ const Form = React.forwardRef((props, ref) => {
             name="email"
             placeholder={t("form.emailPlaceholder")}
             required
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-custom-btn focus:border-custom-btn"
+            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-custom-btn focus:border-custom-btn"
           />
         </div>
 
@@ -88,7 +88,7 @@ const Form = React.forwardRef((props, ref) => {
             placeholder={t("form.messagePlaceholder")}
             rows="5"
             required
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-custom-btn focus:border-custom-btn"
+            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-custom-btn focus:border-custom-btn"
           ></textarea>
         </div>
 

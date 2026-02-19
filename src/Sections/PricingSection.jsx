@@ -59,7 +59,7 @@ const PricingSection = () => {
         </div>
 
         {/* description */}
-        <p className="mx-auto max-w-3xl text-center text-base sm:text-lg md:text-xl font-medium leading-relaxed text-custom-textMenu/90 mb-6 md:mb-8">
+        <p className="mx-auto max-w-3xl text-center text-lg sm:text-lg md:text-xl font-medium leading-relaxed text-custom-textMenu/90 mb-6 md:mb-8">
           {t("description")}
         </p>
 
