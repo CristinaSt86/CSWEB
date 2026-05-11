@@ -14,15 +14,15 @@ const HomeSection = () => {
     <section
       id="home"
       className="
-    scroll-mt-24 
-    relative min-h-[100svh] md:min-h-[60svh] overflow-hidden
-    bg-hero-mobile sm:bg-hero-tablet lg:bg-hero-desktop
-    bg-cover bg-center
-  "
+        scroll-mt-24
+        relative min-h-[100svh] md:min-h-[60svh] overflow-hidden
+        bg-hero-mobile sm:bg-hero-tablet lg:bg-hero-desktop
+        bg-cover bg-center
+      "
     >
-      {/* overlay gradient pentru lizibilitate */}
+      {/* Softer overlay */}
       <div
-        className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/70 via-black/45 to-black/20"
+        className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/55 via-black/15 to-transparent"
         aria-hidden="true"
       />
 
@@ -31,14 +31,11 @@ const HomeSection = () => {
       </Helmet>
 
       {/* CONTENT */}
-      <div
-        className="
-       relative  z-10 mx-auto max-w-6xl px-6 sm:px-6 pt-44 pb-16 lg:pt-48 lg:pb-20"
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+      <div className="relative z-10 mx-auto max-w-6xl px-6 sm:px-6 pt-44 pb-16 lg:pt-48 lg:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* LEFT */}
           <div className="text-left text-white">
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-relaxed ">
+            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-relaxed">
               {t("home.title")}
             </h1>
 
@@ -46,7 +43,7 @@ const HomeSection = () => {
               {t("home.subtitle")}
             </p>
 
-            <p className="mt-4 text-xl text-white/70 max-w-xl">
+            <p className="mt-4 text-xl text-white/80 max-w-xl">
               {t("home.subtitleHome")}
             </p>
 
@@ -71,19 +68,21 @@ const HomeSection = () => {
 
           {/* RIGHT */}
           <div className="relative">
-            <div className="rounded-2xl bg-black/35 backdrop-blur-md ring-1 ring-white/15 p-6 sm:p-8 text-white shadow-2xl max-w-md ml-auto">
-              <h3 className="text-xl font-semibold">
+            <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-white/60 p-6 sm:p-8 text-custom-textMenu shadow-2xl max-w-md ml-auto">
+              <h3 className="text-xl font-semibold text-custom-textMenu">
                 {t("home.previewTitle")}
               </h3>
 
-              <ul className="mt-4 space-y-3 text-white/90">
+              <ul className="mt-4 space-y-3 text-custom-textMenu/80">
                 {previewList.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}
               </ul>
 
-              <div className="mt-6 rounded-xl bg-black/30 p-4">
-                <p className="text-lg text-white/80">{t("home.previewNote")}</p>
+              <div className="mt-6 border-l-4 border-custom-btn/70 pl-4 py-1">
+                <p className="text-base italic leading-relaxed text-custom-textMenu/70">
+                  {t("home.previewNote")}
+                </p>
               </div>
             </div>
           </div>

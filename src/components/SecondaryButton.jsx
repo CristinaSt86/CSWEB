@@ -28,7 +28,8 @@ const SecondaryButton = ({
     large: "px-6 py-3 text-lg font-semibold",
   };
   const variantClasses = {
-    light: "border-white/70 text-white hover:bg-white/10",
+    light:
+      "border border-white/30 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 hover:border-white/50",
     dark: "border text-custom-btn hover:bg-custom-btn/10",
   };
 
@@ -41,25 +42,19 @@ const SecondaryButton = ({
       disabled={disabled}
       aria-label={ariaLabel}
       className={`
-        ${sizeClass}
-        inline-flex items-center justify-center text-center
-        whitespace-nowrap
-        border border-white
-        text-white
-        bg-transparent
-        rounded
-      shadow-md
-        transition-all duration-300
-        hover:bg-white/10
-        hover:border-white
-        hover:-translate-y-0.5
-        focus:outline-none
-        disabled:opacity-50
-        disabled:cursor-not-allowed
-        ${className}
-        ${variantClasses[variant]}
-        
-      `}
+  ${sizeClass}
+  inline-flex items-center justify-center text-center
+  whitespace-nowrap
+  rounded-xl
+  shadow-md
+  transition-all duration-300
+  hover:-translate-y-0.5
+  focus:outline-none
+  disabled:opacity-50
+  disabled:cursor-not-allowed
+  ${className}
+  ${variantClasses[variant]}
+`}
       style={additionalStyles}
     >
       {label}

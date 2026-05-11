@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-//import Button from "./Button";
+import Button from "./Button";
 import { Helmet } from "react-helmet-async";
 
 const ArticlePage = () => {
@@ -47,8 +47,8 @@ const ArticlePage = () => {
         <meta name="twitter:image" content={article.image} />
       </Helmet>
 
-      <article className="container mx-auto px-4 py-24 overflow-x-hidden text-custom-textMenu mt-20 md:mt-26">
-        <h1 className="text-3xl font-semibold mb-12 text-center">
+      <article className="container mx-auto max-w-6xl px-4 py-24 overflow-x-hidden text-custom-textMenu mt-20 md:mt-28">
+        <h1 className="text-3xl font-bold mb-12 text-center">
           {article.title}
         </h1>
 
@@ -84,14 +84,13 @@ const ArticlePage = () => {
               {article.ctaSection.textLine1}
             </p>
             <p className="text-gray-600 mb-6">{article.ctaSection.textLine2}</p>
-            <a
-              translate="no"
-              href={`/${lng}/contact`}
-              aria-label="CTA pentru consultanță"
-              className="inline-flex items-center justify-center px-16 py-3 text-xl font-semibold text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 focus:outline-none"
-            >
-              {article.ctaSection.button}
-            </a>
+           <Button
+  label={article.ctaSection.button}
+  size="large"
+  onClick={() => {
+    window.location.href = `/${lng}/contact`;
+  }}
+/>
           </div>
         )}
       </article>

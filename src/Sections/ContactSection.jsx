@@ -1,34 +1,21 @@
 import React, { useRef, useEffect, useState, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-//import { useLocation } from "react-router-dom";
+import Button from "../components/Button";
 
 const Form = lazy(() => import("../components/Form"));
 
 const ContactSection = () => {
   const { t } = useTranslation();
-  //const location = useLocation();
   const formRef = useRef();
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.3,
-    };
-
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-        }
-      });
-    };
-
     const observer = new IntersectionObserver(
-      handleIntersection,
-      observerOptions
+      ([entry]) => {
+        if (entry.isIntersecting) setIsInView(true);
+      },
+      { threshold: 0.25 },
     );
 
     const target = document.getElementById("contact-section");
@@ -40,9 +27,7 @@ const ContactSection = () => {
   }, []);
 
   const handleButtonClick = () => {
-    if (formRef.current) {
-      formRef.current.focusNameInput();
-    }
+    formRef.current?.focusNameInput();
   };
 
   return (
@@ -50,67 +35,75 @@ const ContactSection = () => {
       <Helmet>
         <title>{t("contact.heading")} | CSWEB</title>
         <meta name="description" content={t("contact.infoText")} />
-        <link
-          rel="canonical"
-          href="https://www.csweb.pro/contact"
-        />
+        <link rel="canonical" href="https://www.csweb.pro/contact" />
       </Helmet>
 
       <section
         id="contact-section"
-        className="min-h-screen  md:min-h-[60svh] bg-contact-bg bg-center bg-scroll md:bg-fixed bg-cover bg-no-repeat text-custom-textMenu flex items-center justify-center px-4 md:px-8 transition-all duration-1000"
         aria-labelledby="contact-heading"
+        className="relative min-h-screen bg-contact-bg bg-center bg-cover bg-no-repeat text-custom-textMenu px-4 md:px-8 py-28 md:py-40 overflow-hidden"
       >
+        <div className="absolute inset-0 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40" />
+
         <div
-          className={`max-w-6xl flex flex-col md:flex-row items-center justify-around w-full mx-auto gap-8 px-4 mt-32 md:mt-48 mb-24 md:mb-48 ${
-            isInView
-              ? "opacity-100 transform translate-y-0"
-              : "opacity-0 transform translate-y-10"
-          } transition-all duration-1000 ease-out`}
+          className={`relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-1000 ease-out ${
+            isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
         >
           {/* Contact Info */}
-          <div className="text-left relative z-10 bg-white p-6 rounded shadow-lg w-full md:w-5/12">
+          <div className="bg-white/75 backdrop-blur-xl border border-white/60 shadow-xl rounded-[28px] p-7 md:p-10">
+            <span className="inline-flex items-center rounded-full bg-custom-btn/10 text-custom-btn px-4 py-2 text-sm font-semibold mb-6">
+              {t("contact.freeConsultation")}
+            </span>
+
             <h2
               id="contact-heading"
-              className="text-3xl md:text-4xl font-bold mb-8"
-              itemProp="headline"
+              className="text-3xl md:text-4xl font-bold tracking-tight leading-tight max-w-md mb-6"
             >
               {t("contact.heading")}
             </h2>
-            <p className="mb-6">{t("contact.infoText")}</p>
-            <address className="mb-6" itemProp="address">
-              <p className="mb-4">
-                <strong>{t("contact.emailLabel")}</strong>{" "}
-                <a
-                  href={`mailto:${t("contact.email")}`}
-                  className="text-custom-btn hover:underline text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-                >
-                  {t("contact.email")}
-                </a>
-              </p>
-              <p className="mb-6">
-                <strong>{t("contact.whatsappLabel")}</strong>{" "}
-                <a
-                  href={`tel:${t("contact.phone")}`}
-                  className="text-custom-btn hover:underline text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-                >
-                  {t("contact.phone")}
-                </a>
-              </p>
-            </address>
 
-            <button
+            <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-8">
+              {t("contact.infoText")}
+            </p>
+
+            <div className="grid gap-4 mb-8">
+              <a
+                href={`mailto:${t("contact.email")}`}
+                className="group rounded-2xl border border-gray-200 p-4 hover:border-custom-btn hover:shadow-md transition-all"
+              >
+                <span className="block text-sm text-gray-500 mb-1">
+                  {t("contact.emailLabel")}
+                </span>
+                <span className="text-custom-btn font-medium group-hover:underline">
+                  {t("contact.email")}
+                </span>
+              </a>
+
+              <a
+                href={`tel:${t("contact.phone")}`}
+                className="group rounded-2xl border border-gray-200 p-4 hover:border-custom-btn hover:shadow-md transition-all"
+              >
+                <span className="block text-sm text-gray-500 mb-1">
+                  {t("contact.whatsappLabel")}
+                </span>
+                <span className="text-custom-btn font-medium group-hover:underline">
+                  {t("contact.phone")}
+                </span>
+              </a>
+            </div>
+
+            <Button
+              label={t("contact.buttonText")}
               onClick={handleButtonClick}
-              type="button"
-              className="border border-custom-btn text-custom-btn text-lg font-medium px-16 py-2 rounded focus:outline-none transition-all duration-300 whitespace-nowrap shadow-md hover:shadow-lg hover:-translate-y-1"
-              aria-label={t("contact.buttonText")}
-            >
-              {t("contact.buttonText")}
-            </button>
+              size="large"
+              className="w-full sm:w-auto"
+            />
           </div>
 
           {/* Form */}
-          <div className="w-full md:w-5/12">
+          <div className="bg-white/85 backdrop-blur-xl border border-white/60 shadow-xl rounded-[28px] p-5 md:p-8">
             <Suspense fallback={<div>Loading form...</div>}>
               <Form ref={formRef} aria-labelledby="contact-heading" />
             </Suspense>

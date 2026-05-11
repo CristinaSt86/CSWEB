@@ -142,8 +142,10 @@
   },
   "contact": {
     "heading": "Kontaktieren Sie uns",
+    "freeConsultation": "Kostenlose Erstberatung",
     "infoText": "Möchten Sie mehr Informationen? Wir sind nur eine Nachricht entfernt.",
     "emailLabel": "E-Mail:",
+
     "whatsappLabel": "WhatsApp:",
     "email": "contact.csweb@gmail.com",
     "phone": "+4915738171996",

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Button from "../components/Button";
 
 const BlogPreviewSection = () => {
   const { lng } = useParams();
@@ -28,7 +29,7 @@ const BlogPreviewSection = () => {
           {latestArticles.map((article) => (
             <div
               key={article.id}
-              className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+              className="bg-white/80 backdrop-blur-xl border border-white/60 p-6 rounded-[28px] shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
               <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
               <p className="text-gray-600 text-sm mb-4">
@@ -50,13 +51,12 @@ const BlogPreviewSection = () => {
         </div>
 
         <div className="text-center mt-8">
-          <a
-            href={`/${lng}/articole`}
-            className="inline-block bg-custom-btn text-white text-xl font-semibold px-16 py-3 rounded hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1 transition-all duration-300 transform mt-6"
-            aria-label={t("seeAll") || "Vezi toate articolele"}
-          >
-            {t("seeAll") || "Vezi toate articolele"}
-          </a>
+          <Button
+            label={t("seeAll") || "Vezi toate articolele"}
+            onClick={() => navigate(`/${lng}/articole`)}
+            size="large"
+            className="mt-6"
+          />
         </div>
       </div>
     </section>

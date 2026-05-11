@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaLaptopCode, FaShoppingCart, FaPuzzlePiece } from "react-icons/fa";
+import Button from "../components/Button";
 
 const packages = [
   { id: "basic-package", name: "basicPackage", type: "basic" },
@@ -114,19 +115,12 @@ const PricingSection = () => {
                 </div>
 
                 <div className="mt-auto flex flex-col items-center pb-6">
-                  <a
-                    href="#contact"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const section = document.getElementById("contact");
-                      if (section)
-                        section.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    aria-label={t("requestOffer")}
-                    className="mt-3 mx-1 text-xl font-semibold text-white bg-custom-btn rounded shadow-md transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-xl hover:-translate-y-1 w-[100%] py-3 inline-flex items-center justify-center"
-                  >
-                    {t("requestOffer")}
-                  </a>
+                  <Button
+                    label={t("requestOffer")}
+                    size="large"
+                    targetSectionId="contact"
+                    className="w-full mt-3"
+                  />
                 </div>
               </div>
             );

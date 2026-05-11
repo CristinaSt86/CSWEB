@@ -1,15 +1,14 @@
 import React, { useRef } from "react";
-import { useTranslation } from "react-i18next"; // Import i18n for translations
+import { useTranslation } from "react-i18next";
+import Button from "../components/Button";
 
 const Form = React.forwardRef((props, ref) => {
-  const { t } = useTranslation(); // Initialize translation hook
+  const { t } = useTranslation();
   const nameInputRef = useRef(null);
 
   React.useImperativeHandle(ref, () => ({
     focusNameInput: () => {
-      if (nameInputRef.current) {
-        nameInputRef.current.focus();
-      }
+      nameInputRef.current?.focus();
     },
   }));
 
@@ -19,6 +18,7 @@ const Form = React.forwardRef((props, ref) => {
 
     try {
       const formData = new FormData(form);
+
       const response = await fetch("https://formspree.io/f/xbllbzlq", {
         method: "POST",
         body: formData,
@@ -39,16 +39,21 @@ const Form = React.forwardRef((props, ref) => {
     }
   };
 
+  const inputClasses =
+    "w-full rounded-2xl border border-gray-200/80 bg-white/70 px-4 py-3 text-custom-textMenu placeholder:text-gray-400 outline-none transition-all duration-300 focus:border-custom-btn/50 focus:bg-white focus:ring-2 focus:ring-custom-btn/20";
+
   return (
-    <div className="bg-white/60 p-8 rounded shadow-lg max-w-md w-full text-custom-textMenu">
-      <h3 className="text-2xl font-bold mb-6">{t("form.heading")}</h3>
-      <form onSubmit={handleSubmit} noValidate>
-        {/* Câmpul pentru Nume */}
-        <div className="mb-4">
-          <label
-            htmlFor="name"
-            className="block text-gray-700 font-medium mb-2"
-          ></label>
+    <div className="w-full text-custom-textMenu">
+      <h3 className="text-2xl md:text-3xl font-bold tracking-tight leading-tight mb-6">
+        {t("form.heading")}
+      </h3>
+
+      <form onSubmit={handleSubmit} noValidate className="space-y-4">
+        <div>
+          <label htmlFor="name" className="sr-only">
+            {t("form.namePlaceholder")}
+          </label>
+
           <input
             type="text"
             id="name"
@@ -56,52 +61,51 @@ const Form = React.forwardRef((props, ref) => {
             ref={nameInputRef}
             placeholder={t("form.namePlaceholder")}
             required
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-custom-btn focus:border-custom-btn"
+            className={inputClasses}
           />
         </div>
 
-        {/* Câmpul pentru Email */}
-        <div className="mb-4">
-          <label
-            htmlFor="email"
-            className="block text-gray-700 font-medium mb-2"
-          ></label>
+        <div>
+          <label htmlFor="email" className="sr-only">
+            {t("form.emailPlaceholder")}
+          </label>
+
           <input
             type="email"
             id="email"
             name="email"
             placeholder={t("form.emailPlaceholder")}
             required
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-custom-btn focus:border-custom-btn"
+            className={inputClasses}
           />
         </div>
 
-        {/* Câmpul pentru Mesaj */}
-        <div className="mb-4">
-          <label
-            htmlFor="message"
-            className="block text-gray-700 font-medium mb-2"
-          ></label>
+        <div>
+          <label htmlFor="message" className="sr-only">
+            {t("form.messagePlaceholder")}
+          </label>
+
           <textarea
             id="message"
             name="message"
             placeholder={t("form.messagePlaceholder")}
             rows="5"
             required
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-custom-btn focus:border-custom-btn"
-          ></textarea>
+            className={`${inputClasses} resize-none`}
+          />
         </div>
 
-        {/* Butonul de Trimitere */}
-        <button
+        <Button
+          label={t("form.submitButton")}
           type="submit"
-          className="bg-custom-btn text-white text-xl font-semibold w-[100%] py-3 rounded focus:outline-none transition-all duration-300 hover:bg-custom-btn-hover hover:shadow-md hover:-translate-y-1"
-        >
-          {t("form.submitButton")}
-        </button>
+          size="large"
+          className="w-full"
+        />
       </form>
     </div>
   );
 });
+
+Form.displayName = "Form";
 
 export default Form;
