@@ -39,11 +39,11 @@ const HomeSection = () => {
               {t("home.title")}
             </h1>
 
-            <p className="mt-5 text-xl text-white/90 leading-relaxed max-w-xl">
+            <p className="mt-5 text-xl text-white leading-relaxed max-w-xl">
               {t("home.subtitle")}
             </p>
 
-            <p className="mt-4 text-xl text-white/80 max-w-xl">
+            <p className="mt-4 text-s text-white/80 max-w-xl">
               {t("home.subtitleHome")}
             </p>
 
